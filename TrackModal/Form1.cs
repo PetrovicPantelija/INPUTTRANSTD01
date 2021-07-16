@@ -112,5 +112,10 @@ namespace TrackModal
         {
             Application.Exit();
         }
+
+        private void siticoneShadowPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
