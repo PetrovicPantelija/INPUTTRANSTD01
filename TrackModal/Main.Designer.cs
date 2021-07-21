@@ -53,6 +53,7 @@
             this.pozicijeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.skladištaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.vrsteManipulacijeToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.predefinisanePorukeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.prevozToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.vozoviToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
@@ -119,7 +120,6 @@
             this.metadžerPretovarenoPoOrganizatoruToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.punoPraznoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.predefinisanePorukeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -329,6 +329,13 @@
             this.vrsteManipulacijeToolStripMenuItem1.Size = new System.Drawing.Size(218, 22);
             this.vrsteManipulacijeToolStripMenuItem1.Text = "Vrste manipulacije";
             this.vrsteManipulacijeToolStripMenuItem1.Click += new System.EventHandler(this.vrsteManipulacijeToolStripMenuItem1_Click);
+            // 
+            // predefinisanePorukeToolStripMenuItem
+            // 
+            this.predefinisanePorukeToolStripMenuItem.Name = "predefinisanePorukeToolStripMenuItem";
+            this.predefinisanePorukeToolStripMenuItem.Size = new System.Drawing.Size(218, 22);
+            this.predefinisanePorukeToolStripMenuItem.Text = "Predefinisane poruke";
+            this.predefinisanePorukeToolStripMenuItem.Click += new System.EventHandler(this.predefinisanePorukeToolStripMenuItem_Click);
             // 
             // prevozToolStripMenuItem
             // 
@@ -866,13 +873,6 @@
             this.pictureBox1.Size = new System.Drawing.Size(142, 54);
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
-            // 
-            // predefinisanePorukeToolStripMenuItem
-            // 
-            this.predefinisanePorukeToolStripMenuItem.Name = "predefinisanePorukeToolStripMenuItem";
-            this.predefinisanePorukeToolStripMenuItem.Size = new System.Drawing.Size(218, 22);
-            this.predefinisanePorukeToolStripMenuItem.Text = "Predefinisane poruke";
-            this.predefinisanePorukeToolStripMenuItem.Click += new System.EventHandler(this.predefinisanePorukeToolStripMenuItem_Click);
             // 
             // Main
             // 
