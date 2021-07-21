@@ -37,7 +37,7 @@ namespace TrackModal
             cboKorisnik.DisplayMember = "Korisnik";
             cboKorisnik.ValueMember = "Korisnik";
         }
-
+        //1234
         private void button1_Click(object sender, EventArgs e)
         {
             // var select = " Select Distinct DatumUtovara From RkShipping where Stanje = 1 and Vozilo = '" + cboVozila.Text + "'";
