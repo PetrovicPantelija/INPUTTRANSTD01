@@ -649,5 +649,10 @@ namespace TrackModal
             Sifarnici.frmPredefinisanePoruke predefinisane = new Sifarnici.frmPredefinisanePoruke();
             predefinisane.Show();
         }
+
+        private void tabPage1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

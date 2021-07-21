@@ -32,13 +32,13 @@
             this.bunifuPanel1 = new Bunifu.UI.WinForms.BunifuPanel();
             this.bunifuLabel1 = new Bunifu.UI.WinForms.BunifuLabel();
             this.siticoneShadowPanel1 = new Siticone.Desktop.UI.WinForms.SiticoneShadowPanel();
-            this.cboKorisnik = new Siticone.Desktop.UI.WinForms.SiticoneComboBox();
-            this.txtPassword = new Siticone.Desktop.UI.WinForms.SiticoneTextBox();
-            this.button1 = new Siticone.Desktop.UI.WinForms.SiticoneGradientButton();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.button2 = new Siticone.Desktop.UI.WinForms.SiticoneGradientButton();
-            this.siticoneSeparator1 = new Siticone.Desktop.UI.WinForms.SiticoneSeparator();
             this.siticoneComboBox1 = new Siticone.Desktop.UI.WinForms.SiticoneComboBox();
+            this.siticoneSeparator1 = new Siticone.Desktop.UI.WinForms.SiticoneSeparator();
+            this.button2 = new Siticone.Desktop.UI.WinForms.SiticoneGradientButton();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.button1 = new Siticone.Desktop.UI.WinForms.SiticoneGradientButton();
+            this.txtPassword = new Siticone.Desktop.UI.WinForms.SiticoneTextBox();
+            this.cboKorisnik = new Siticone.Desktop.UI.WinForms.SiticoneComboBox();
             this.bunifuPanel1.SuspendLayout();
             this.siticoneShadowPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -64,6 +64,7 @@
             // 
             this.bunifuLabel1.AllowParentOverrides = false;
             this.bunifuLabel1.AutoEllipsis = false;
+            this.bunifuLabel1.Cursor = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel1.CursorType = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel1.Font = new System.Drawing.Font("Bahnschrift SemiBold Condensed", 26.25F, System.Drawing.FontStyle.Bold);
             this.bunifuLabel1.ForeColor = System.Drawing.Color.White;
@@ -96,27 +97,92 @@
             this.siticoneShadowPanel1.TabIndex = 50;
             this.siticoneShadowPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.siticoneShadowPanel1_Paint);
             // 
-            // cboKorisnik
+            // siticoneComboBox1
             // 
-            this.cboKorisnik.BackColor = System.Drawing.Color.Transparent;
-            this.cboKorisnik.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(63)))), ((int)(((byte)(72)))));
-            this.cboKorisnik.BorderRadius = 5;
-            this.cboKorisnik.BorderThickness = 0;
-            this.cboKorisnik.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cboKorisnik.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboKorisnik.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cboKorisnik.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cboKorisnik.FocusedState.Parent = this.cboKorisnik;
-            this.cboKorisnik.Font = new System.Drawing.Font("Ebrima", 12F);
-            this.cboKorisnik.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.cboKorisnik.HoverState.Parent = this.cboKorisnik;
-            this.cboKorisnik.ItemHeight = 30;
-            this.cboKorisnik.ItemsAppearance.Parent = this.cboKorisnik;
-            this.cboKorisnik.Location = new System.Drawing.Point(149, 178);
-            this.cboKorisnik.Name = "cboKorisnik";
-            this.cboKorisnik.ShadowDecoration.Parent = this.cboKorisnik;
-            this.cboKorisnik.Size = new System.Drawing.Size(323, 36);
-            this.cboKorisnik.TabIndex = 0;
+            this.siticoneComboBox1.BackColor = System.Drawing.Color.Transparent;
+            this.siticoneComboBox1.BorderRadius = 5;
+            this.siticoneComboBox1.BorderThickness = 0;
+            this.siticoneComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.siticoneComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.siticoneComboBox1.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.siticoneComboBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.siticoneComboBox1.FocusedState.Parent = this.siticoneComboBox1;
+            this.siticoneComboBox1.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.siticoneComboBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.siticoneComboBox1.HoverState.Parent = this.siticoneComboBox1;
+            this.siticoneComboBox1.ItemHeight = 30;
+            this.siticoneComboBox1.ItemsAppearance.Parent = this.siticoneComboBox1;
+            this.siticoneComboBox1.Location = new System.Drawing.Point(149, 406);
+            this.siticoneComboBox1.Name = "siticoneComboBox1";
+            this.siticoneComboBox1.ShadowDecoration.Parent = this.siticoneComboBox1;
+            this.siticoneComboBox1.Size = new System.Drawing.Size(323, 36);
+            this.siticoneComboBox1.TabIndex = 140;
+            // 
+            // siticoneSeparator1
+            // 
+            this.siticoneSeparator1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(63)))), ((int)(((byte)(72)))));
+            this.siticoneSeparator1.Location = new System.Drawing.Point(149, 364);
+            this.siticoneSeparator1.Name = "siticoneSeparator1";
+            this.siticoneSeparator1.Size = new System.Drawing.Size(323, 19);
+            this.siticoneSeparator1.TabIndex = 139;
+            // 
+            // button2
+            // 
+            this.button2.BorderRadius = 5;
+            this.button2.CheckedState.Parent = this.button2;
+            this.button2.CustomImages.Parent = this.button2;
+            this.button2.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.button2.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.button2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.button2.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.button2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.button2.DisabledState.Parent = this.button2;
+            this.button2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(89)))), ((int)(((byte)(98)))));
+            this.button2.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(154)))), ((int)(((byte)(135)))));
+            this.button2.FocusedColor = System.Drawing.Color.Transparent;
+            this.button2.Font = new System.Drawing.Font("Bahnschrift", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.HoverState.Parent = this.button2;
+            this.button2.Location = new System.Drawing.Point(322, 296);
+            this.button2.Name = "button2";
+            this.button2.ShadowDecoration.Parent = this.button2;
+            this.button2.Size = new System.Drawing.Size(150, 45);
+            this.button2.TabIndex = 138;
+            this.button2.Text = "Odjava";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(216, 30);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(192, 68);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 137;
+            this.pictureBox1.TabStop = false;
+            // 
+            // button1
+            // 
+            this.button1.BorderRadius = 5;
+            this.button1.CheckedState.Parent = this.button1;
+            this.button1.CustomImages.Parent = this.button1;
+            this.button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.button1.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.button1.DisabledState.Parent = this.button1;
+            this.button1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(185)))), ((int)(((byte)(136)))));
+            this.button1.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(175)))), ((int)(((byte)(190)))));
+            this.button1.FocusedColor = System.Drawing.Color.Transparent;
+            this.button1.Font = new System.Drawing.Font("Bahnschrift", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.HoverState.Parent = this.button1;
+            this.button1.Location = new System.Drawing.Point(149, 296);
+            this.button1.Name = "button1";
+            this.button1.ShadowDecoration.Parent = this.button1;
+            this.button1.Size = new System.Drawing.Size(150, 45);
+            this.button1.TabIndex = 2;
+            this.button1.Text = "Prijava";
             // 
             // txtPassword
             // 
@@ -145,92 +211,27 @@
             this.txtPassword.TabIndex = 3;
             this.txtPassword.TextOffset = new System.Drawing.Point(5, 0);
             // 
-            // button1
+            // cboKorisnik
             // 
-            this.button1.BorderRadius = 5;
-            this.button1.CheckedState.Parent = this.button1;
-            this.button1.CustomImages.Parent = this.button1;
-            this.button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.button1.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.button1.DisabledState.Parent = this.button1;
-            this.button1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(185)))), ((int)(((byte)(136)))));
-            this.button1.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(175)))), ((int)(((byte)(190)))));
-            this.button1.FocusedColor = System.Drawing.Color.Transparent;
-            this.button1.Font = new System.Drawing.Font("Bahnschrift", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.HoverState.Parent = this.button1;
-            this.button1.Location = new System.Drawing.Point(149, 296);
-            this.button1.Name = "button1";
-            this.button1.ShadowDecoration.Parent = this.button1;
-            this.button1.Size = new System.Drawing.Size(150, 45);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Prijava";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(216, 30);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(192, 68);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 137;
-            this.pictureBox1.TabStop = false;
-            // 
-            // button2
-            // 
-            this.button2.BorderRadius = 5;
-            this.button2.CheckedState.Parent = this.button2;
-            this.button2.CustomImages.Parent = this.button2;
-            this.button2.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.button2.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.button2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.button2.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.button2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.button2.DisabledState.Parent = this.button2;
-            this.button2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(89)))), ((int)(((byte)(98)))));
-            this.button2.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(154)))), ((int)(((byte)(135)))));
-            this.button2.FocusedColor = System.Drawing.Color.Transparent;
-            this.button2.Font = new System.Drawing.Font("Bahnschrift", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.HoverState.Parent = this.button2;
-            this.button2.Location = new System.Drawing.Point(322, 296);
-            this.button2.Name = "button2";
-            this.button2.ShadowDecoration.Parent = this.button2;
-            this.button2.Size = new System.Drawing.Size(150, 45);
-            this.button2.TabIndex = 138;
-            this.button2.Text = "Odjava";
-            // 
-            // siticoneSeparator1
-            // 
-            this.siticoneSeparator1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(63)))), ((int)(((byte)(72)))));
-            this.siticoneSeparator1.Location = new System.Drawing.Point(149, 364);
-            this.siticoneSeparator1.Name = "siticoneSeparator1";
-            this.siticoneSeparator1.Size = new System.Drawing.Size(323, 19);
-            this.siticoneSeparator1.TabIndex = 139;
-            // 
-            // siticoneComboBox1
-            // 
-            this.siticoneComboBox1.BackColor = System.Drawing.Color.Transparent;
-            this.siticoneComboBox1.BorderRadius = 5;
-            this.siticoneComboBox1.BorderThickness = 0;
-            this.siticoneComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.siticoneComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.siticoneComboBox1.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.siticoneComboBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.siticoneComboBox1.FocusedState.Parent = this.siticoneComboBox1;
-            this.siticoneComboBox1.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.siticoneComboBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.siticoneComboBox1.HoverState.Parent = this.siticoneComboBox1;
-            this.siticoneComboBox1.ItemHeight = 30;
-            this.siticoneComboBox1.ItemsAppearance.Parent = this.siticoneComboBox1;
-            this.siticoneComboBox1.Location = new System.Drawing.Point(149, 406);
-            this.siticoneComboBox1.Name = "siticoneComboBox1";
-            this.siticoneComboBox1.ShadowDecoration.Parent = this.siticoneComboBox1;
-            this.siticoneComboBox1.Size = new System.Drawing.Size(323, 36);
-            this.siticoneComboBox1.TabIndex = 140;
+            this.cboKorisnik.BackColor = System.Drawing.Color.Transparent;
+            this.cboKorisnik.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(63)))), ((int)(((byte)(72)))));
+            this.cboKorisnik.BorderRadius = 5;
+            this.cboKorisnik.BorderThickness = 0;
+            this.cboKorisnik.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cboKorisnik.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboKorisnik.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cboKorisnik.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cboKorisnik.FocusedState.Parent = this.cboKorisnik;
+            this.cboKorisnik.Font = new System.Drawing.Font("Ebrima", 12F);
+            this.cboKorisnik.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.cboKorisnik.HoverState.Parent = this.cboKorisnik;
+            this.cboKorisnik.ItemHeight = 30;
+            this.cboKorisnik.ItemsAppearance.Parent = this.cboKorisnik;
+            this.cboKorisnik.Location = new System.Drawing.Point(149, 178);
+            this.cboKorisnik.Name = "cboKorisnik";
+            this.cboKorisnik.ShadowDecoration.Parent = this.cboKorisnik;
+            this.cboKorisnik.Size = new System.Drawing.Size(323, 36);
+            this.cboKorisnik.TabIndex = 0;
             // 
             // frmLogovanje
             // 
