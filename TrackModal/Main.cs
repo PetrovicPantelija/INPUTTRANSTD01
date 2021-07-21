@@ -62,7 +62,7 @@ namespace TrackModal
 
         private void nHMToolStripMenuItem_Click(object sender, EventArgs e)
         {
-          
+          //panta
         }
 
         private void komitentiToolStripMenuItem1_Click(object sender, EventArgs e)
