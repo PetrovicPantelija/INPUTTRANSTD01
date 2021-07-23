@@ -57,7 +57,6 @@ namespace TrackModal
             {
                 while (reader.Read())
                 {
-                   
                     string myString = reader.GetString(0); //The 0 stands for "the 0'th column", so the first column of the result.
                     // Do somthing with this rows string, for example to put them in to a list
                     if (myString.TrimEnd() == cboKorisnik.Text.TrimEnd())
@@ -72,7 +71,7 @@ namespace TrackModal
                     }
                 }
             }
-           
+
         }
 
         private void frmLogovanje_Enter(object sender, EventArgs e)
@@ -113,9 +112,5 @@ namespace TrackModal
             Application.Exit();
         }
 
-        private void siticoneShadowPanel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
     }
 }
