@@ -530,6 +530,60 @@
     <Compile Include="Izvestaji\InsertCosco.cs" />
     <Compile Include="Izvestaji\InsertMen.cs" />
     <Compile Include="Izvestaji\InsertMersk.cs" />
+    <Compile Include="MeniForme\FormaAdministracija.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MeniForme\FormaAdministracija.Designer.cs">
+      <DependentUpon>FormaAdministracija.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MeniForme\FormaIzvestaj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MeniForme\FormaIzvestaj.Designer.cs">
+      <DependentUpon>FormaIzvestaj.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MeniForme\FormaManipulacije.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MeniForme\FormaManipulacije.Designer.cs">
+      <DependentUpon>FormaManipulacije.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MeniForme\FormaNoviKorisnik.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MeniForme\FormaNoviKorisnik.Designer.cs">
+      <DependentUpon>FormaNoviKorisnik.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MeniForme\FormaPomoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MeniForme\FormaPomoc.Designer.cs">
+      <DependentUpon>FormaPomoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MeniForme\FormaPrevoz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MeniForme\FormaPrevoz.Designer.cs">
+      <DependentUpon>FormaPrevoz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MeniForme\FormaSifrarnici.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MeniForme\FormaSifrarnici.Designer.cs">
+      <DependentUpon>FormaSifrarnici.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MeniForme\FormaSkladistnoPoslovanje.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MeniForme\FormaSkladistnoPoslovanje.Designer.cs">
+      <DependentUpon>FormaSkladistnoPoslovanje.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MeniForme\FormaTransport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MeniForme\FormaTransport.Designer.cs">
+      <DependentUpon>FormaTransport.cs</DependentUpon>
+    </Compile>
     <Compile Include="Promet\frmLager.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -1147,6 +1201,9 @@
     <EmbeddedResource Include="Izvestaji\rptSelectTransport4.rdlc" />
     <EmbeddedResource Include="Izvestaji\rptSelectTransport5.rdlc" />
     <EmbeddedResource Include="Izvestaji\rptTovarniList.rdlc" />
+    <EmbeddedResource Include="MeniForme\FormaSifrarnici.resx">
+      <DependentUpon>FormaSifrarnici.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Promet\frmLager.resx">
       <DependentUpon>frmLager.cs</DependentUpon>
     </EmbeddedResource>
@@ -1592,6 +1649,7 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

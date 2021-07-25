@@ -24,18 +24,96 @@ using System.Text.RegularExpressions;
 using System.Drawing.Imaging;
 using TrackModal.Dokumeta;
 using TrackModal.Izvestaji;
+using FontAwesome.Sharp;
+using TrackModal.MeniForme;
 
 namespace TrackModal
 {
     public partial class Main : Form
     {
+        //Polja
+        private IconButton curentBtn;
+        private Panel leftBorderBtn;
+        private Form currentChildForm;
+
         string Korisnik = "";
 
+        //Konstruktor za dizajn
         public Main()
         {
             InitializeComponent();
+            leftBorderBtn = new Panel();
+            leftBorderBtn.Size = new Size(7, 50);
+            PanelMenu.Controls.Add(leftBorderBtn);
+            //form
+            this.Text = string.Empty;
+            this.ControlBox = false;
+            this.DoubleBuffered = true;
+            this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
         }
 
+        //Struktura za boje
+        private struct RGBColors
+        {
+            public static Color color1 = Color.FromArgb(83, 175, 190);
+        }
+
+        //metoda
+        private void ActivateButton(object senderBtn, Color color)
+        {
+            if (senderBtn != null)
+            {
+                DisableButton();
+                //button
+                curentBtn = (IconButton)senderBtn;
+                curentBtn.BackColor = Color.FromArgb(57, 75, 86);
+                curentBtn.ForeColor = color;
+                curentBtn.TextAlign = ContentAlignment.MiddleCenter;
+                curentBtn.IconColor = color;
+                curentBtn.TextImageRelation = TextImageRelation.TextBeforeImage;
+                curentBtn.ImageAlign = ContentAlignment.MiddleCenter;
+                //left border btn
+                leftBorderBtn.BackColor = color;
+                leftBorderBtn.Location = new Point(0, curentBtn.Location.Y);
+                leftBorderBtn.Visible = true;
+                leftBorderBtn.BringToFront();
+                //Icon curent child form
+                iconCurentChildForm.IconChar = curentBtn.IconChar;
+                iconCurentChildForm.IconColor = color;
+            }
+        }
+
+        private void DisableButton()
+        {
+            if (curentBtn != null)
+            {
+                curentBtn.BackColor = Color.FromArgb(48, 63, 72);
+                curentBtn.ForeColor = Color.FromArgb(180, 193, 204);
+                curentBtn.TextAlign = ContentAlignment.MiddleLeft;
+                curentBtn.IconColor = Color.FromArgb(180, 193, 204);
+                curentBtn.TextImageRelation = TextImageRelation.ImageBeforeText;
+                curentBtn.ImageAlign = ContentAlignment.MiddleLeft;
+            }
+        }
+
+        private void OpenChildForm(Form childForm)
+        {
+            if(currentChildForm != null)
+            {
+                //otvaranje samo jedne forme
+                currentChildForm.Close();
+            }
+            currentChildForm = childForm;
+            childForm.TopLevel = false;
+            childForm.FormBorderStyle = FormBorderStyle.None;
+            childForm.Dock = DockStyle.Fill;
+            panelDesktop.Controls.Add(childForm);
+            panelDesktop.Tag = childForm;
+            childForm.BringToFront();
+            childForm.Show();
+            lblTitlechildForm.Text = childForm.Text;
+        }
+ 
         public Main(string Logovan, int Lozinka)
         {
             InitializeComponent();
@@ -652,6 +730,94 @@ namespace TrackModal
 
         private void tabPage1_Click(object sender, EventArgs e)
         {
+
+        }
+
+        private void btnSifrarnici_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender, RGBColors.color1);
+            OpenChildForm(new FormaSifrarnici());
+        }
+
+        private void iconButton1_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender, RGBColors.color1);
+            OpenChildForm(new FormaPrevoz());
+
+        }
+
+        private void iconButton2_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender, RGBColors.color1);
+            OpenChildForm(new FormaManipulacije());
+
+        }
+
+        private void iconButton3_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender, RGBColors.color1);
+            OpenChildForm(new FormaSkladistnoPoslovanje());
+
+        }
+
+        private void iconButton4_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender, RGBColors.color1);
+            OpenChildForm(new FormaTransport());
+
+        }
+
+        private void iconButton5_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender, RGBColors.color1);
+            OpenChildForm(new FormaAdministracija());
+
+        }
+
+        private void iconButton6_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender, RGBColors.color1);
+            OpenChildForm(new FormaIzvestaj());
+
+        }
+
+        private void iconButton7_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender, RGBColors.color1);
+            OpenChildForm(new FormaNoviKorisnik());
+
+        }
+
+        private void iconButton8_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender, RGBColors.color1);
+            OpenChildForm(new FormaPomoc());
+        }
+
+        private void bunifuLabel1_Click(object sender, EventArgs e)
+        {
+            currentChildForm.Close();
+            Reset();
+        }
+
+        private void Reset()
+        {
+            DisableButton();
+            leftBorderBtn.Visible = false;
+            iconCurentChildForm.IconChar = IconChar.Home;
+            iconCurentChildForm.IconColor = Color.FromArgb(180, 193, 204);
+            lblTitlechildForm.Text = "Početna";
+        }
+        //drag form
+        [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
+        private extern static void ReleaseCapture();
+        [DllImport("user32.DLL", EntryPoint = "SendMessage")]
+        private extern static void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int lParam);
+        
+        private void panelTitleBar_MouseDown(object sender, MouseEventArgs e)
+        {
+            ReleaseCapture();
+            SendMessage(this.Handle, 0x112, 0xf012, 0);
 
         }
     }

@@ -95,7 +95,7 @@
             this.siticoneShadowPanel1.ShadowShift = 10;
             this.siticoneShadowPanel1.Size = new System.Drawing.Size(626, 513);
             this.siticoneShadowPanel1.TabIndex = 50;
-            this.siticoneShadowPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.siticoneShadowPanel1_Paint);
+           // this.siticoneShadowPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.siticoneShadowPanel1_Paint);
             // 
             // siticoneComboBox1
             // 
