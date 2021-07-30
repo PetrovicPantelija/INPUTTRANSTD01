@@ -28,403 +28,540 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormaSifrarnici));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.iconButton1 = new FontAwesome.Sharp.IconButton();
-            this.iconButton2 = new FontAwesome.Sharp.IconButton();
-            this.iconButton3 = new FontAwesome.Sharp.IconButton();
-            this.iconButton4 = new FontAwesome.Sharp.IconButton();
-            this.iconButton5 = new FontAwesome.Sharp.IconButton();
-            this.iconButton6 = new FontAwesome.Sharp.IconButton();
-            this.iconButton7 = new FontAwesome.Sharp.IconButton();
-            this.iconButton8 = new FontAwesome.Sharp.IconButton();
-            this.iconButton9 = new FontAwesome.Sharp.IconButton();
-            this.iconButton10 = new FontAwesome.Sharp.IconButton();
-            this.iconButton11 = new FontAwesome.Sharp.IconButton();
-            this.iconButton12 = new FontAwesome.Sharp.IconButton();
-            this.iconButton13 = new FontAwesome.Sharp.IconButton();
-            this.iconButton14 = new FontAwesome.Sharp.IconButton();
-            this.iconButton15 = new FontAwesome.Sharp.IconButton();
-            this.iconButton16 = new FontAwesome.Sharp.IconButton();
-            this.iconButton17 = new FontAwesome.Sharp.IconButton();
+            this.btnsPredefinisanePoruke = new FontAwesome.Sharp.IconButton();
+            this.btnsVrsteManipulacije = new FontAwesome.Sharp.IconButton();
+            this.btnsSkladišta = new FontAwesome.Sharp.IconButton();
+            this.btnsPozicije = new FontAwesome.Sharp.IconButton();
+            this.btnsStanice = new FontAwesome.Sharp.IconButton();
+            this.btnsSredstvaRada = new FontAwesome.Sharp.IconButton();
+            this.btnsTipKontenjera = new FontAwesome.Sharp.IconButton();
+            this.btnsVrstaRobe = new FontAwesome.Sharp.IconButton();
+            this.panelSubZaposlSifr = new Bunifu.UI.WinForms.BunifuPanel();
+            this.btnszsStrucniIpit = new System.Windows.Forms.Button();
+            this.btnszsZastitnaOdeca = new System.Windows.Forms.Button();
+            this.btnszsLicenceSertifikati = new System.Windows.Forms.Button();
+            this.btnszsOrganizacioneJedinice = new System.Windows.Forms.Button();
+            this.btnszsLekarskiPregled = new System.Windows.Forms.Button();
+            this.btnszSkolskaSprema = new System.Windows.Forms.Button();
+            this.btnsZaposleniSifr = new FontAwesome.Sharp.IconButton();
+            this.btnsZaposleni = new FontAwesome.Sharp.IconButton();
+            this.btnsStatusKontejnera = new FontAwesome.Sharp.IconButton();
+            this.btnsNacinDolOdl = new FontAwesome.Sharp.IconButton();
+            this.btnsPartneri = new FontAwesome.Sharp.IconButton();
+            this.btnsTipCenovnika = new FontAwesome.Sharp.IconButton();
+            this.btnsCena = new FontAwesome.Sharp.IconButton();
+            this.btnsDelKontejnera = new FontAwesome.Sharp.IconButton();
+            this.btnsOstecenja = new FontAwesome.Sharp.IconButton();
             this.panel1.SuspendLayout();
+            this.panelSubZaposlSifr.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.iconButton17);
-            this.panel1.Controls.Add(this.iconButton16);
-            this.panel1.Controls.Add(this.iconButton15);
-            this.panel1.Controls.Add(this.iconButton14);
-            this.panel1.Controls.Add(this.iconButton13);
-            this.panel1.Controls.Add(this.iconButton12);
-            this.panel1.Controls.Add(this.iconButton11);
-            this.panel1.Controls.Add(this.iconButton10);
-            this.panel1.Controls.Add(this.iconButton9);
-            this.panel1.Controls.Add(this.iconButton8);
-            this.panel1.Controls.Add(this.iconButton7);
-            this.panel1.Controls.Add(this.iconButton6);
-            this.panel1.Controls.Add(this.iconButton5);
-            this.panel1.Controls.Add(this.iconButton4);
-            this.panel1.Controls.Add(this.iconButton3);
-            this.panel1.Controls.Add(this.iconButton2);
-            this.panel1.Controls.Add(this.iconButton1);
+            this.panel1.Controls.Add(this.btnsPredefinisanePoruke);
+            this.panel1.Controls.Add(this.btnsVrsteManipulacije);
+            this.panel1.Controls.Add(this.btnsSkladišta);
+            this.panel1.Controls.Add(this.btnsPozicije);
+            this.panel1.Controls.Add(this.btnsStanice);
+            this.panel1.Controls.Add(this.btnsSredstvaRada);
+            this.panel1.Controls.Add(this.btnsTipKontenjera);
+            this.panel1.Controls.Add(this.btnsVrstaRobe);
+            this.panel1.Controls.Add(this.panelSubZaposlSifr);
+            this.panel1.Controls.Add(this.btnsZaposleniSifr);
+            this.panel1.Controls.Add(this.btnsZaposleni);
+            this.panel1.Controls.Add(this.btnsStatusKontejnera);
+            this.panel1.Controls.Add(this.btnsNacinDolOdl);
+            this.panel1.Controls.Add(this.btnsPartneri);
+            this.panel1.Controls.Add(this.btnsTipCenovnika);
+            this.panel1.Controls.Add(this.btnsCena);
+            this.panel1.Controls.Add(this.btnsDelKontejnera);
+            this.panel1.Controls.Add(this.btnsOstecenja);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(223, 550);
+            this.panel1.Size = new System.Drawing.Size(296, 972);
             this.panel1.TabIndex = 0;
             // 
-            // iconButton1
+            // btnsPredefinisanePoruke
             // 
-            this.iconButton1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.iconButton1.FlatAppearance.BorderSize = 0;
-            this.iconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton1.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.iconButton1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(193)))), ((int)(((byte)(204)))));
-            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.iconButton1.IconColor = System.Drawing.Color.Black;
-            this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton1.Location = new System.Drawing.Point(0, 0);
-            this.iconButton1.Name = "iconButton1";
-            this.iconButton1.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.iconButton1.Size = new System.Drawing.Size(223, 30);
-            this.iconButton1.TabIndex = 3;
-            this.iconButton1.Text = "Oštećenja";
-            this.iconButton1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton1.UseVisualStyleBackColor = true;
+            this.btnsPredefinisanePoruke.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnsPredefinisanePoruke.FlatAppearance.BorderSize = 0;
+            this.btnsPredefinisanePoruke.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnsPredefinisanePoruke.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.btnsPredefinisanePoruke.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(193)))), ((int)(((byte)(204)))));
+            this.btnsPredefinisanePoruke.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.btnsPredefinisanePoruke.IconColor = System.Drawing.Color.Black;
+            this.btnsPredefinisanePoruke.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnsPredefinisanePoruke.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnsPredefinisanePoruke.Location = new System.Drawing.Point(0, 850);
+            this.btnsPredefinisanePoruke.Name = "btnsPredefinisanePoruke";
+            this.btnsPredefinisanePoruke.Padding = new System.Windows.Forms.Padding(20, 0, 20, 0);
+            this.btnsPredefinisanePoruke.Size = new System.Drawing.Size(296, 40);
+            this.btnsPredefinisanePoruke.TabIndex = 20;
+            this.btnsPredefinisanePoruke.Text = "Predefinisane poruke";
+            this.btnsPredefinisanePoruke.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnsPredefinisanePoruke.UseVisualStyleBackColor = true;
             // 
-            // iconButton2
+            // btnsVrsteManipulacije
             // 
-            this.iconButton2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.iconButton2.FlatAppearance.BorderSize = 0;
-            this.iconButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton2.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.iconButton2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(193)))), ((int)(((byte)(204)))));
-            this.iconButton2.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.iconButton2.IconColor = System.Drawing.Color.Black;
-            this.iconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton2.Location = new System.Drawing.Point(0, 30);
-            this.iconButton2.Name = "iconButton2";
-            this.iconButton2.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.iconButton2.Size = new System.Drawing.Size(223, 30);
-            this.iconButton2.TabIndex = 4;
-            this.iconButton2.Text = "Delovi kontenjera";
-            this.iconButton2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton2.UseVisualStyleBackColor = true;
+            this.btnsVrsteManipulacije.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnsVrsteManipulacije.FlatAppearance.BorderSize = 0;
+            this.btnsVrsteManipulacije.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnsVrsteManipulacije.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.btnsVrsteManipulacije.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(193)))), ((int)(((byte)(204)))));
+            this.btnsVrsteManipulacije.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.btnsVrsteManipulacije.IconColor = System.Drawing.Color.Black;
+            this.btnsVrsteManipulacije.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnsVrsteManipulacije.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnsVrsteManipulacije.Location = new System.Drawing.Point(0, 810);
+            this.btnsVrsteManipulacije.Name = "btnsVrsteManipulacije";
+            this.btnsVrsteManipulacije.Padding = new System.Windows.Forms.Padding(20, 0, 20, 0);
+            this.btnsVrsteManipulacije.Size = new System.Drawing.Size(296, 40);
+            this.btnsVrsteManipulacije.TabIndex = 19;
+            this.btnsVrsteManipulacije.Text = "Vrste manipulacije";
+            this.btnsVrsteManipulacije.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnsVrsteManipulacije.UseVisualStyleBackColor = true;
             // 
-            // iconButton3
+            // btnsSkladišta
             // 
-            this.iconButton3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.iconButton3.FlatAppearance.BorderSize = 0;
-            this.iconButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton3.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.iconButton3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(193)))), ((int)(((byte)(204)))));
-            this.iconButton3.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.iconButton3.IconColor = System.Drawing.Color.Black;
-            this.iconButton3.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton3.Location = new System.Drawing.Point(0, 60);
-            this.iconButton3.Name = "iconButton3";
-            this.iconButton3.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.iconButton3.Size = new System.Drawing.Size(223, 30);
-            this.iconButton3.TabIndex = 5;
-            this.iconButton3.Text = "Cene";
-            this.iconButton3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton3.UseVisualStyleBackColor = true;
+            this.btnsSkladišta.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnsSkladišta.FlatAppearance.BorderSize = 0;
+            this.btnsSkladišta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnsSkladišta.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.btnsSkladišta.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(193)))), ((int)(((byte)(204)))));
+            this.btnsSkladišta.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.btnsSkladišta.IconColor = System.Drawing.Color.Black;
+            this.btnsSkladišta.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnsSkladišta.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnsSkladišta.Location = new System.Drawing.Point(0, 770);
+            this.btnsSkladišta.Name = "btnsSkladišta";
+            this.btnsSkladišta.Padding = new System.Windows.Forms.Padding(20, 0, 20, 0);
+            this.btnsSkladišta.Size = new System.Drawing.Size(296, 40);
+            this.btnsSkladišta.TabIndex = 18;
+            this.btnsSkladišta.Text = "Skladišta";
+            this.btnsSkladišta.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnsSkladišta.UseVisualStyleBackColor = true;
             // 
-            // iconButton4
+            // btnsPozicije
             // 
-            this.iconButton4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.iconButton4.FlatAppearance.BorderSize = 0;
-            this.iconButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton4.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.iconButton4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(193)))), ((int)(((byte)(204)))));
-            this.iconButton4.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.iconButton4.IconColor = System.Drawing.Color.Black;
-            this.iconButton4.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton4.Location = new System.Drawing.Point(0, 90);
-            this.iconButton4.Name = "iconButton4";
-            this.iconButton4.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.iconButton4.Size = new System.Drawing.Size(223, 30);
-            this.iconButton4.TabIndex = 6;
-            this.iconButton4.Text = "Tip cenovnika";
-            this.iconButton4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton4.UseVisualStyleBackColor = true;
+            this.btnsPozicije.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnsPozicije.FlatAppearance.BorderSize = 0;
+            this.btnsPozicije.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnsPozicije.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.btnsPozicije.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(193)))), ((int)(((byte)(204)))));
+            this.btnsPozicije.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.btnsPozicije.IconColor = System.Drawing.Color.Black;
+            this.btnsPozicije.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnsPozicije.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnsPozicije.Location = new System.Drawing.Point(0, 730);
+            this.btnsPozicije.Name = "btnsPozicije";
+            this.btnsPozicije.Padding = new System.Windows.Forms.Padding(20, 0, 20, 0);
+            this.btnsPozicije.Size = new System.Drawing.Size(296, 40);
+            this.btnsPozicije.TabIndex = 17;
+            this.btnsPozicije.Text = "Pozicije";
+            this.btnsPozicije.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnsPozicije.UseVisualStyleBackColor = true;
             // 
-            // iconButton5
+            // btnsStanice
             // 
-            this.iconButton5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.iconButton5.FlatAppearance.BorderSize = 0;
-            this.iconButton5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton5.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.iconButton5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(193)))), ((int)(((byte)(204)))));
-            this.iconButton5.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.iconButton5.IconColor = System.Drawing.Color.Black;
-            this.iconButton5.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton5.Location = new System.Drawing.Point(0, 120);
-            this.iconButton5.Name = "iconButton5";
-            this.iconButton5.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.iconButton5.Size = new System.Drawing.Size(223, 30);
-            this.iconButton5.TabIndex = 7;
-            this.iconButton5.Text = "Partneri";
-            this.iconButton5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton5.UseVisualStyleBackColor = true;
+            this.btnsStanice.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnsStanice.FlatAppearance.BorderSize = 0;
+            this.btnsStanice.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnsStanice.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.btnsStanice.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(193)))), ((int)(((byte)(204)))));
+            this.btnsStanice.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.btnsStanice.IconColor = System.Drawing.Color.Black;
+            this.btnsStanice.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnsStanice.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnsStanice.Location = new System.Drawing.Point(0, 690);
+            this.btnsStanice.Name = "btnsStanice";
+            this.btnsStanice.Padding = new System.Windows.Forms.Padding(20, 0, 20, 0);
+            this.btnsStanice.Size = new System.Drawing.Size(296, 40);
+            this.btnsStanice.TabIndex = 16;
+            this.btnsStanice.Text = "Stanice";
+            this.btnsStanice.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnsStanice.UseVisualStyleBackColor = true;
             // 
-            // iconButton6
+            // btnsSredstvaRada
             // 
-            this.iconButton6.Dock = System.Windows.Forms.DockStyle.Top;
-            this.iconButton6.FlatAppearance.BorderSize = 0;
-            this.iconButton6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton6.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.iconButton6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(193)))), ((int)(((byte)(204)))));
-            this.iconButton6.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.iconButton6.IconColor = System.Drawing.Color.Black;
-            this.iconButton6.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton6.Location = new System.Drawing.Point(0, 150);
-            this.iconButton6.Name = "iconButton6";
-            this.iconButton6.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.iconButton6.Size = new System.Drawing.Size(223, 30);
-            this.iconButton6.TabIndex = 8;
-            this.iconButton6.Text = "Način dolaska odlaska";
-            this.iconButton6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton6.UseVisualStyleBackColor = true;
+            this.btnsSredstvaRada.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnsSredstvaRada.FlatAppearance.BorderSize = 0;
+            this.btnsSredstvaRada.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnsSredstvaRada.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.btnsSredstvaRada.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(193)))), ((int)(((byte)(204)))));
+            this.btnsSredstvaRada.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.btnsSredstvaRada.IconColor = System.Drawing.Color.Black;
+            this.btnsSredstvaRada.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnsSredstvaRada.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnsSredstvaRada.Location = new System.Drawing.Point(0, 650);
+            this.btnsSredstvaRada.Name = "btnsSredstvaRada";
+            this.btnsSredstvaRada.Padding = new System.Windows.Forms.Padding(20, 0, 20, 0);
+            this.btnsSredstvaRada.Size = new System.Drawing.Size(296, 40);
+            this.btnsSredstvaRada.TabIndex = 15;
+            this.btnsSredstvaRada.Text = "Sredstva rada";
+            this.btnsSredstvaRada.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnsSredstvaRada.UseVisualStyleBackColor = true;
             // 
-            // iconButton7
+            // btnsTipKontenjera
             // 
-            this.iconButton7.Dock = System.Windows.Forms.DockStyle.Top;
-            this.iconButton7.FlatAppearance.BorderSize = 0;
-            this.iconButton7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton7.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.iconButton7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(193)))), ((int)(((byte)(204)))));
-            this.iconButton7.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.iconButton7.IconColor = System.Drawing.Color.Black;
-            this.iconButton7.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton7.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton7.Location = new System.Drawing.Point(0, 180);
-            this.iconButton7.Name = "iconButton7";
-            this.iconButton7.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.iconButton7.Size = new System.Drawing.Size(223, 30);
-            this.iconButton7.TabIndex = 9;
-            this.iconButton7.Text = "Status kontenjera";
-            this.iconButton7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton7.UseVisualStyleBackColor = true;
+            this.btnsTipKontenjera.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnsTipKontenjera.FlatAppearance.BorderSize = 0;
+            this.btnsTipKontenjera.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnsTipKontenjera.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.btnsTipKontenjera.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(193)))), ((int)(((byte)(204)))));
+            this.btnsTipKontenjera.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.btnsTipKontenjera.IconColor = System.Drawing.Color.Black;
+            this.btnsTipKontenjera.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnsTipKontenjera.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnsTipKontenjera.Location = new System.Drawing.Point(0, 610);
+            this.btnsTipKontenjera.Name = "btnsTipKontenjera";
+            this.btnsTipKontenjera.Padding = new System.Windows.Forms.Padding(20, 0, 20, 0);
+            this.btnsTipKontenjera.Size = new System.Drawing.Size(296, 40);
+            this.btnsTipKontenjera.TabIndex = 14;
+            this.btnsTipKontenjera.Text = "Tip kontenjera";
+            this.btnsTipKontenjera.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnsTipKontenjera.UseVisualStyleBackColor = true;
             // 
-            // iconButton8
+            // btnsVrstaRobe
             // 
-            this.iconButton8.Dock = System.Windows.Forms.DockStyle.Top;
-            this.iconButton8.FlatAppearance.BorderSize = 0;
-            this.iconButton8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton8.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.iconButton8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(193)))), ((int)(((byte)(204)))));
-            this.iconButton8.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.iconButton8.IconColor = System.Drawing.Color.Black;
-            this.iconButton8.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton8.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton8.Location = new System.Drawing.Point(0, 210);
-            this.iconButton8.Name = "iconButton8";
-            this.iconButton8.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.iconButton8.Size = new System.Drawing.Size(223, 30);
-            this.iconButton8.TabIndex = 10;
-            this.iconButton8.Text = "Zaposleni";
-            this.iconButton8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton8.UseVisualStyleBackColor = true;
+            this.btnsVrstaRobe.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnsVrstaRobe.FlatAppearance.BorderSize = 0;
+            this.btnsVrstaRobe.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnsVrstaRobe.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.btnsVrstaRobe.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(193)))), ((int)(((byte)(204)))));
+            this.btnsVrstaRobe.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.btnsVrstaRobe.IconColor = System.Drawing.Color.Black;
+            this.btnsVrstaRobe.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnsVrstaRobe.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnsVrstaRobe.Location = new System.Drawing.Point(0, 570);
+            this.btnsVrstaRobe.Name = "btnsVrstaRobe";
+            this.btnsVrstaRobe.Padding = new System.Windows.Forms.Padding(20, 0, 20, 0);
+            this.btnsVrstaRobe.Size = new System.Drawing.Size(296, 40);
+            this.btnsVrstaRobe.TabIndex = 13;
+            this.btnsVrstaRobe.Text = "Vrste robe";
+            this.btnsVrstaRobe.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnsVrstaRobe.UseVisualStyleBackColor = true;
             // 
-            // iconButton9
+            // panelSubZaposlSifr
             // 
-            this.iconButton9.Dock = System.Windows.Forms.DockStyle.Top;
-            this.iconButton9.FlatAppearance.BorderSize = 0;
-            this.iconButton9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton9.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.iconButton9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(193)))), ((int)(((byte)(204)))));
-            this.iconButton9.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.iconButton9.IconColor = System.Drawing.Color.Black;
-            this.iconButton9.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton9.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton9.Location = new System.Drawing.Point(0, 240);
-            this.iconButton9.Name = "iconButton9";
-            this.iconButton9.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.iconButton9.Size = new System.Drawing.Size(223, 30);
-            this.iconButton9.TabIndex = 11;
-            this.iconButton9.Text = "Zaposleni šifrarnici";
-            this.iconButton9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton9.UseVisualStyleBackColor = true;
+            this.panelSubZaposlSifr.BackgroundColor = System.Drawing.Color.Transparent;
+            this.panelSubZaposlSifr.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panelSubZaposlSifr.BackgroundImage")));
+            this.panelSubZaposlSifr.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panelSubZaposlSifr.BorderColor = System.Drawing.Color.Transparent;
+            this.panelSubZaposlSifr.BorderRadius = 3;
+            this.panelSubZaposlSifr.BorderThickness = 1;
+            this.panelSubZaposlSifr.Controls.Add(this.btnszsStrucniIpit);
+            this.panelSubZaposlSifr.Controls.Add(this.btnszsZastitnaOdeca);
+            this.panelSubZaposlSifr.Controls.Add(this.btnszsLicenceSertifikati);
+            this.panelSubZaposlSifr.Controls.Add(this.btnszsOrganizacioneJedinice);
+            this.panelSubZaposlSifr.Controls.Add(this.btnszsLekarskiPregled);
+            this.panelSubZaposlSifr.Controls.Add(this.btnszSkolskaSprema);
+            this.panelSubZaposlSifr.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelSubZaposlSifr.Location = new System.Drawing.Point(0, 360);
+            this.panelSubZaposlSifr.Name = "panelSubZaposlSifr";
+            this.panelSubZaposlSifr.ShowBorders = true;
+            this.panelSubZaposlSifr.Size = new System.Drawing.Size(296, 210);
+            this.panelSubZaposlSifr.TabIndex = 12;
             // 
-            // iconButton10
+            // btnszsStrucniIpit
             // 
-            this.iconButton10.Dock = System.Windows.Forms.DockStyle.Top;
-            this.iconButton10.FlatAppearance.BorderSize = 0;
-            this.iconButton10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton10.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.iconButton10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(193)))), ((int)(((byte)(204)))));
-            this.iconButton10.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.iconButton10.IconColor = System.Drawing.Color.Black;
-            this.iconButton10.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton10.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton10.Location = new System.Drawing.Point(0, 270);
-            this.iconButton10.Name = "iconButton10";
-            this.iconButton10.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.iconButton10.Size = new System.Drawing.Size(223, 30);
-            this.iconButton10.TabIndex = 12;
-            this.iconButton10.Text = "Vrste robe";
-            this.iconButton10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton10.UseVisualStyleBackColor = true;
+            this.btnszsStrucniIpit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(81)))), ((int)(((byte)(108)))), ((int)(((byte)(123)))));
+            this.btnszsStrucniIpit.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnszsStrucniIpit.FlatAppearance.BorderSize = 0;
+            this.btnszsStrucniIpit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnszsStrucniIpit.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnszsStrucniIpit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(193)))), ((int)(((byte)(204)))));
+            this.btnszsStrucniIpit.Location = new System.Drawing.Point(0, 175);
+            this.btnszsStrucniIpit.Name = "btnszsStrucniIpit";
+            this.btnszsStrucniIpit.Padding = new System.Windows.Forms.Padding(45, 0, 20, 0);
+            this.btnszsStrucniIpit.Size = new System.Drawing.Size(296, 35);
+            this.btnszsStrucniIpit.TabIndex = 5;
+            this.btnszsStrucniIpit.Text = "Stručni ispit";
+            this.btnszsStrucniIpit.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnszsStrucniIpit.UseVisualStyleBackColor = false;
             // 
-            // iconButton11
+            // btnszsZastitnaOdeca
             // 
-            this.iconButton11.Dock = System.Windows.Forms.DockStyle.Top;
-            this.iconButton11.FlatAppearance.BorderSize = 0;
-            this.iconButton11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton11.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.iconButton11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(193)))), ((int)(((byte)(204)))));
-            this.iconButton11.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.iconButton11.IconColor = System.Drawing.Color.Black;
-            this.iconButton11.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton11.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton11.Location = new System.Drawing.Point(0, 300);
-            this.iconButton11.Name = "iconButton11";
-            this.iconButton11.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.iconButton11.Size = new System.Drawing.Size(223, 30);
-            this.iconButton11.TabIndex = 13;
-            this.iconButton11.Text = "Tip kontenjera";
-            this.iconButton11.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton11.UseVisualStyleBackColor = true;
+            this.btnszsZastitnaOdeca.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(81)))), ((int)(((byte)(108)))), ((int)(((byte)(123)))));
+            this.btnszsZastitnaOdeca.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnszsZastitnaOdeca.FlatAppearance.BorderSize = 0;
+            this.btnszsZastitnaOdeca.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnszsZastitnaOdeca.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnszsZastitnaOdeca.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(193)))), ((int)(((byte)(204)))));
+            this.btnszsZastitnaOdeca.Location = new System.Drawing.Point(0, 140);
+            this.btnszsZastitnaOdeca.Name = "btnszsZastitnaOdeca";
+            this.btnszsZastitnaOdeca.Padding = new System.Windows.Forms.Padding(45, 0, 20, 0);
+            this.btnszsZastitnaOdeca.Size = new System.Drawing.Size(296, 35);
+            this.btnszsZastitnaOdeca.TabIndex = 4;
+            this.btnszsZastitnaOdeca.Text = "Zaštitna odeća";
+            this.btnszsZastitnaOdeca.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnszsZastitnaOdeca.UseVisualStyleBackColor = false;
             // 
-            // iconButton12
+            // btnszsLicenceSertifikati
             // 
-            this.iconButton12.Dock = System.Windows.Forms.DockStyle.Top;
-            this.iconButton12.FlatAppearance.BorderSize = 0;
-            this.iconButton12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton12.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.iconButton12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(193)))), ((int)(((byte)(204)))));
-            this.iconButton12.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.iconButton12.IconColor = System.Drawing.Color.Black;
-            this.iconButton12.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton12.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton12.Location = new System.Drawing.Point(0, 330);
-            this.iconButton12.Name = "iconButton12";
-            this.iconButton12.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.iconButton12.Size = new System.Drawing.Size(223, 30);
-            this.iconButton12.TabIndex = 14;
-            this.iconButton12.Text = "Sredstva rada";
-            this.iconButton12.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton12.UseVisualStyleBackColor = true;
+            this.btnszsLicenceSertifikati.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(81)))), ((int)(((byte)(108)))), ((int)(((byte)(123)))));
+            this.btnszsLicenceSertifikati.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnszsLicenceSertifikati.FlatAppearance.BorderSize = 0;
+            this.btnszsLicenceSertifikati.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnszsLicenceSertifikati.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnszsLicenceSertifikati.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(193)))), ((int)(((byte)(204)))));
+            this.btnszsLicenceSertifikati.Location = new System.Drawing.Point(0, 105);
+            this.btnszsLicenceSertifikati.Name = "btnszsLicenceSertifikati";
+            this.btnszsLicenceSertifikati.Padding = new System.Windows.Forms.Padding(45, 0, 20, 0);
+            this.btnszsLicenceSertifikati.Size = new System.Drawing.Size(296, 35);
+            this.btnszsLicenceSertifikati.TabIndex = 3;
+            this.btnszsLicenceSertifikati.Text = "Licence i sertifikati";
+            this.btnszsLicenceSertifikati.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnszsLicenceSertifikati.UseVisualStyleBackColor = false;
             // 
-            // iconButton13
+            // btnszsOrganizacioneJedinice
             // 
-            this.iconButton13.Dock = System.Windows.Forms.DockStyle.Top;
-            this.iconButton13.FlatAppearance.BorderSize = 0;
-            this.iconButton13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton13.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.iconButton13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(193)))), ((int)(((byte)(204)))));
-            this.iconButton13.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.iconButton13.IconColor = System.Drawing.Color.Black;
-            this.iconButton13.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton13.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton13.Location = new System.Drawing.Point(0, 360);
-            this.iconButton13.Name = "iconButton13";
-            this.iconButton13.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.iconButton13.Size = new System.Drawing.Size(223, 30);
-            this.iconButton13.TabIndex = 15;
-            this.iconButton13.Text = "Stanice";
-            this.iconButton13.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton13.UseVisualStyleBackColor = true;
+            this.btnszsOrganizacioneJedinice.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(81)))), ((int)(((byte)(108)))), ((int)(((byte)(123)))));
+            this.btnszsOrganizacioneJedinice.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnszsOrganizacioneJedinice.FlatAppearance.BorderSize = 0;
+            this.btnszsOrganizacioneJedinice.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnszsOrganizacioneJedinice.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnszsOrganizacioneJedinice.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(193)))), ((int)(((byte)(204)))));
+            this.btnszsOrganizacioneJedinice.Location = new System.Drawing.Point(0, 70);
+            this.btnszsOrganizacioneJedinice.Name = "btnszsOrganizacioneJedinice";
+            this.btnszsOrganizacioneJedinice.Padding = new System.Windows.Forms.Padding(45, 0, 20, 0);
+            this.btnszsOrganizacioneJedinice.Size = new System.Drawing.Size(296, 35);
+            this.btnszsOrganizacioneJedinice.TabIndex = 2;
+            this.btnszsOrganizacioneJedinice.Text = "Organizacione jedinice";
+            this.btnszsOrganizacioneJedinice.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnszsOrganizacioneJedinice.UseVisualStyleBackColor = false;
             // 
-            // iconButton14
+            // btnszsLekarskiPregled
             // 
-            this.iconButton14.Dock = System.Windows.Forms.DockStyle.Top;
-            this.iconButton14.FlatAppearance.BorderSize = 0;
-            this.iconButton14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton14.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.iconButton14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(193)))), ((int)(((byte)(204)))));
-            this.iconButton14.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.iconButton14.IconColor = System.Drawing.Color.Black;
-            this.iconButton14.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton14.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton14.Location = new System.Drawing.Point(0, 390);
-            this.iconButton14.Name = "iconButton14";
-            this.iconButton14.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.iconButton14.Size = new System.Drawing.Size(223, 30);
-            this.iconButton14.TabIndex = 16;
-            this.iconButton14.Text = "Pozicije";
-            this.iconButton14.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton14.UseVisualStyleBackColor = true;
+            this.btnszsLekarskiPregled.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(81)))), ((int)(((byte)(108)))), ((int)(((byte)(123)))));
+            this.btnszsLekarskiPregled.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnszsLekarskiPregled.FlatAppearance.BorderSize = 0;
+            this.btnszsLekarskiPregled.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnszsLekarskiPregled.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnszsLekarskiPregled.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(193)))), ((int)(((byte)(204)))));
+            this.btnszsLekarskiPregled.Location = new System.Drawing.Point(0, 35);
+            this.btnszsLekarskiPregled.Name = "btnszsLekarskiPregled";
+            this.btnszsLekarskiPregled.Padding = new System.Windows.Forms.Padding(45, 0, 20, 0);
+            this.btnszsLekarskiPregled.Size = new System.Drawing.Size(296, 35);
+            this.btnszsLekarskiPregled.TabIndex = 1;
+            this.btnszsLekarskiPregled.Text = "Lekarski pregled";
+            this.btnszsLekarskiPregled.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnszsLekarskiPregled.UseVisualStyleBackColor = false;
             // 
-            // iconButton15
+            // btnszSkolskaSprema
             // 
-            this.iconButton15.Dock = System.Windows.Forms.DockStyle.Top;
-            this.iconButton15.FlatAppearance.BorderSize = 0;
-            this.iconButton15.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton15.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.iconButton15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(193)))), ((int)(((byte)(204)))));
-            this.iconButton15.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.iconButton15.IconColor = System.Drawing.Color.Black;
-            this.iconButton15.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton15.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton15.Location = new System.Drawing.Point(0, 420);
-            this.iconButton15.Name = "iconButton15";
-            this.iconButton15.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.iconButton15.Size = new System.Drawing.Size(223, 30);
-            this.iconButton15.TabIndex = 17;
-            this.iconButton15.Text = "Skladišta";
-            this.iconButton15.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton15.UseVisualStyleBackColor = true;
+            this.btnszSkolskaSprema.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(81)))), ((int)(((byte)(108)))), ((int)(((byte)(123)))));
+            this.btnszSkolskaSprema.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnszSkolskaSprema.FlatAppearance.BorderSize = 0;
+            this.btnszSkolskaSprema.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnszSkolskaSprema.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnszSkolskaSprema.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(193)))), ((int)(((byte)(204)))));
+            this.btnszSkolskaSprema.Location = new System.Drawing.Point(0, 0);
+            this.btnszSkolskaSprema.Name = "btnszSkolskaSprema";
+            this.btnszSkolskaSprema.Padding = new System.Windows.Forms.Padding(45, 0, 20, 0);
+            this.btnszSkolskaSprema.Size = new System.Drawing.Size(296, 35);
+            this.btnszSkolskaSprema.TabIndex = 0;
+            this.btnszSkolskaSprema.Text = "Školska sprema";
+            this.btnszSkolskaSprema.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnszSkolskaSprema.UseVisualStyleBackColor = false;
             // 
-            // iconButton16
+            // btnsZaposleniSifr
             // 
-            this.iconButton16.Dock = System.Windows.Forms.DockStyle.Top;
-            this.iconButton16.FlatAppearance.BorderSize = 0;
-            this.iconButton16.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton16.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.iconButton16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(193)))), ((int)(((byte)(204)))));
-            this.iconButton16.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.iconButton16.IconColor = System.Drawing.Color.Black;
-            this.iconButton16.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton16.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton16.Location = new System.Drawing.Point(0, 450);
-            this.iconButton16.Name = "iconButton16";
-            this.iconButton16.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.iconButton16.Size = new System.Drawing.Size(223, 30);
-            this.iconButton16.TabIndex = 18;
-            this.iconButton16.Text = "Vrste manipulacije";
-            this.iconButton16.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton16.UseVisualStyleBackColor = true;
+            this.btnsZaposleniSifr.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnsZaposleniSifr.FlatAppearance.BorderSize = 0;
+            this.btnsZaposleniSifr.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnsZaposleniSifr.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.btnsZaposleniSifr.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(193)))), ((int)(((byte)(204)))));
+            this.btnsZaposleniSifr.IconChar = FontAwesome.Sharp.IconChar.SortDown;
+            this.btnsZaposleniSifr.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(193)))), ((int)(((byte)(204)))));
+            this.btnsZaposleniSifr.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnsZaposleniSifr.IconSize = 32;
+            this.btnsZaposleniSifr.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnsZaposleniSifr.Location = new System.Drawing.Point(0, 320);
+            this.btnsZaposleniSifr.Name = "btnsZaposleniSifr";
+            this.btnsZaposleniSifr.Padding = new System.Windows.Forms.Padding(20, 0, 20, 0);
+            this.btnsZaposleniSifr.Size = new System.Drawing.Size(296, 40);
+            this.btnsZaposleniSifr.TabIndex = 11;
+            this.btnsZaposleniSifr.Text = "Zaposleni šifrarnici";
+            this.btnsZaposleniSifr.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnsZaposleniSifr.UseVisualStyleBackColor = true;
+            this.btnsZaposleniSifr.Click += new System.EventHandler(this.btnsZaposleniSifr_Click);
             // 
-            // iconButton17
+            // btnsZaposleni
             // 
-            this.iconButton17.Dock = System.Windows.Forms.DockStyle.Top;
-            this.iconButton17.FlatAppearance.BorderSize = 0;
-            this.iconButton17.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton17.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.iconButton17.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(193)))), ((int)(((byte)(204)))));
-            this.iconButton17.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.iconButton17.IconColor = System.Drawing.Color.Black;
-            this.iconButton17.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton17.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton17.Location = new System.Drawing.Point(0, 480);
-            this.iconButton17.Name = "iconButton17";
-            this.iconButton17.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.iconButton17.Size = new System.Drawing.Size(223, 30);
-            this.iconButton17.TabIndex = 19;
-            this.iconButton17.Text = "Predefinisane poruke";
-            this.iconButton17.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton17.UseVisualStyleBackColor = true;
+            this.btnsZaposleni.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnsZaposleni.FlatAppearance.BorderSize = 0;
+            this.btnsZaposleni.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnsZaposleni.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.btnsZaposleni.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(193)))), ((int)(((byte)(204)))));
+            this.btnsZaposleni.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.btnsZaposleni.IconColor = System.Drawing.Color.Black;
+            this.btnsZaposleni.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnsZaposleni.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnsZaposleni.Location = new System.Drawing.Point(0, 280);
+            this.btnsZaposleni.Name = "btnsZaposleni";
+            this.btnsZaposleni.Padding = new System.Windows.Forms.Padding(20, 0, 20, 0);
+            this.btnsZaposleni.Size = new System.Drawing.Size(296, 40);
+            this.btnsZaposleni.TabIndex = 10;
+            this.btnsZaposleni.Text = "Zaposleni";
+            this.btnsZaposleni.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnsZaposleni.UseVisualStyleBackColor = true;
+            // 
+            // btnsStatusKontejnera
+            // 
+            this.btnsStatusKontejnera.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnsStatusKontejnera.FlatAppearance.BorderSize = 0;
+            this.btnsStatusKontejnera.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnsStatusKontejnera.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.btnsStatusKontejnera.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(193)))), ((int)(((byte)(204)))));
+            this.btnsStatusKontejnera.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.btnsStatusKontejnera.IconColor = System.Drawing.Color.Black;
+            this.btnsStatusKontejnera.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnsStatusKontejnera.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnsStatusKontejnera.Location = new System.Drawing.Point(0, 240);
+            this.btnsStatusKontejnera.Name = "btnsStatusKontejnera";
+            this.btnsStatusKontejnera.Padding = new System.Windows.Forms.Padding(20, 0, 20, 0);
+            this.btnsStatusKontejnera.Size = new System.Drawing.Size(296, 40);
+            this.btnsStatusKontejnera.TabIndex = 9;
+            this.btnsStatusKontejnera.Text = "Status kontenjera";
+            this.btnsStatusKontejnera.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnsStatusKontejnera.UseVisualStyleBackColor = true;
+            // 
+            // btnsNacinDolOdl
+            // 
+            this.btnsNacinDolOdl.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnsNacinDolOdl.FlatAppearance.BorderSize = 0;
+            this.btnsNacinDolOdl.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnsNacinDolOdl.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.btnsNacinDolOdl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(193)))), ((int)(((byte)(204)))));
+            this.btnsNacinDolOdl.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.btnsNacinDolOdl.IconColor = System.Drawing.Color.Black;
+            this.btnsNacinDolOdl.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnsNacinDolOdl.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnsNacinDolOdl.Location = new System.Drawing.Point(0, 200);
+            this.btnsNacinDolOdl.Name = "btnsNacinDolOdl";
+            this.btnsNacinDolOdl.Padding = new System.Windows.Forms.Padding(20, 0, 20, 0);
+            this.btnsNacinDolOdl.Size = new System.Drawing.Size(296, 40);
+            this.btnsNacinDolOdl.TabIndex = 8;
+            this.btnsNacinDolOdl.Text = "Način dolaska odlaska";
+            this.btnsNacinDolOdl.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnsNacinDolOdl.UseVisualStyleBackColor = true;
+            // 
+            // btnsPartneri
+            // 
+            this.btnsPartneri.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnsPartneri.FlatAppearance.BorderSize = 0;
+            this.btnsPartneri.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnsPartneri.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.btnsPartneri.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(193)))), ((int)(((byte)(204)))));
+            this.btnsPartneri.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.btnsPartneri.IconColor = System.Drawing.Color.Black;
+            this.btnsPartneri.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnsPartneri.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnsPartneri.Location = new System.Drawing.Point(0, 160);
+            this.btnsPartneri.Name = "btnsPartneri";
+            this.btnsPartneri.Padding = new System.Windows.Forms.Padding(20, 0, 20, 0);
+            this.btnsPartneri.Size = new System.Drawing.Size(296, 40);
+            this.btnsPartneri.TabIndex = 7;
+            this.btnsPartneri.Text = "Partneri";
+            this.btnsPartneri.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnsPartneri.UseVisualStyleBackColor = true;
+            // 
+            // btnsTipCenovnika
+            // 
+            this.btnsTipCenovnika.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnsTipCenovnika.FlatAppearance.BorderSize = 0;
+            this.btnsTipCenovnika.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnsTipCenovnika.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.btnsTipCenovnika.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(193)))), ((int)(((byte)(204)))));
+            this.btnsTipCenovnika.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.btnsTipCenovnika.IconColor = System.Drawing.Color.Black;
+            this.btnsTipCenovnika.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnsTipCenovnika.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnsTipCenovnika.Location = new System.Drawing.Point(0, 120);
+            this.btnsTipCenovnika.Name = "btnsTipCenovnika";
+            this.btnsTipCenovnika.Padding = new System.Windows.Forms.Padding(20, 0, 20, 0);
+            this.btnsTipCenovnika.Size = new System.Drawing.Size(296, 40);
+            this.btnsTipCenovnika.TabIndex = 6;
+            this.btnsTipCenovnika.Text = "Tip cenovnika";
+            this.btnsTipCenovnika.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnsTipCenovnika.UseVisualStyleBackColor = true;
+            // 
+            // btnsCena
+            // 
+            this.btnsCena.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnsCena.FlatAppearance.BorderSize = 0;
+            this.btnsCena.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnsCena.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.btnsCena.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(193)))), ((int)(((byte)(204)))));
+            this.btnsCena.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.btnsCena.IconColor = System.Drawing.Color.Black;
+            this.btnsCena.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnsCena.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnsCena.Location = new System.Drawing.Point(0, 80);
+            this.btnsCena.Name = "btnsCena";
+            this.btnsCena.Padding = new System.Windows.Forms.Padding(20, 0, 20, 0);
+            this.btnsCena.Size = new System.Drawing.Size(296, 40);
+            this.btnsCena.TabIndex = 5;
+            this.btnsCena.Text = "Cene";
+            this.btnsCena.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnsCena.UseVisualStyleBackColor = true;
+            // 
+            // btnsDelKontejnera
+            // 
+            this.btnsDelKontejnera.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnsDelKontejnera.FlatAppearance.BorderSize = 0;
+            this.btnsDelKontejnera.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnsDelKontejnera.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.btnsDelKontejnera.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(193)))), ((int)(((byte)(204)))));
+            this.btnsDelKontejnera.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.btnsDelKontejnera.IconColor = System.Drawing.Color.Black;
+            this.btnsDelKontejnera.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnsDelKontejnera.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnsDelKontejnera.Location = new System.Drawing.Point(0, 40);
+            this.btnsDelKontejnera.Name = "btnsDelKontejnera";
+            this.btnsDelKontejnera.Padding = new System.Windows.Forms.Padding(20, 0, 20, 0);
+            this.btnsDelKontejnera.Size = new System.Drawing.Size(296, 40);
+            this.btnsDelKontejnera.TabIndex = 4;
+            this.btnsDelKontejnera.Text = "Delovi kontenjera";
+            this.btnsDelKontejnera.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnsDelKontejnera.UseVisualStyleBackColor = true;
+            // 
+            // btnsOstecenja
+            // 
+            this.btnsOstecenja.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnsOstecenja.FlatAppearance.BorderSize = 0;
+            this.btnsOstecenja.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnsOstecenja.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.btnsOstecenja.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(193)))), ((int)(((byte)(204)))));
+            this.btnsOstecenja.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.btnsOstecenja.IconColor = System.Drawing.Color.Black;
+            this.btnsOstecenja.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnsOstecenja.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnsOstecenja.Location = new System.Drawing.Point(0, 0);
+            this.btnsOstecenja.Name = "btnsOstecenja";
+            this.btnsOstecenja.Padding = new System.Windows.Forms.Padding(20, 0, 20, 0);
+            this.btnsOstecenja.Size = new System.Drawing.Size(296, 40);
+            this.btnsOstecenja.TabIndex = 3;
+            this.btnsOstecenja.Text = "Oštećenja";
+            this.btnsOstecenja.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnsOstecenja.UseVisualStyleBackColor = true;
             // 
             // FormaSifrarnici
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(75)))), ((int)(((byte)(86)))));
-            this.ClientSize = new System.Drawing.Size(862, 550);
+            this.ClientSize = new System.Drawing.Size(862, 972);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormaSifrarnici";
             this.Text = "FormaSifrarnici";
+            this.Load += new System.EventHandler(this.FormaSifrarnici_Load);
             this.panel1.ResumeLayout(false);
+            this.panelSubZaposlSifr.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -432,22 +569,29 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private FontAwesome.Sharp.IconButton iconButton1;
-        private FontAwesome.Sharp.IconButton iconButton17;
-        private FontAwesome.Sharp.IconButton iconButton16;
-        private FontAwesome.Sharp.IconButton iconButton15;
-        private FontAwesome.Sharp.IconButton iconButton14;
-        private FontAwesome.Sharp.IconButton iconButton13;
-        private FontAwesome.Sharp.IconButton iconButton12;
-        private FontAwesome.Sharp.IconButton iconButton11;
-        private FontAwesome.Sharp.IconButton iconButton10;
-        private FontAwesome.Sharp.IconButton iconButton9;
-        private FontAwesome.Sharp.IconButton iconButton8;
-        private FontAwesome.Sharp.IconButton iconButton7;
-        private FontAwesome.Sharp.IconButton iconButton6;
-        private FontAwesome.Sharp.IconButton iconButton5;
-        private FontAwesome.Sharp.IconButton iconButton4;
-        private FontAwesome.Sharp.IconButton iconButton3;
-        private FontAwesome.Sharp.IconButton iconButton2;
+        private FontAwesome.Sharp.IconButton btnsOstecenja;
+        private FontAwesome.Sharp.IconButton btnsZaposleniSifr;
+        private FontAwesome.Sharp.IconButton btnsZaposleni;
+        private FontAwesome.Sharp.IconButton btnsStatusKontejnera;
+        private FontAwesome.Sharp.IconButton btnsNacinDolOdl;
+        private FontAwesome.Sharp.IconButton btnsPartneri;
+        private FontAwesome.Sharp.IconButton btnsTipCenovnika;
+        private FontAwesome.Sharp.IconButton btnsCena;
+        private FontAwesome.Sharp.IconButton btnsDelKontejnera;
+        private Bunifu.UI.WinForms.BunifuPanel panelSubZaposlSifr;
+        private System.Windows.Forms.Button btnszsZastitnaOdeca;
+        private System.Windows.Forms.Button btnszsLicenceSertifikati;
+        private System.Windows.Forms.Button btnszsOrganizacioneJedinice;
+        private System.Windows.Forms.Button btnszsLekarskiPregled;
+        private System.Windows.Forms.Button btnszSkolskaSprema;
+        private FontAwesome.Sharp.IconButton btnsPredefinisanePoruke;
+        private FontAwesome.Sharp.IconButton btnsVrsteManipulacije;
+        private FontAwesome.Sharp.IconButton btnsSkladišta;
+        private FontAwesome.Sharp.IconButton btnsPozicije;
+        private FontAwesome.Sharp.IconButton btnsStanice;
+        private FontAwesome.Sharp.IconButton btnsSredstvaRada;
+        private FontAwesome.Sharp.IconButton btnsTipKontenjera;
+        private FontAwesome.Sharp.IconButton btnsVrstaRobe;
+        private System.Windows.Forms.Button btnszsStrucniIpit;
     }
 }

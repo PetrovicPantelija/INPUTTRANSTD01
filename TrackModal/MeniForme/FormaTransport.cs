@@ -15,6 +15,27 @@ namespace TrackModal.MeniForme
         public FormaTransport()
         {
             InitializeComponent();
+            CustomizeDesigne();
+        }
+
+        private void CustomizeDesigne()
+        {
+            panel2SubMenu.Visible = false;
+        }
+
+        private void ShowSubMenu(Panel subMenu)
+        {
+            if (subMenu.Visible == false)
+            {
+                subMenu.Visible = true;
+            }
+            else
+                subMenu.Visible = false;
+        }
+
+        private void btntIzvestaji_Click(object sender, EventArgs e)
+        {
+            ShowSubMenu(panel2SubMenu);
         }
     }
 }

@@ -781,12 +781,6 @@ namespace TrackModal
 
         }
 
-        private void iconButton7_Click(object sender, EventArgs e)
-        {
-            ActivateButton(sender, RGBColors.color1);
-            OpenChildForm(new FormaNoviKorisnik());
-
-        }
 
         private void iconButton8_Click(object sender, EventArgs e)
         {
@@ -819,6 +813,24 @@ namespace TrackModal
             ReleaseCapture();
             SendMessage(this.Handle, 0x112, 0xf012, 0);
 
+        }
+
+        private void iconButton10_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void iconButton9_Click(object sender, EventArgs e)
+        {
+            if (WindowState == FormWindowState.Normal)
+                WindowState = FormWindowState.Maximized;
+            else
+                WindowState = FormWindowState.Normal;
+        }
+
+        private void iconButton7_Click(object sender, EventArgs e)
+        {
+            WindowState = FormWindowState.Minimized;
         }
     }
 }

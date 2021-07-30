@@ -28,12 +28,104 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.btnmPregManPartneru = new FontAwesome.Sharp.IconButton();
+            this.btnmPregManPrevoz = new FontAwesome.Sharp.IconButton();
+            this.btnmRasporedManipulacija = new FontAwesome.Sharp.IconButton();
+            this.panel1.SuspendLayout();
+            this.SuspendLayout();
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.btnmPregManPartneru);
+            this.panel1.Controls.Add(this.btnmPregManPrevoz);
+            this.panel1.Controls.Add(this.btnmRasporedManipulacija);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(296, 450);
+            this.panel1.TabIndex = 1;
+            // 
+            // btnmPregManPartneru
+            // 
+            this.btnmPregManPartneru.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnmPregManPartneru.FlatAppearance.BorderSize = 0;
+            this.btnmPregManPartneru.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnmPregManPartneru.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.btnmPregManPartneru.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(193)))), ((int)(((byte)(204)))));
+            this.btnmPregManPartneru.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.btnmPregManPartneru.IconColor = System.Drawing.Color.Black;
+            this.btnmPregManPartneru.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnmPregManPartneru.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnmPregManPartneru.Location = new System.Drawing.Point(0, 80);
+            this.btnmPregManPartneru.Name = "btnmPregManPartneru";
+            this.btnmPregManPartneru.Padding = new System.Windows.Forms.Padding(20, 0, 20, 0);
+            this.btnmPregManPartneru.Size = new System.Drawing.Size(296, 40);
+            this.btnmPregManPartneru.TabIndex = 5;
+            this.btnmPregManPartneru.Text = "Pregled manipulacija - Partneru";
+            this.btnmPregManPartneru.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnmPregManPartneru.UseVisualStyleBackColor = true;
+            // 
+            // btnmPregManPrevoz
+            // 
+            this.btnmPregManPrevoz.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnmPregManPrevoz.FlatAppearance.BorderSize = 0;
+            this.btnmPregManPrevoz.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnmPregManPrevoz.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.btnmPregManPrevoz.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(193)))), ((int)(((byte)(204)))));
+            this.btnmPregManPrevoz.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.btnmPregManPrevoz.IconColor = System.Drawing.Color.Black;
+            this.btnmPregManPrevoz.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnmPregManPrevoz.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnmPregManPrevoz.Location = new System.Drawing.Point(0, 40);
+            this.btnmPregManPrevoz.Name = "btnmPregManPrevoz";
+            this.btnmPregManPrevoz.Padding = new System.Windows.Forms.Padding(20, 0, 20, 0);
+            this.btnmPregManPrevoz.Size = new System.Drawing.Size(296, 40);
+            this.btnmPregManPrevoz.TabIndex = 4;
+            this.btnmPregManPrevoz.Text = "Pregled manipulacija - Prevoz";
+            this.btnmPregManPrevoz.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnmPregManPrevoz.UseVisualStyleBackColor = true;
+            // 
+            // btnmRasporedManipulacija
+            // 
+            this.btnmRasporedManipulacija.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnmRasporedManipulacija.FlatAppearance.BorderSize = 0;
+            this.btnmRasporedManipulacija.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnmRasporedManipulacija.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.btnmRasporedManipulacija.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(193)))), ((int)(((byte)(204)))));
+            this.btnmRasporedManipulacija.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.btnmRasporedManipulacija.IconColor = System.Drawing.Color.Black;
+            this.btnmRasporedManipulacija.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnmRasporedManipulacija.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnmRasporedManipulacija.Location = new System.Drawing.Point(0, 0);
+            this.btnmRasporedManipulacija.Name = "btnmRasporedManipulacija";
+            this.btnmRasporedManipulacija.Padding = new System.Windows.Forms.Padding(20, 0, 20, 0);
+            this.btnmRasporedManipulacija.Size = new System.Drawing.Size(296, 40);
+            this.btnmRasporedManipulacija.TabIndex = 3;
+            this.btnmRasporedManipulacija.Text = "Raspored manipulacija";
+            this.btnmRasporedManipulacija.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnmRasporedManipulacija.UseVisualStyleBackColor = true;
+            // 
+            // FormaManipulacije
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(75)))), ((int)(((byte)(86)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Name = "FormaManipulacije";
             this.Text = "FormaManipulacije";
+            this.panel1.ResumeLayout(false);
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private System.Windows.Forms.Panel panel1;
+        private FontAwesome.Sharp.IconButton btnmPregManPartneru;
+        private FontAwesome.Sharp.IconButton btnmPregManPrevoz;
+        private FontAwesome.Sharp.IconButton btnmRasporedManipulacija;
     }
 }

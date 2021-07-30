@@ -548,12 +548,6 @@
     <Compile Include="MeniForme\FormaManipulacije.Designer.cs">
       <DependentUpon>FormaManipulacije.cs</DependentUpon>
     </Compile>
-    <Compile Include="MeniForme\FormaNoviKorisnik.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="MeniForme\FormaNoviKorisnik.Designer.cs">
-      <DependentUpon>FormaNoviKorisnik.cs</DependentUpon>
-    </Compile>
     <Compile Include="MeniForme\FormaPomoc.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -1201,8 +1195,29 @@
     <EmbeddedResource Include="Izvestaji\rptSelectTransport4.rdlc" />
     <EmbeddedResource Include="Izvestaji\rptSelectTransport5.rdlc" />
     <EmbeddedResource Include="Izvestaji\rptTovarniList.rdlc" />
+    <EmbeddedResource Include="MeniForme\FormaAdministracija.resx">
+      <DependentUpon>FormaAdministracija.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MeniForme\FormaIzvestaj.resx">
+      <DependentUpon>FormaIzvestaj.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MeniForme\FormaManipulacije.resx">
+      <DependentUpon>FormaManipulacije.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MeniForme\FormaPomoc.resx">
+      <DependentUpon>FormaPomoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MeniForme\FormaPrevoz.resx">
+      <DependentUpon>FormaPrevoz.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MeniForme\FormaSifrarnici.resx">
       <DependentUpon>FormaSifrarnici.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MeniForme\FormaSkladistnoPoslovanje.resx">
+      <DependentUpon>FormaSkladistnoPoslovanje.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MeniForme\FormaTransport.resx">
+      <DependentUpon>FormaTransport.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Promet\frmLager.resx">
       <DependentUpon>frmLager.cs</DependentUpon>
