@@ -244,5 +244,23 @@ namespace TrackModal.Sifarnici
             VratiPodatke(txtSifra.Text);
             con.Close();
         }
+
+        private void iconButton5_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void iconButton6_Click(object sender, EventArgs e)
+        {
+            if (WindowState == FormWindowState.Normal)
+                WindowState = FormWindowState.Maximized;
+            else
+                WindowState = FormWindowState.Normal;
+        }
+
+        private void iconButton8_Click(object sender, EventArgs e)
+        {
+            WindowState = FormWindowState.Minimized;
+        }
     }
 }
