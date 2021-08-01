@@ -79,6 +79,7 @@
             this.btnspPopisLista.Text = "Popis lista";
             this.btnspPopisLista.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnspPopisLista.UseVisualStyleBackColor = true;
+            this.btnspPopisLista.Click += new System.EventHandler(this.btnspPopisLista_Click);
             // 
             // btnspOtprManipulacija
             // 
@@ -99,6 +100,7 @@
             this.btnspOtprManipulacija.Text = "Otprema manipulacija";
             this.btnspOtprManipulacija.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnspOtprManipulacija.UseVisualStyleBackColor = true;
+            this.btnspOtprManipulacija.Click += new System.EventHandler(this.btnspOtprManipulacija_Click);
             // 
             // btnspMedjSklaPrenos
             // 
@@ -119,6 +121,7 @@
             this.btnspMedjSklaPrenos.Text = "Međuskladišni prenos";
             this.btnspMedjSklaPrenos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnspMedjSklaPrenos.UseVisualStyleBackColor = true;
+            this.btnspMedjSklaPrenos.Click += new System.EventHandler(this.btnspMedjSklaPrenos_Click);
             // 
             // btnspPrijemRaspored
             // 
@@ -139,6 +142,7 @@
             this.btnspPrijemRaspored.Text = "Prijem raspored";
             this.btnspPrijemRaspored.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnspPrijemRaspored.UseVisualStyleBackColor = true;
+            this.btnspPrijemRaspored.Click += new System.EventHandler(this.btnspPrijemRaspored_Click);
             // 
             // btnspPregPopListi
             // 
@@ -159,6 +163,7 @@
             this.btnspPregPopListi.Text = "Pregled popisnih listi";
             this.btnspPregPopListi.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnspPregPopListi.UseVisualStyleBackColor = true;
+            this.btnspPregPopListi.Click += new System.EventHandler(this.btnspPregPopListi_Click);
             // 
             // btnspPregStanjZalMagacioner
             // 
@@ -179,6 +184,7 @@
             this.btnspPregStanjZalMagacioner.Text = "Pregled stanja zaliha - Magacioner";
             this.btnspPregStanjZalMagacioner.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnspPregStanjZalMagacioner.UseVisualStyleBackColor = true;
+            this.btnspPregStanjZalMagacioner.Click += new System.EventHandler(this.btnspPregStanjZalMagacioner_Click);
             // 
             // btnspPregStanjZaliha
             // 
@@ -199,6 +205,7 @@
             this.btnspPregStanjZaliha.Text = "Pregled stanja zaliha";
             this.btnspPregStanjZaliha.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnspPregStanjZaliha.UseVisualStyleBackColor = true;
+            this.btnspPregStanjZaliha.Click += new System.EventHandler(this.btnspPregStanjZaliha_Click);
             // 
             // btnspPregPrometa
             // 
@@ -219,6 +226,7 @@
             this.btnspPregPrometa.Text = "Pregled prometa";
             this.btnspPregPrometa.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnspPregPrometa.UseVisualStyleBackColor = true;
+            this.btnspPregPrometa.Click += new System.EventHandler(this.btnspPregPrometa_Click);
             // 
             // btnspPregMedjuPrijem
             // 
@@ -239,6 +247,7 @@
             this.btnspPregMedjuPrijem.Text = "Pregled Međuskladišni po prijemu";
             this.btnspPregMedjuPrijem.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnspPregMedjuPrijem.UseVisualStyleBackColor = true;
+            this.btnspPregMedjuPrijem.Click += new System.EventHandler(this.btnspPregMedjuPrijem_Click);
             // 
             // btnspPregledPrijemaRaspored
             // 
@@ -259,6 +268,7 @@
             this.btnspPregledPrijemaRaspored.Text = "Pregled prijema raspored";
             this.btnspPregledPrijemaRaspored.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnspPregledPrijemaRaspored.UseVisualStyleBackColor = true;
+            this.btnspPregledPrijemaRaspored.Click += new System.EventHandler(this.btnspPregledPrijemaRaspored_Click);
             // 
             // FormaSkladistnoPoslovanje
             // 

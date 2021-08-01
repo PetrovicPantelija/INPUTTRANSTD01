@@ -112,5 +112,22 @@ namespace TrackModal
             Application.Exit();
         }
 
+        private void iconButton10_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void iconButton9_Click(object sender, EventArgs e)
+        {
+            if (WindowState == FormWindowState.Normal)
+                WindowState = FormWindowState.Maximized;
+            else
+                WindowState = FormWindowState.Normal;
+        }
+
+        private void iconButton7_Click(object sender, EventArgs e)
+        {
+            WindowState = FormWindowState.Minimized;
+        }
     }
 }

@@ -65,6 +65,7 @@
             this.btnmPregManPartneru.Text = "Pregled manipulacija - Partneru";
             this.btnmPregManPartneru.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnmPregManPartneru.UseVisualStyleBackColor = true;
+            this.btnmPregManPartneru.Click += new System.EventHandler(this.btnmPregManPartneru_Click);
             // 
             // btnmPregManPrevoz
             // 
@@ -85,6 +86,7 @@
             this.btnmPregManPrevoz.Text = "Pregled manipulacija - Prevoz";
             this.btnmPregManPrevoz.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnmPregManPrevoz.UseVisualStyleBackColor = true;
+            this.btnmPregManPrevoz.Click += new System.EventHandler(this.btnmPregManPrevoz_Click);
             // 
             // btnmRasporedManipulacija
             // 
@@ -105,6 +107,7 @@
             this.btnmRasporedManipulacija.Text = "Raspored manipulacija";
             this.btnmRasporedManipulacija.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnmRasporedManipulacija.UseVisualStyleBackColor = true;
+            this.btnmRasporedManipulacija.Click += new System.EventHandler(this.btnmRasporedManipulacija_Click);
             // 
             // FormaManipulacije
             // 

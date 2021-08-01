@@ -67,6 +67,7 @@
             this.BtnaForme.Text = "Forme";
             this.BtnaForme.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnaForme.UseVisualStyleBackColor = true;
+            this.BtnaForme.Click += new System.EventHandler(this.BtnaForme_Click);
             // 
             // btnaDodavanjePristupa
             // 
@@ -87,6 +88,7 @@
             this.btnaDodavanjePristupa.Text = "Dodavanje prava pristupa";
             this.btnaDodavanjePristupa.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnaDodavanjePristupa.UseVisualStyleBackColor = true;
+            this.btnaDodavanjePristupa.Click += new System.EventHandler(this.btnaDodavanjePristupa_Click);
             // 
             // BtnaDodavanjeKorisnika
             // 
@@ -127,6 +129,7 @@
             this.btnaKorisnici.Text = "Korisnici";
             this.btnaKorisnici.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnaKorisnici.UseVisualStyleBackColor = true;
+            this.btnaKorisnici.Click += new System.EventHandler(this.btnaKorisnici_Click);
             // 
             // FormaAdministracija
             // 

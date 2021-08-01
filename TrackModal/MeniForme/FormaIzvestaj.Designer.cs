@@ -30,7 +30,7 @@
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.btniMenadzerPunoPrazno = new FontAwesome.Sharp.IconButton();
-            this.btniMenadzerPreOrg = new FontAwesome.Sharp.IconButton();
+            this.btniCOSCO = new FontAwesome.Sharp.IconButton();
             this.BtniMenadzerManipulacije = new FontAwesome.Sharp.IconButton();
             this.btniMenadzerKamioni = new FontAwesome.Sharp.IconButton();
             this.BtniMenadzerKPS = new FontAwesome.Sharp.IconButton();
@@ -39,13 +39,15 @@
             this.btniCMACGAPregled = new FontAwesome.Sharp.IconButton();
             this.btniMERSKPregled = new FontAwesome.Sharp.IconButton();
             this.btniDodatniList = new FontAwesome.Sharp.IconButton();
+            this.iconButton1 = new FontAwesome.Sharp.IconButton();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.iconButton1);
             this.panel1.Controls.Add(this.btniMenadzerPunoPrazno);
-            this.panel1.Controls.Add(this.btniMenadzerPreOrg);
+            this.panel1.Controls.Add(this.btniCOSCO);
             this.panel1.Controls.Add(this.BtniMenadzerManipulacije);
             this.panel1.Controls.Add(this.btniMenadzerKamioni);
             this.panel1.Controls.Add(this.BtniMenadzerKPS);
@@ -79,26 +81,28 @@
             this.btniMenadzerPunoPrazno.Text = "Menadžer - Puno / Prazno";
             this.btniMenadzerPunoPrazno.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btniMenadzerPunoPrazno.UseVisualStyleBackColor = true;
+            this.btniMenadzerPunoPrazno.Click += new System.EventHandler(this.btniMenadzerPunoPrazno_Click);
             // 
-            // btniMenadzerPreOrg
+            // btniCOSCO
             // 
-            this.btniMenadzerPreOrg.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btniMenadzerPreOrg.FlatAppearance.BorderSize = 0;
-            this.btniMenadzerPreOrg.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btniMenadzerPreOrg.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.btniMenadzerPreOrg.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(193)))), ((int)(((byte)(204)))));
-            this.btniMenadzerPreOrg.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.btniMenadzerPreOrg.IconColor = System.Drawing.Color.Black;
-            this.btniMenadzerPreOrg.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btniMenadzerPreOrg.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btniMenadzerPreOrg.Location = new System.Drawing.Point(0, 320);
-            this.btniMenadzerPreOrg.Name = "btniMenadzerPreOrg";
-            this.btniMenadzerPreOrg.Padding = new System.Windows.Forms.Padding(20, 0, 20, 0);
-            this.btniMenadzerPreOrg.Size = new System.Drawing.Size(296, 40);
-            this.btniMenadzerPreOrg.TabIndex = 17;
-            this.btniMenadzerPreOrg.Text = "Menadžer - pretovareno po organizatoru";
-            this.btniMenadzerPreOrg.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btniMenadzerPreOrg.UseVisualStyleBackColor = true;
+            this.btniCOSCO.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btniCOSCO.FlatAppearance.BorderSize = 0;
+            this.btniCOSCO.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btniCOSCO.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.btniCOSCO.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(193)))), ((int)(((byte)(204)))));
+            this.btniCOSCO.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.btniCOSCO.IconColor = System.Drawing.Color.Black;
+            this.btniCOSCO.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btniCOSCO.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btniCOSCO.Location = new System.Drawing.Point(0, 320);
+            this.btniCOSCO.Name = "btniCOSCO";
+            this.btniCOSCO.Padding = new System.Windows.Forms.Padding(20, 0, 20, 0);
+            this.btniCOSCO.Size = new System.Drawing.Size(296, 40);
+            this.btniCOSCO.TabIndex = 17;
+            this.btniCOSCO.Text = "Menadžer - pretovareno po organizatoru";
+            this.btniCOSCO.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btniCOSCO.UseVisualStyleBackColor = true;
+            this.btniCOSCO.Click += new System.EventHandler(this.btniCOSCO_Click);
             // 
             // BtniMenadzerManipulacije
             // 
@@ -119,6 +123,7 @@
             this.BtniMenadzerManipulacije.Text = "Menadžer - Manipulacijama";
             this.BtniMenadzerManipulacije.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtniMenadzerManipulacije.UseVisualStyleBackColor = true;
+            this.BtniMenadzerManipulacije.Click += new System.EventHandler(this.BtniMenadzerManipulacije_Click);
             // 
             // btniMenadzerKamioni
             // 
@@ -139,6 +144,7 @@
             this.btniMenadzerKamioni.Text = "Menadžer - Kamioni";
             this.btniMenadzerKamioni.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btniMenadzerKamioni.UseVisualStyleBackColor = true;
+            this.btniMenadzerKamioni.Click += new System.EventHandler(this.btniMenadzerKamioni_Click);
             // 
             // BtniMenadzerKPS
             // 
@@ -159,6 +165,7 @@
             this.BtniMenadzerKPS.Text = "Menadžer - Kamioni po Špediteru";
             this.BtniMenadzerKPS.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtniMenadzerKPS.UseVisualStyleBackColor = true;
+            this.BtniMenadzerKPS.Click += new System.EventHandler(this.BtniMenadzerKPS_Click);
             // 
             // btniMenadzerVozovi
             // 
@@ -179,6 +186,7 @@
             this.btniMenadzerVozovi.Text = "Menadžer - Vozovi";
             this.btniMenadzerVozovi.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btniMenadzerVozovi.UseVisualStyleBackColor = true;
+            this.btniMenadzerVozovi.Click += new System.EventHandler(this.btniMenadzerVozovi_Click);
             // 
             // btniCIRPregled
             // 
@@ -199,6 +207,7 @@
             this.btniCIRPregled.Text = "CIR Pregled ";
             this.btniCIRPregled.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btniCIRPregled.UseVisualStyleBackColor = true;
+            this.btniCIRPregled.Click += new System.EventHandler(this.btniCIRPregled_Click);
             // 
             // btniCMACGAPregled
             // 
@@ -219,6 +228,7 @@
             this.btniCMACGAPregled.Text = "CMA - CGA Pregled";
             this.btniCMACGAPregled.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btniCMACGAPregled.UseVisualStyleBackColor = true;
+            this.btniCMACGAPregled.Click += new System.EventHandler(this.btniCMACGAPregled_Click);
             // 
             // btniMERSKPregled
             // 
@@ -239,6 +249,7 @@
             this.btniMERSKPregled.Text = "MERSK pregled";
             this.btniMERSKPregled.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btniMERSKPregled.UseVisualStyleBackColor = true;
+            this.btniMERSKPregled.Click += new System.EventHandler(this.btniMERSKPregled_Click);
             // 
             // btniDodatniList
             // 
@@ -259,6 +270,28 @@
             this.btniDodatniList.Text = "Dodatni list";
             this.btniDodatniList.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btniDodatniList.UseVisualStyleBackColor = true;
+            this.btniDodatniList.Click += new System.EventHandler(this.btniDodatniList_Click);
+            // 
+            // iconButton1
+            // 
+            this.iconButton1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.iconButton1.FlatAppearance.BorderSize = 0;
+            this.iconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.iconButton1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(193)))), ((int)(((byte)(204)))));
+            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.iconButton1.IconColor = System.Drawing.Color.Black;
+            this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButton1.Location = new System.Drawing.Point(0, 400);
+            this.iconButton1.Name = "iconButton1";
+            this.iconButton1.Padding = new System.Windows.Forms.Padding(20, 0, 20, 0);
+            this.iconButton1.Size = new System.Drawing.Size(296, 40);
+            this.iconButton1.TabIndex = 19;
+            this.iconButton1.Text = "COSCO";
+            this.iconButton1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButton1.UseVisualStyleBackColor = true;
+            this.iconButton1.Click += new System.EventHandler(this.iconButton1_Click);
             // 
             // FormaIzvestaj
             // 
@@ -279,7 +312,7 @@
 
         private System.Windows.Forms.Panel panel1;
         private FontAwesome.Sharp.IconButton btniMenadzerPunoPrazno;
-        private FontAwesome.Sharp.IconButton btniMenadzerPreOrg;
+        private FontAwesome.Sharp.IconButton btniCOSCO;
         private FontAwesome.Sharp.IconButton BtniMenadzerManipulacije;
         private FontAwesome.Sharp.IconButton btniMenadzerKamioni;
         private FontAwesome.Sharp.IconButton BtniMenadzerKPS;
@@ -288,5 +321,6 @@
         private FontAwesome.Sharp.IconButton btniCMACGAPregled;
         private FontAwesome.Sharp.IconButton btniMERSKPregled;
         private FontAwesome.Sharp.IconButton btniDodatniList;
+        private FontAwesome.Sharp.IconButton iconButton1;
     }
 }

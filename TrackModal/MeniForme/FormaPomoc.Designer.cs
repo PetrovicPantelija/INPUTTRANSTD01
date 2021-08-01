@@ -71,6 +71,7 @@
             this.btnpTransport.Text = "Transport";
             this.btnpTransport.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnpTransport.UseVisualStyleBackColor = true;
+            this.btnpTransport.Click += new System.EventHandler(this.btnpTransport_Click);
             // 
             // btnpIzvestaji
             // 
@@ -91,6 +92,7 @@
             this.btnpIzvestaji.Text = "Izveštaji";
             this.btnpIzvestaji.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnpIzvestaji.UseVisualStyleBackColor = true;
+            this.btnpIzvestaji.Click += new System.EventHandler(this.btnpIzvestaji_Click);
             // 
             // btnpSkladPoslovanje
             // 
@@ -111,6 +113,7 @@
             this.btnpSkladPoslovanje.Text = "Skladišno poslovanje";
             this.btnpSkladPoslovanje.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnpSkladPoslovanje.UseVisualStyleBackColor = true;
+            this.btnpSkladPoslovanje.Click += new System.EventHandler(this.btnpSkladPoslovanje_Click);
             // 
             // btnpManipulacije
             // 
@@ -131,6 +134,7 @@
             this.btnpManipulacije.Text = "Manipulacije";
             this.btnpManipulacije.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnpManipulacije.UseVisualStyleBackColor = true;
+            this.btnpManipulacije.Click += new System.EventHandler(this.btnpManipulacije_Click);
             // 
             // btnpPrevoz
             // 
@@ -151,6 +155,7 @@
             this.btnpPrevoz.Text = "Prevoz";
             this.btnpPrevoz.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnpPrevoz.UseVisualStyleBackColor = true;
+            this.btnpPrevoz.Click += new System.EventHandler(this.btnpPrevoz_Click);
             // 
             // btnpSifrarnici
             // 
@@ -171,6 +176,7 @@
             this.btnpSifrarnici.Text = "Šifrarnici";
             this.btnpSifrarnici.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnpSifrarnici.UseVisualStyleBackColor = true;
+            this.btnpSifrarnici.Click += new System.EventHandler(this.btnpSifrarnici_Click);
             // 
             // FormaPomoc
             // 

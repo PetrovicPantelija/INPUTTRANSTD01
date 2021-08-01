@@ -39,9 +39,14 @@
             this.button1 = new Siticone.Desktop.UI.WinForms.SiticoneGradientButton();
             this.txtPassword = new Siticone.Desktop.UI.WinForms.SiticoneTextBox();
             this.cboKorisnik = new Siticone.Desktop.UI.WinForms.SiticoneComboBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.iconButton10 = new FontAwesome.Sharp.IconButton();
+            this.iconButton9 = new FontAwesome.Sharp.IconButton();
+            this.iconButton7 = new FontAwesome.Sharp.IconButton();
             this.bunifuPanel1.SuspendLayout();
             this.siticoneShadowPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // bunifuPanel1
@@ -52,6 +57,7 @@
             this.bunifuPanel1.BorderColor = System.Drawing.Color.Transparent;
             this.bunifuPanel1.BorderRadius = 3;
             this.bunifuPanel1.BorderThickness = 1;
+            this.bunifuPanel1.Controls.Add(this.panel1);
             this.bunifuPanel1.Controls.Add(this.bunifuLabel1);
             this.bunifuPanel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.bunifuPanel1.Location = new System.Drawing.Point(0, 0);
@@ -95,7 +101,6 @@
             this.siticoneShadowPanel1.ShadowShift = 10;
             this.siticoneShadowPanel1.Size = new System.Drawing.Size(626, 513);
             this.siticoneShadowPanel1.TabIndex = 50;
-           // this.siticoneShadowPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.siticoneShadowPanel1_Paint);
             // 
             // siticoneComboBox1
             // 
@@ -233,6 +238,66 @@
             this.cboKorisnik.Size = new System.Drawing.Size(323, 36);
             this.cboKorisnik.TabIndex = 0;
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(74)))), ((int)(((byte)(84)))));
+            this.panel1.Controls.Add(this.iconButton10);
+            this.panel1.Controls.Add(this.iconButton9);
+            this.panel1.Controls.Add(this.iconButton7);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel1.Location = new System.Drawing.Point(1012, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(119, 60);
+            this.panel1.TabIndex = 4;
+            // 
+            // iconButton10
+            // 
+            this.iconButton10.FlatAppearance.BorderSize = 0;
+            this.iconButton10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton10.ForeColor = System.Drawing.Color.Transparent;
+            this.iconButton10.IconChar = FontAwesome.Sharp.IconChar.WindowClose;
+            this.iconButton10.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(193)))), ((int)(((byte)(204)))));
+            this.iconButton10.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton10.IconSize = 20;
+            this.iconButton10.Location = new System.Drawing.Point(95, 4);
+            this.iconButton10.Name = "iconButton10";
+            this.iconButton10.Size = new System.Drawing.Size(20, 20);
+            this.iconButton10.TabIndex = 5;
+            this.iconButton10.UseVisualStyleBackColor = true;
+            this.iconButton10.Click += new System.EventHandler(this.iconButton10_Click);
+            // 
+            // iconButton9
+            // 
+            this.iconButton9.FlatAppearance.BorderSize = 0;
+            this.iconButton9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton9.ForeColor = System.Drawing.Color.Transparent;
+            this.iconButton9.IconChar = FontAwesome.Sharp.IconChar.WindowMaximize;
+            this.iconButton9.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(193)))), ((int)(((byte)(204)))));
+            this.iconButton9.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton9.IconSize = 20;
+            this.iconButton9.Location = new System.Drawing.Point(66, 4);
+            this.iconButton9.Name = "iconButton9";
+            this.iconButton9.Size = new System.Drawing.Size(20, 20);
+            this.iconButton9.TabIndex = 4;
+            this.iconButton9.UseVisualStyleBackColor = true;
+            this.iconButton9.Click += new System.EventHandler(this.iconButton9_Click);
+            // 
+            // iconButton7
+            // 
+            this.iconButton7.FlatAppearance.BorderSize = 0;
+            this.iconButton7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton7.ForeColor = System.Drawing.Color.Transparent;
+            this.iconButton7.IconChar = FontAwesome.Sharp.IconChar.WindowMinimize;
+            this.iconButton7.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(193)))), ((int)(((byte)(204)))));
+            this.iconButton7.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton7.IconSize = 20;
+            this.iconButton7.Location = new System.Drawing.Point(37, 4);
+            this.iconButton7.Name = "iconButton7";
+            this.iconButton7.Size = new System.Drawing.Size(20, 20);
+            this.iconButton7.TabIndex = 3;
+            this.iconButton7.UseVisualStyleBackColor = true;
+            this.iconButton7.Click += new System.EventHandler(this.iconButton7_Click);
+            // 
             // frmLogovanje
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
@@ -254,6 +319,7 @@
             this.bunifuPanel1.PerformLayout();
             this.siticoneShadowPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -269,6 +335,10 @@
         private Siticone.Desktop.UI.WinForms.SiticoneSeparator siticoneSeparator1;
         private Siticone.Desktop.UI.WinForms.SiticoneGradientButton button2;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Panel panel1;
+        private FontAwesome.Sharp.IconButton iconButton10;
+        private FontAwesome.Sharp.IconButton iconButton9;
+        private FontAwesome.Sharp.IconButton iconButton7;
     }
 }
 

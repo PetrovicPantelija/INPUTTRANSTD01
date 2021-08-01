@@ -79,6 +79,7 @@
             this.btnprPregledtovarniList.Text = "Pregled Tovarni list";
             this.btnprPregledtovarniList.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnprPregledtovarniList.UseVisualStyleBackColor = true;
+            this.btnprPregledtovarniList.Click += new System.EventHandler(this.btnprPregledtovarniList_Click);
             // 
             // btnprPregledPutniNalozi
             // 
@@ -99,6 +100,7 @@
             this.btnprPregledPutniNalozi.Text = "Pregled Putni nalozi";
             this.btnprPregledPutniNalozi.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnprPregledPutniNalozi.UseVisualStyleBackColor = true;
+            this.btnprPregledPutniNalozi.Click += new System.EventHandler(this.btnprPregledPutniNalozi_Click);
             // 
             // btnprPregledNaloziPrevoz
             // 
@@ -119,6 +121,7 @@
             this.btnprPregledNaloziPrevoz.Text = "Pregled Nalozi za prevoz";
             this.btnprPregledNaloziPrevoz.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnprPregledNaloziPrevoz.UseVisualStyleBackColor = true;
+            this.btnprPregledNaloziPrevoz.Click += new System.EventHandler(this.btnprPregledNaloziPrevoz_Click);
             // 
             // btnprPtpremaKontejneraKamion
             // 
@@ -139,6 +142,7 @@
             this.btnprPtpremaKontejneraKamion.Text = "Otprema kontejnera kamionom";
             this.btnprPtpremaKontejneraKamion.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnprPtpremaKontejneraKamion.UseVisualStyleBackColor = true;
+            this.btnprPtpremaKontejneraKamion.Click += new System.EventHandler(this.btnprPtpremaKontejneraKamion_Click);
             // 
             // btnorOtpremaKontejneraVoz
             // 
@@ -159,6 +163,7 @@
             this.btnorOtpremaKontejneraVoz.Text = "Otprema kontejnera vozom";
             this.btnorOtpremaKontejneraVoz.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnorOtpremaKontejneraVoz.UseVisualStyleBackColor = true;
+            this.btnorOtpremaKontejneraVoz.Click += new System.EventHandler(this.btnorOtpremaKontejneraVoz_Click);
             // 
             // btnprBukingVoza
             // 
@@ -179,6 +184,7 @@
             this.btnprBukingVoza.Text = "Buking voza";
             this.btnprBukingVoza.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnprBukingVoza.UseVisualStyleBackColor = true;
+            this.btnprBukingVoza.Click += new System.EventHandler(this.btnprBukingVoza_Click);
             // 
             // btnprPrijemKotejneraVozom
             // 
@@ -199,6 +205,7 @@
             this.btnprPrijemKotejneraVozom.Text = "Prijem kontejnera Vozom Pregled";
             this.btnprPrijemKotejneraVozom.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnprPrijemKotejneraVozom.UseVisualStyleBackColor = true;
+            this.btnprPrijemKotejneraVozom.Click += new System.EventHandler(this.btnprPrijemKotejneraVozom_Click);
             // 
             // btnprPrijemKotejnera
             // 
@@ -219,6 +226,7 @@
             this.btnprPrijemKotejnera.Text = "Prijem kontejnera Kamionom Pregled";
             this.btnprPrijemKotejnera.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnprPrijemKotejnera.UseVisualStyleBackColor = true;
+            this.btnprPrijemKotejnera.Click += new System.EventHandler(this.btnprPrijemKotejnera_Click);
             // 
             // btnprPregledVozovi
             // 
@@ -239,6 +247,7 @@
             this.btnprPregledVozovi.Text = "Pregled Vozovi";
             this.btnprPregledVozovi.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnprPregledVozovi.UseVisualStyleBackColor = true;
+            this.btnprPregledVozovi.Click += new System.EventHandler(this.btnprPregledVozovi_Click);
             // 
             // btnprVozovi
             // 
@@ -259,6 +268,7 @@
             this.btnprVozovi.Text = "Vozovi";
             this.btnprVozovi.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnprVozovi.UseVisualStyleBackColor = true;
+            this.btnprVozovi.Click += new System.EventHandler(this.btnprVozovi_Click);
             // 
             // FormaPrevoz
             // 

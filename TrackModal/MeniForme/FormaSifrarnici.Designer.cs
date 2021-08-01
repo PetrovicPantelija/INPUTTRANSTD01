@@ -103,6 +103,7 @@
             this.btnsPredefinisanePoruke.Text = "Predefinisane poruke";
             this.btnsPredefinisanePoruke.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnsPredefinisanePoruke.UseVisualStyleBackColor = true;
+            this.btnsPredefinisanePoruke.Click += new System.EventHandler(this.btnsPredefinisanePoruke_Click);
             // 
             // btnsVrsteManipulacije
             // 
@@ -123,6 +124,7 @@
             this.btnsVrsteManipulacije.Text = "Vrste manipulacije";
             this.btnsVrsteManipulacije.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnsVrsteManipulacije.UseVisualStyleBackColor = true;
+            this.btnsVrsteManipulacije.Click += new System.EventHandler(this.btnsVrsteManipulacije_Click);
             // 
             // btnsSkladišta
             // 
@@ -143,6 +145,7 @@
             this.btnsSkladišta.Text = "Skladišta";
             this.btnsSkladišta.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnsSkladišta.UseVisualStyleBackColor = true;
+            this.btnsSkladišta.Click += new System.EventHandler(this.btnsSkladišta_Click);
             // 
             // btnsPozicije
             // 
@@ -163,6 +166,7 @@
             this.btnsPozicije.Text = "Pozicije";
             this.btnsPozicije.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnsPozicije.UseVisualStyleBackColor = true;
+            this.btnsPozicije.Click += new System.EventHandler(this.btnsPozicije_Click);
             // 
             // btnsStanice
             // 
@@ -183,6 +187,7 @@
             this.btnsStanice.Text = "Stanice";
             this.btnsStanice.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnsStanice.UseVisualStyleBackColor = true;
+            this.btnsStanice.Click += new System.EventHandler(this.btnsStanice_Click);
             // 
             // btnsSredstvaRada
             // 
@@ -203,6 +208,7 @@
             this.btnsSredstvaRada.Text = "Sredstva rada";
             this.btnsSredstvaRada.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnsSredstvaRada.UseVisualStyleBackColor = true;
+            this.btnsSredstvaRada.Click += new System.EventHandler(this.btnsSredstvaRada_Click);
             // 
             // btnsTipKontenjera
             // 
@@ -223,6 +229,7 @@
             this.btnsTipKontenjera.Text = "Tip kontenjera";
             this.btnsTipKontenjera.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnsTipKontenjera.UseVisualStyleBackColor = true;
+            this.btnsTipKontenjera.Click += new System.EventHandler(this.btnsTipKontenjera_Click);
             // 
             // btnsVrstaRobe
             // 
@@ -243,6 +250,7 @@
             this.btnsVrstaRobe.Text = "Vrste robe";
             this.btnsVrstaRobe.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnsVrstaRobe.UseVisualStyleBackColor = true;
+            this.btnsVrstaRobe.Click += new System.EventHandler(this.btnsVrstaRobe_Click);
             // 
             // panelSubZaposlSifr
             // 
@@ -281,6 +289,7 @@
             this.btnszsStrucniIpit.Text = "Stručni ispit";
             this.btnszsStrucniIpit.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnszsStrucniIpit.UseVisualStyleBackColor = false;
+            this.btnszsStrucniIpit.Click += new System.EventHandler(this.btnszsStrucniIpit_Click);
             // 
             // btnszsZastitnaOdeca
             // 
@@ -298,6 +307,7 @@
             this.btnszsZastitnaOdeca.Text = "Zaštitna odeća";
             this.btnszsZastitnaOdeca.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnszsZastitnaOdeca.UseVisualStyleBackColor = false;
+            this.btnszsZastitnaOdeca.Click += new System.EventHandler(this.btnszsZastitnaOdeca_Click);
             // 
             // btnszsLicenceSertifikati
             // 
@@ -315,6 +325,7 @@
             this.btnszsLicenceSertifikati.Text = "Licence i sertifikati";
             this.btnszsLicenceSertifikati.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnszsLicenceSertifikati.UseVisualStyleBackColor = false;
+            this.btnszsLicenceSertifikati.Click += new System.EventHandler(this.btnszsLicenceSertifikati_Click);
             // 
             // btnszsOrganizacioneJedinice
             // 
@@ -332,6 +343,7 @@
             this.btnszsOrganizacioneJedinice.Text = "Organizacione jedinice";
             this.btnszsOrganizacioneJedinice.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnszsOrganizacioneJedinice.UseVisualStyleBackColor = false;
+            this.btnszsOrganizacioneJedinice.Click += new System.EventHandler(this.btnszsOrganizacioneJedinice_Click);
             // 
             // btnszsLekarskiPregled
             // 
@@ -349,6 +361,7 @@
             this.btnszsLekarskiPregled.Text = "Lekarski pregled";
             this.btnszsLekarskiPregled.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnszsLekarskiPregled.UseVisualStyleBackColor = false;
+            this.btnszsLekarskiPregled.Click += new System.EventHandler(this.btnszsLekarskiPregled_Click);
             // 
             // btnszSkolskaSprema
             // 
@@ -366,6 +379,7 @@
             this.btnszSkolskaSprema.Text = "Školska sprema";
             this.btnszSkolskaSprema.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnszSkolskaSprema.UseVisualStyleBackColor = false;
+            this.btnszSkolskaSprema.Click += new System.EventHandler(this.btnszSkolskaSprema_Click);
             // 
             // btnsZaposleniSifr
             // 
@@ -408,6 +422,7 @@
             this.btnsZaposleni.Text = "Zaposleni";
             this.btnsZaposleni.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnsZaposleni.UseVisualStyleBackColor = true;
+            this.btnsZaposleni.Click += new System.EventHandler(this.btnsZaposleni_Click);
             // 
             // btnsStatusKontejnera
             // 
@@ -428,6 +443,7 @@
             this.btnsStatusKontejnera.Text = "Status kontenjera";
             this.btnsStatusKontejnera.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnsStatusKontejnera.UseVisualStyleBackColor = true;
+            this.btnsStatusKontejnera.Click += new System.EventHandler(this.btnsStatusKontejnera_Click);
             // 
             // btnsNacinDolOdl
             // 
@@ -448,6 +464,7 @@
             this.btnsNacinDolOdl.Text = "Način dolaska odlaska";
             this.btnsNacinDolOdl.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnsNacinDolOdl.UseVisualStyleBackColor = true;
+            this.btnsNacinDolOdl.Click += new System.EventHandler(this.btnsNacinDolOdl_Click);
             // 
             // btnsPartneri
             // 
@@ -468,6 +485,7 @@
             this.btnsPartneri.Text = "Partneri";
             this.btnsPartneri.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnsPartneri.UseVisualStyleBackColor = true;
+            this.btnsPartneri.Click += new System.EventHandler(this.btnsPartneri_Click);
             // 
             // btnsTipCenovnika
             // 
@@ -488,6 +506,7 @@
             this.btnsTipCenovnika.Text = "Tip cenovnika";
             this.btnsTipCenovnika.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnsTipCenovnika.UseVisualStyleBackColor = true;
+            this.btnsTipCenovnika.Click += new System.EventHandler(this.btnsTipCenovnika_Click);
             // 
             // btnsCena
             // 
@@ -508,6 +527,7 @@
             this.btnsCena.Text = "Cene";
             this.btnsCena.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnsCena.UseVisualStyleBackColor = true;
+            this.btnsCena.Click += new System.EventHandler(this.btnsCena_Click);
             // 
             // btnsDelKontejnera
             // 
@@ -528,6 +548,7 @@
             this.btnsDelKontejnera.Text = "Delovi kontenjera";
             this.btnsDelKontejnera.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnsDelKontejnera.UseVisualStyleBackColor = true;
+            this.btnsDelKontejnera.Click += new System.EventHandler(this.btnsDelKontejnera_Click);
             // 
             // btnsOstecenja
             // 
@@ -548,6 +569,7 @@
             this.btnsOstecenja.Text = "Oštećenja";
             this.btnsOstecenja.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnsOstecenja.UseVisualStyleBackColor = true;
+            this.btnsOstecenja.Click += new System.EventHandler(this.btnsOstecenja_Click);
             // 
             // FormaSifrarnici
             // 
