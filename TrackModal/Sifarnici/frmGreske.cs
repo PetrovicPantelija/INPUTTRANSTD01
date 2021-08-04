@@ -14,6 +14,7 @@ using System.Net;
 using System.Net.Mail;
 
 using Microsoft.Reporting.WinForms;
+using System.Runtime.InteropServices;
 
 namespace TrackModal.Sifarnici
 {
@@ -258,9 +259,39 @@ namespace TrackModal.Sifarnici
                 WindowState = FormWindowState.Normal;
         }
 
+        [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
+        private extern static void ReleaseCapture();
+        [DllImport("user32.DLL", EntryPoint = "SendMessage")]
+        private extern static void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int lParam);
+
         private void iconButton8_Click(object sender, EventArgs e)
         {
             WindowState = FormWindowState.Minimized;
+        }
+
+        private void iconButton10_Click(object sender, EventArgs e)
+        {
+            frmGreske greska = new frmGreske();
+            this.Close();
+        }
+
+        private void iconButton9_Click(object sender, EventArgs e)
+        {
+            if (WindowState == FormWindowState.Normal)
+                WindowState = FormWindowState.Maximized;
+            else
+                WindowState = FormWindowState.Normal;
+        }
+
+        private void iconButton7_Click(object sender, EventArgs e)
+        {
+            WindowState = FormWindowState.Minimized;
+        }
+
+        private void iconButton1_Click(object sender, EventArgs e)
+        {
+            frmGreske greska = new frmGreske();
+            this.Close();
         }
     }
 }

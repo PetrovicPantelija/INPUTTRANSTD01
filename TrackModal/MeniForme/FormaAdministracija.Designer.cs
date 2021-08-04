@@ -33,6 +33,7 @@
             this.btnaDodavanjePristupa = new FontAwesome.Sharp.IconButton();
             this.BtnaDodavanjeKorisnika = new FontAwesome.Sharp.IconButton();
             this.btnaKorisnici = new FontAwesome.Sharp.IconButton();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -42,8 +43,7 @@
             this.panel1.Controls.Add(this.btnaDodavanjePristupa);
             this.panel1.Controls.Add(this.BtnaDodavanjeKorisnika);
             this.panel1.Controls.Add(this.btnaKorisnici);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Location = new System.Drawing.Point(0, 10);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(296, 450);
             this.panel1.TabIndex = 1;
@@ -54,7 +54,7 @@
             this.BtnaForme.FlatAppearance.BorderSize = 0;
             this.BtnaForme.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnaForme.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnaForme.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(193)))), ((int)(((byte)(204)))));
+            this.BtnaForme.ForeColor = System.Drawing.Color.White;
             this.BtnaForme.IconChar = FontAwesome.Sharp.IconChar.None;
             this.BtnaForme.IconColor = System.Drawing.Color.Black;
             this.BtnaForme.IconFont = FontAwesome.Sharp.IconFont.Auto;
@@ -75,7 +75,7 @@
             this.btnaDodavanjePristupa.FlatAppearance.BorderSize = 0;
             this.btnaDodavanjePristupa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnaDodavanjePristupa.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnaDodavanjePristupa.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(193)))), ((int)(((byte)(204)))));
+            this.btnaDodavanjePristupa.ForeColor = System.Drawing.Color.White;
             this.btnaDodavanjePristupa.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btnaDodavanjePristupa.IconColor = System.Drawing.Color.Black;
             this.btnaDodavanjePristupa.IconFont = FontAwesome.Sharp.IconFont.Auto;
@@ -96,7 +96,7 @@
             this.BtnaDodavanjeKorisnika.FlatAppearance.BorderSize = 0;
             this.BtnaDodavanjeKorisnika.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnaDodavanjeKorisnika.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnaDodavanjeKorisnika.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(193)))), ((int)(((byte)(204)))));
+            this.BtnaDodavanjeKorisnika.ForeColor = System.Drawing.Color.White;
             this.BtnaDodavanjeKorisnika.IconChar = FontAwesome.Sharp.IconChar.None;
             this.BtnaDodavanjeKorisnika.IconColor = System.Drawing.Color.Black;
             this.BtnaDodavanjeKorisnika.IconFont = FontAwesome.Sharp.IconFont.Auto;
@@ -116,7 +116,7 @@
             this.btnaKorisnici.FlatAppearance.BorderSize = 0;
             this.btnaKorisnici.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnaKorisnici.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnaKorisnici.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(193)))), ((int)(((byte)(204)))));
+            this.btnaKorisnici.ForeColor = System.Drawing.Color.White;
             this.btnaKorisnici.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btnaKorisnici.IconColor = System.Drawing.Color.Black;
             this.btnaKorisnici.IconFont = FontAwesome.Sharp.IconFont.Auto;
@@ -131,12 +131,22 @@
             this.btnaKorisnici.UseVisualStyleBackColor = true;
             this.btnaKorisnici.Click += new System.EventHandler(this.btnaKorisnici_Click);
             // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(207)))), ((int)(((byte)(189)))));
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(800, 10);
+            this.panel2.TabIndex = 6;
+            // 
             // FormaAdministracija
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(75)))), ((int)(((byte)(86)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(108)))), ((int)(((byte)(120)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormaAdministracija";
@@ -153,5 +163,6 @@
         private FontAwesome.Sharp.IconButton btnaDodavanjePristupa;
         private FontAwesome.Sharp.IconButton BtnaDodavanjeKorisnika;
         private FontAwesome.Sharp.IconButton btnaKorisnici;
+        private System.Windows.Forms.Panel panel2;
     }
 }

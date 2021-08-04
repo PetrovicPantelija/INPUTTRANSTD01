@@ -39,6 +39,7 @@
             this.btnprPrijemKotejnera = new FontAwesome.Sharp.IconButton();
             this.btnprPregledVozovi = new FontAwesome.Sharp.IconButton();
             this.btnprVozovi = new FontAwesome.Sharp.IconButton();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -54,8 +55,7 @@
             this.panel1.Controls.Add(this.btnprPrijemKotejnera);
             this.panel1.Controls.Add(this.btnprPregledVozovi);
             this.panel1.Controls.Add(this.btnprVozovi);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Location = new System.Drawing.Point(0, 10);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(296, 580);
             this.panel1.TabIndex = 1;
@@ -66,7 +66,7 @@
             this.btnprPregledtovarniList.FlatAppearance.BorderSize = 0;
             this.btnprPregledtovarniList.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnprPregledtovarniList.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.btnprPregledtovarniList.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(193)))), ((int)(((byte)(204)))));
+            this.btnprPregledtovarniList.ForeColor = System.Drawing.Color.White;
             this.btnprPregledtovarniList.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btnprPregledtovarniList.IconColor = System.Drawing.Color.Black;
             this.btnprPregledtovarniList.IconFont = FontAwesome.Sharp.IconFont.Auto;
@@ -87,7 +87,7 @@
             this.btnprPregledPutniNalozi.FlatAppearance.BorderSize = 0;
             this.btnprPregledPutniNalozi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnprPregledPutniNalozi.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.btnprPregledPutniNalozi.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(193)))), ((int)(((byte)(204)))));
+            this.btnprPregledPutniNalozi.ForeColor = System.Drawing.Color.White;
             this.btnprPregledPutniNalozi.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btnprPregledPutniNalozi.IconColor = System.Drawing.Color.Black;
             this.btnprPregledPutniNalozi.IconFont = FontAwesome.Sharp.IconFont.Auto;
@@ -108,7 +108,7 @@
             this.btnprPregledNaloziPrevoz.FlatAppearance.BorderSize = 0;
             this.btnprPregledNaloziPrevoz.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnprPregledNaloziPrevoz.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.btnprPregledNaloziPrevoz.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(193)))), ((int)(((byte)(204)))));
+            this.btnprPregledNaloziPrevoz.ForeColor = System.Drawing.Color.White;
             this.btnprPregledNaloziPrevoz.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btnprPregledNaloziPrevoz.IconColor = System.Drawing.Color.Black;
             this.btnprPregledNaloziPrevoz.IconFont = FontAwesome.Sharp.IconFont.Auto;
@@ -129,7 +129,7 @@
             this.btnprPtpremaKontejneraKamion.FlatAppearance.BorderSize = 0;
             this.btnprPtpremaKontejneraKamion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnprPtpremaKontejneraKamion.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.btnprPtpremaKontejneraKamion.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(193)))), ((int)(((byte)(204)))));
+            this.btnprPtpremaKontejneraKamion.ForeColor = System.Drawing.Color.White;
             this.btnprPtpremaKontejneraKamion.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btnprPtpremaKontejneraKamion.IconColor = System.Drawing.Color.Black;
             this.btnprPtpremaKontejneraKamion.IconFont = FontAwesome.Sharp.IconFont.Auto;
@@ -150,7 +150,7 @@
             this.btnorOtpremaKontejneraVoz.FlatAppearance.BorderSize = 0;
             this.btnorOtpremaKontejneraVoz.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnorOtpremaKontejneraVoz.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.btnorOtpremaKontejneraVoz.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(193)))), ((int)(((byte)(204)))));
+            this.btnorOtpremaKontejneraVoz.ForeColor = System.Drawing.Color.White;
             this.btnorOtpremaKontejneraVoz.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btnorOtpremaKontejneraVoz.IconColor = System.Drawing.Color.Black;
             this.btnorOtpremaKontejneraVoz.IconFont = FontAwesome.Sharp.IconFont.Auto;
@@ -171,7 +171,7 @@
             this.btnprBukingVoza.FlatAppearance.BorderSize = 0;
             this.btnprBukingVoza.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnprBukingVoza.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.btnprBukingVoza.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(193)))), ((int)(((byte)(204)))));
+            this.btnprBukingVoza.ForeColor = System.Drawing.Color.White;
             this.btnprBukingVoza.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btnprBukingVoza.IconColor = System.Drawing.Color.Black;
             this.btnprBukingVoza.IconFont = FontAwesome.Sharp.IconFont.Auto;
@@ -192,7 +192,7 @@
             this.btnprPrijemKotejneraVozom.FlatAppearance.BorderSize = 0;
             this.btnprPrijemKotejneraVozom.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnprPrijemKotejneraVozom.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.btnprPrijemKotejneraVozom.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(193)))), ((int)(((byte)(204)))));
+            this.btnprPrijemKotejneraVozom.ForeColor = System.Drawing.Color.White;
             this.btnprPrijemKotejneraVozom.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btnprPrijemKotejneraVozom.IconColor = System.Drawing.Color.Black;
             this.btnprPrijemKotejneraVozom.IconFont = FontAwesome.Sharp.IconFont.Auto;
@@ -213,7 +213,7 @@
             this.btnprPrijemKotejnera.FlatAppearance.BorderSize = 0;
             this.btnprPrijemKotejnera.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnprPrijemKotejnera.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.btnprPrijemKotejnera.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(193)))), ((int)(((byte)(204)))));
+            this.btnprPrijemKotejnera.ForeColor = System.Drawing.Color.White;
             this.btnprPrijemKotejnera.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btnprPrijemKotejnera.IconColor = System.Drawing.Color.Black;
             this.btnprPrijemKotejnera.IconFont = FontAwesome.Sharp.IconFont.Auto;
@@ -234,7 +234,7 @@
             this.btnprPregledVozovi.FlatAppearance.BorderSize = 0;
             this.btnprPregledVozovi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnprPregledVozovi.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.btnprPregledVozovi.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(193)))), ((int)(((byte)(204)))));
+            this.btnprPregledVozovi.ForeColor = System.Drawing.Color.White;
             this.btnprPregledVozovi.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btnprPregledVozovi.IconColor = System.Drawing.Color.Black;
             this.btnprPregledVozovi.IconFont = FontAwesome.Sharp.IconFont.Auto;
@@ -255,7 +255,7 @@
             this.btnprVozovi.FlatAppearance.BorderSize = 0;
             this.btnprVozovi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnprVozovi.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.btnprVozovi.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(193)))), ((int)(((byte)(204)))));
+            this.btnprVozovi.ForeColor = System.Drawing.Color.White;
             this.btnprVozovi.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btnprVozovi.IconColor = System.Drawing.Color.Black;
             this.btnprVozovi.IconFont = FontAwesome.Sharp.IconFont.Auto;
@@ -270,12 +270,22 @@
             this.btnprVozovi.UseVisualStyleBackColor = true;
             this.btnprVozovi.Click += new System.EventHandler(this.btnprVozovi_Click);
             // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(153)))), ((int)(((byte)(232)))));
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(846, 10);
+            this.panel2.TabIndex = 2;
+            // 
             // FormaPrevoz
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(75)))), ((int)(((byte)(86)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(108)))), ((int)(((byte)(120)))));
             this.ClientSize = new System.Drawing.Size(846, 580);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormaPrevoz";
@@ -298,5 +308,6 @@
         private FontAwesome.Sharp.IconButton btnprPrijemKotejnera;
         private FontAwesome.Sharp.IconButton btnprPregledVozovi;
         private FontAwesome.Sharp.IconButton btnprVozovi;
+        private System.Windows.Forms.Panel panel2;
     }
 }

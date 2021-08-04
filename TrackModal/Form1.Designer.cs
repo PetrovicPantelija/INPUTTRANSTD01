@@ -51,7 +51,7 @@
             // 
             // bunifuPanel1
             // 
-            this.bunifuPanel1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(74)))), ((int)(((byte)(84)))));
+            this.bunifuPanel1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(90)))), ((int)(((byte)(100)))));
             this.bunifuPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuPanel1.BackgroundImage")));
             this.bunifuPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.bunifuPanel1.BorderColor = System.Drawing.Color.Transparent;
@@ -63,19 +63,27 @@
             this.bunifuPanel1.Location = new System.Drawing.Point(0, 0);
             this.bunifuPanel1.Name = "bunifuPanel1";
             this.bunifuPanel1.ShowBorders = true;
-            this.bunifuPanel1.Size = new System.Drawing.Size(1131, 60);
+            this.bunifuPanel1.Size = new System.Drawing.Size(1131, 64);
             this.bunifuPanel1.TabIndex = 49;
             // 
             // panel1
             // 
+<<<<<<< HEAD
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(74)))), ((int)(((byte)(84)))));
+=======
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(90)))), ((int)(((byte)(100)))));
+>>>>>>> 9832f9951676c50994d7350b3eae0217dcb4770c
             this.panel1.Controls.Add(this.iconButton10);
             this.panel1.Controls.Add(this.iconButton9);
             this.panel1.Controls.Add(this.iconButton7);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel1.Location = new System.Drawing.Point(1012, 0);
             this.panel1.Name = "panel1";
+<<<<<<< HEAD
             this.panel1.Size = new System.Drawing.Size(119, 60);
+=======
+            this.panel1.Size = new System.Drawing.Size(119, 64);
+>>>>>>> 9832f9951676c50994d7350b3eae0217dcb4770c
             this.panel1.TabIndex = 4;
             // 
             // iconButton10
@@ -84,7 +92,11 @@
             this.iconButton10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.iconButton10.ForeColor = System.Drawing.Color.Transparent;
             this.iconButton10.IconChar = FontAwesome.Sharp.IconChar.WindowClose;
+<<<<<<< HEAD
             this.iconButton10.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(193)))), ((int)(((byte)(204)))));
+=======
+            this.iconButton10.IconColor = System.Drawing.Color.White;
+>>>>>>> 9832f9951676c50994d7350b3eae0217dcb4770c
             this.iconButton10.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton10.IconSize = 20;
             this.iconButton10.Location = new System.Drawing.Point(95, 4);
@@ -100,7 +112,11 @@
             this.iconButton9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.iconButton9.ForeColor = System.Drawing.Color.Transparent;
             this.iconButton9.IconChar = FontAwesome.Sharp.IconChar.WindowMaximize;
+<<<<<<< HEAD
             this.iconButton9.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(193)))), ((int)(((byte)(204)))));
+=======
+            this.iconButton9.IconColor = System.Drawing.Color.White;
+>>>>>>> 9832f9951676c50994d7350b3eae0217dcb4770c
             this.iconButton9.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton9.IconSize = 20;
             this.iconButton9.Location = new System.Drawing.Point(66, 4);
@@ -116,7 +132,11 @@
             this.iconButton7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.iconButton7.ForeColor = System.Drawing.Color.Transparent;
             this.iconButton7.IconChar = FontAwesome.Sharp.IconChar.WindowMinimize;
+<<<<<<< HEAD
             this.iconButton7.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(193)))), ((int)(((byte)(204)))));
+=======
+            this.iconButton7.IconColor = System.Drawing.Color.White;
+>>>>>>> 9832f9951676c50994d7350b3eae0217dcb4770c
             this.iconButton7.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton7.IconSize = 20;
             this.iconButton7.Location = new System.Drawing.Point(37, 4);
@@ -153,7 +173,7 @@
             this.siticoneShadowPanel1.Controls.Add(this.button1);
             this.siticoneShadowPanel1.Controls.Add(this.txtPassword);
             this.siticoneShadowPanel1.Controls.Add(this.cboKorisnik);
-            this.siticoneShadowPanel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(74)))), ((int)(((byte)(84)))));
+            this.siticoneShadowPanel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(90)))), ((int)(((byte)(100)))));
             this.siticoneShadowPanel1.Location = new System.Drawing.Point(252, 146);
             this.siticoneShadowPanel1.Name = "siticoneShadowPanel1";
             this.siticoneShadowPanel1.ShadowColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(49)))), ((int)(((byte)(56)))));
@@ -185,6 +205,7 @@
             // 
             // siticoneSeparator1
             // 
+            this.siticoneSeparator1.BackColor = System.Drawing.Color.Transparent;
             this.siticoneSeparator1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(63)))), ((int)(((byte)(72)))));
             this.siticoneSeparator1.Location = new System.Drawing.Point(149, 364);
             this.siticoneSeparator1.Name = "siticoneSeparator1";
@@ -214,9 +235,11 @@
             this.button2.Size = new System.Drawing.Size(150, 45);
             this.button2.TabIndex = 138;
             this.button2.Text = "Odjava";
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // pictureBox1
             // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(216, 30);
             this.pictureBox1.Name = "pictureBox1";
@@ -262,7 +285,8 @@
             this.txtPassword.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtPassword.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtPassword.FocusedState.Parent = this.txtPassword;
-            this.txtPassword.Font = new System.Drawing.Font("Ebrima", 12F);
+            this.txtPassword.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.txtPassword.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
             this.txtPassword.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtPassword.HoverState.Parent = this.txtPassword;
             this.txtPassword.Location = new System.Drawing.Point(149, 237);
@@ -288,8 +312,8 @@
             this.cboKorisnik.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.cboKorisnik.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.cboKorisnik.FocusedState.Parent = this.cboKorisnik;
-            this.cboKorisnik.Font = new System.Drawing.Font("Ebrima", 12F);
-            this.cboKorisnik.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.cboKorisnik.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cboKorisnik.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
             this.cboKorisnik.HoverState.Parent = this.cboKorisnik;
             this.cboKorisnik.ItemHeight = 30;
             this.cboKorisnik.ItemsAppearance.Parent = this.cboKorisnik;
@@ -304,7 +328,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(63)))), ((int)(((byte)(72)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(75)))), ((int)(((byte)(86)))));
             this.ClientSize = new System.Drawing.Size(1131, 733);
             this.Controls.Add(this.siticoneShadowPanel1);
             this.Controls.Add(this.bunifuPanel1);

@@ -39,6 +39,7 @@
             this.btnspPregPrometa = new FontAwesome.Sharp.IconButton();
             this.btnspPregMedjuPrijem = new FontAwesome.Sharp.IconButton();
             this.btnspPregledPrijemaRaspored = new FontAwesome.Sharp.IconButton();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -54,8 +55,7 @@
             this.panel1.Controls.Add(this.btnspPregPrometa);
             this.panel1.Controls.Add(this.btnspPregMedjuPrijem);
             this.panel1.Controls.Add(this.btnspPregledPrijemaRaspored);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Location = new System.Drawing.Point(0, 10);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(296, 450);
             this.panel1.TabIndex = 2;
@@ -66,7 +66,7 @@
             this.btnspPopisLista.FlatAppearance.BorderSize = 0;
             this.btnspPopisLista.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnspPopisLista.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.btnspPopisLista.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(193)))), ((int)(((byte)(204)))));
+            this.btnspPopisLista.ForeColor = System.Drawing.Color.White;
             this.btnspPopisLista.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btnspPopisLista.IconColor = System.Drawing.Color.Black;
             this.btnspPopisLista.IconFont = FontAwesome.Sharp.IconFont.Auto;
@@ -87,7 +87,7 @@
             this.btnspOtprManipulacija.FlatAppearance.BorderSize = 0;
             this.btnspOtprManipulacija.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnspOtprManipulacija.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.btnspOtprManipulacija.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(193)))), ((int)(((byte)(204)))));
+            this.btnspOtprManipulacija.ForeColor = System.Drawing.Color.White;
             this.btnspOtprManipulacija.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btnspOtprManipulacija.IconColor = System.Drawing.Color.Black;
             this.btnspOtprManipulacija.IconFont = FontAwesome.Sharp.IconFont.Auto;
@@ -108,7 +108,7 @@
             this.btnspMedjSklaPrenos.FlatAppearance.BorderSize = 0;
             this.btnspMedjSklaPrenos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnspMedjSklaPrenos.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.btnspMedjSklaPrenos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(193)))), ((int)(((byte)(204)))));
+            this.btnspMedjSklaPrenos.ForeColor = System.Drawing.Color.White;
             this.btnspMedjSklaPrenos.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btnspMedjSklaPrenos.IconColor = System.Drawing.Color.Black;
             this.btnspMedjSklaPrenos.IconFont = FontAwesome.Sharp.IconFont.Auto;
@@ -129,7 +129,7 @@
             this.btnspPrijemRaspored.FlatAppearance.BorderSize = 0;
             this.btnspPrijemRaspored.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnspPrijemRaspored.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.btnspPrijemRaspored.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(193)))), ((int)(((byte)(204)))));
+            this.btnspPrijemRaspored.ForeColor = System.Drawing.Color.White;
             this.btnspPrijemRaspored.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btnspPrijemRaspored.IconColor = System.Drawing.Color.Black;
             this.btnspPrijemRaspored.IconFont = FontAwesome.Sharp.IconFont.Auto;
@@ -150,7 +150,7 @@
             this.btnspPregPopListi.FlatAppearance.BorderSize = 0;
             this.btnspPregPopListi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnspPregPopListi.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.btnspPregPopListi.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(193)))), ((int)(((byte)(204)))));
+            this.btnspPregPopListi.ForeColor = System.Drawing.Color.White;
             this.btnspPregPopListi.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btnspPregPopListi.IconColor = System.Drawing.Color.Black;
             this.btnspPregPopListi.IconFont = FontAwesome.Sharp.IconFont.Auto;
@@ -171,7 +171,7 @@
             this.btnspPregStanjZalMagacioner.FlatAppearance.BorderSize = 0;
             this.btnspPregStanjZalMagacioner.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnspPregStanjZalMagacioner.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.btnspPregStanjZalMagacioner.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(193)))), ((int)(((byte)(204)))));
+            this.btnspPregStanjZalMagacioner.ForeColor = System.Drawing.Color.White;
             this.btnspPregStanjZalMagacioner.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btnspPregStanjZalMagacioner.IconColor = System.Drawing.Color.Black;
             this.btnspPregStanjZalMagacioner.IconFont = FontAwesome.Sharp.IconFont.Auto;
@@ -192,7 +192,7 @@
             this.btnspPregStanjZaliha.FlatAppearance.BorderSize = 0;
             this.btnspPregStanjZaliha.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnspPregStanjZaliha.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.btnspPregStanjZaliha.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(193)))), ((int)(((byte)(204)))));
+            this.btnspPregStanjZaliha.ForeColor = System.Drawing.Color.White;
             this.btnspPregStanjZaliha.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btnspPregStanjZaliha.IconColor = System.Drawing.Color.Black;
             this.btnspPregStanjZaliha.IconFont = FontAwesome.Sharp.IconFont.Auto;
@@ -213,7 +213,7 @@
             this.btnspPregPrometa.FlatAppearance.BorderSize = 0;
             this.btnspPregPrometa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnspPregPrometa.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.btnspPregPrometa.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(193)))), ((int)(((byte)(204)))));
+            this.btnspPregPrometa.ForeColor = System.Drawing.Color.White;
             this.btnspPregPrometa.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btnspPregPrometa.IconColor = System.Drawing.Color.Black;
             this.btnspPregPrometa.IconFont = FontAwesome.Sharp.IconFont.Auto;
@@ -234,7 +234,7 @@
             this.btnspPregMedjuPrijem.FlatAppearance.BorderSize = 0;
             this.btnspPregMedjuPrijem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnspPregMedjuPrijem.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.btnspPregMedjuPrijem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(193)))), ((int)(((byte)(204)))));
+            this.btnspPregMedjuPrijem.ForeColor = System.Drawing.Color.White;
             this.btnspPregMedjuPrijem.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btnspPregMedjuPrijem.IconColor = System.Drawing.Color.Black;
             this.btnspPregMedjuPrijem.IconFont = FontAwesome.Sharp.IconFont.Auto;
@@ -255,7 +255,7 @@
             this.btnspPregledPrijemaRaspored.FlatAppearance.BorderSize = 0;
             this.btnspPregledPrijemaRaspored.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnspPregledPrijemaRaspored.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.btnspPregledPrijemaRaspored.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(193)))), ((int)(((byte)(204)))));
+            this.btnspPregledPrijemaRaspored.ForeColor = System.Drawing.Color.White;
             this.btnspPregledPrijemaRaspored.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btnspPregledPrijemaRaspored.IconColor = System.Drawing.Color.Black;
             this.btnspPregledPrijemaRaspored.IconFont = FontAwesome.Sharp.IconFont.Auto;
@@ -270,12 +270,22 @@
             this.btnspPregledPrijemaRaspored.UseVisualStyleBackColor = true;
             this.btnspPregledPrijemaRaspored.Click += new System.EventHandler(this.btnspPregledPrijemaRaspored_Click);
             // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(180)))), ((int)(((byte)(211)))));
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(800, 10);
+            this.panel2.TabIndex = 4;
+            // 
             // FormaSkladistnoPoslovanje
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(75)))), ((int)(((byte)(86)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(108)))), ((int)(((byte)(120)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormaSkladistnoPoslovanje";
@@ -298,5 +308,6 @@
         private FontAwesome.Sharp.IconButton btnspPregPrometa;
         private FontAwesome.Sharp.IconButton btnspPregMedjuPrijem;
         private FontAwesome.Sharp.IconButton btnspPregledPrijemaRaspored;
+        private System.Windows.Forms.Panel panel2;
     }
 }
