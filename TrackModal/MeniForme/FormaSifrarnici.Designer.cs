@@ -81,7 +81,7 @@
             this.panel1.Controls.Add(this.btnsOstecenja);
             this.panel1.Location = new System.Drawing.Point(0, 10);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(296, 788);
+            this.panel1.Size = new System.Drawing.Size(296, 972);
             this.panel1.TabIndex = 0;
             // 
             // btnsPredefinisanePoruke
@@ -506,7 +506,6 @@
             this.btnsTipCenovnika.Text = "Tip cenovnika";
             this.btnsTipCenovnika.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnsTipCenovnika.UseVisualStyleBackColor = true;
-            this.btnsTipCenovnika.Visible = false;
             this.btnsTipCenovnika.Click += new System.EventHandler(this.btnsTipCenovnika_Click);
             // 
             // btnsCena
@@ -570,7 +569,6 @@
             this.btnsOstecenja.Text = "Oštećenja";
             this.btnsOstecenja.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnsOstecenja.UseVisualStyleBackColor = true;
-            this.btnsOstecenja.Visible = false;
             this.btnsOstecenja.Click += new System.EventHandler(this.btnsOstecenja_Click);
             // 
             // panel2
@@ -586,14 +584,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-<<<<<<< HEAD
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(75)))), ((int)(((byte)(86)))));
-            this.ClientSize = new System.Drawing.Size(862, 788);
-=======
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(108)))), ((int)(((byte)(120)))));
             this.ClientSize = new System.Drawing.Size(862, 972);
             this.Controls.Add(this.panel2);
->>>>>>> 9832f9951676c50994d7350b3eae0217dcb4770c
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormaSifrarnici";

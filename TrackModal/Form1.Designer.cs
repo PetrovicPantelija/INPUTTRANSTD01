@@ -68,22 +68,14 @@
             // 
             // panel1
             // 
-<<<<<<< HEAD
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(74)))), ((int)(((byte)(84)))));
-=======
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(90)))), ((int)(((byte)(100)))));
->>>>>>> 9832f9951676c50994d7350b3eae0217dcb4770c
             this.panel1.Controls.Add(this.iconButton10);
             this.panel1.Controls.Add(this.iconButton9);
             this.panel1.Controls.Add(this.iconButton7);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel1.Location = new System.Drawing.Point(1012, 0);
             this.panel1.Name = "panel1";
-<<<<<<< HEAD
-            this.panel1.Size = new System.Drawing.Size(119, 60);
-=======
             this.panel1.Size = new System.Drawing.Size(119, 64);
->>>>>>> 9832f9951676c50994d7350b3eae0217dcb4770c
             this.panel1.TabIndex = 4;
             // 
             // iconButton10
@@ -92,11 +84,7 @@
             this.iconButton10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.iconButton10.ForeColor = System.Drawing.Color.Transparent;
             this.iconButton10.IconChar = FontAwesome.Sharp.IconChar.WindowClose;
-<<<<<<< HEAD
-            this.iconButton10.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(193)))), ((int)(((byte)(204)))));
-=======
             this.iconButton10.IconColor = System.Drawing.Color.White;
->>>>>>> 9832f9951676c50994d7350b3eae0217dcb4770c
             this.iconButton10.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton10.IconSize = 20;
             this.iconButton10.Location = new System.Drawing.Point(95, 4);
@@ -112,11 +100,7 @@
             this.iconButton9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.iconButton9.ForeColor = System.Drawing.Color.Transparent;
             this.iconButton9.IconChar = FontAwesome.Sharp.IconChar.WindowMaximize;
-<<<<<<< HEAD
-            this.iconButton9.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(193)))), ((int)(((byte)(204)))));
-=======
             this.iconButton9.IconColor = System.Drawing.Color.White;
->>>>>>> 9832f9951676c50994d7350b3eae0217dcb4770c
             this.iconButton9.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton9.IconSize = 20;
             this.iconButton9.Location = new System.Drawing.Point(66, 4);
@@ -132,11 +116,7 @@
             this.iconButton7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.iconButton7.ForeColor = System.Drawing.Color.Transparent;
             this.iconButton7.IconChar = FontAwesome.Sharp.IconChar.WindowMinimize;
-<<<<<<< HEAD
-            this.iconButton7.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(193)))), ((int)(((byte)(204)))));
-=======
             this.iconButton7.IconColor = System.Drawing.Color.White;
->>>>>>> 9832f9951676c50994d7350b3eae0217dcb4770c
             this.iconButton7.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton7.IconSize = 20;
             this.iconButton7.Location = new System.Drawing.Point(37, 4);
@@ -157,7 +137,7 @@
             this.bunifuLabel1.Location = new System.Drawing.Point(8, 8);
             this.bunifuLabel1.Name = "bunifuLabel1";
             this.bunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel1.Size = new System.Drawing.Size(174, 40);
+            this.bunifuLabel1.Size = new System.Drawing.Size(184, 42);
             this.bunifuLabel1.TabIndex = 0;
             this.bunifuLabel1.Text = "INPUTRANS TD01";
             this.bunifuLabel1.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
