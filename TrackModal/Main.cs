@@ -42,6 +42,8 @@ namespace TrackModal
         public Main()
         {
             InitializeComponent();
+            //frmLogovanje obj = (frmLogovanje)Application.OpenForms["frmLogovanje"];
+           // obj.Close();
             leftBorderBtn = new Panel();
             leftBorderBtn.Size = new Size(7, 50);
             PanelMenu.Controls.Add(leftBorderBtn);
@@ -73,10 +75,10 @@ namespace TrackModal
                 curentBtn.TextImageRelation = TextImageRelation.TextBeforeImage;
                 curentBtn.ImageAlign = ContentAlignment.MiddleCenter;
                 //left border btn
-                leftBorderBtn.BackColor = color;
-                leftBorderBtn.Location = new Point(0, curentBtn.Location.Y);
-                leftBorderBtn.Visible = true;
-                leftBorderBtn.BringToFront();
+               // leftBorderBtn.BackColor = color;
+               // leftBorderBtn.Location = new Point(0, curentBtn.Location.Y);
+               // leftBorderBtn.Visible = true;
+               // leftBorderBtn.BringToFront();
                 //Icon curent child form
                 iconCurentChildForm.IconChar = curentBtn.IconChar;
                 iconCurentChildForm.IconColor = color;
@@ -741,6 +743,8 @@ namespace TrackModal
 
         private void iconButton1_Click(object sender, EventArgs e)
         {
+          
+
             ActivateButton(sender, RGBColors.color1);
             OpenChildForm(new FormaPrevoz());
 
