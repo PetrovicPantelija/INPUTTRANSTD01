@@ -117,37 +117,38 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="bunifuLabel5.BaseStylesheet" xml:space="preserve">
+    <value>#bunifu-label { padding: 0px; font-family: 'Bahnschrift SemiBold Condensed'; font-size: 20pt; width: 100%; height: 100%; font-style: normal; font-weight: bold; text-decoration: none; color: rgb(255, 255, 255); text-align: left; }</value>
+  </data>
   <data name="bunifuLabel1.BaseStylesheet" xml:space="preserve">
-    <value>#bunifu-label { padding: 0px; font-family: 'Segoe UI Semibold'; font-size: 15pt; width: 100%; height: 100%; font-style: normal; font-weight: bold; text-decoration: none; color: rgb(180, 193, 204); text-align: left; }</value>
+    <value>#bunifu-label { padding: 0px; font-family: 'Segoe UI Semibold'; font-size: 20.25pt; width: 100%; height: 100%; font-style: normal; font-weight: bold; text-decoration: none; color: rgb(255, 255, 255); text-align: left; }</value>
+  </data>
+  <data name="bunifuLabel4.BaseStylesheet" xml:space="preserve">
+    <value>#bunifu-label { padding: 0px; font-family: 'Segoe UI Semibold'; font-size: 12pt; width: 100%; height: 100%; font-style: normal; font-weight: bold; text-decoration: none; color: rgb(35, 35, 35); text-align: left; }</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="txtNaziv.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAAQQAAAAeCAYAAADKMmBDAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACdSURBVHhe7dSxCQJBAAXRLckOTC3WSIwMBMFEsAPLsABl
-        4Ri4GvZ9eMkvYIaZ2W7n2/Nzfbx/wJpmA7YcjDGPw/EELGo2YMuBIMDqBAGIIAARBCCCAEQQgAgCEEEA
-        IghABAGIIAARBCCCAEQQgAgCEEEAIghABAGIIAARBCCCAEQQgAgCEEEAIghAdkG43F/feQBrmg3YcmBm
-        NjfGHy06tGCvNK/7AAAAAElFTkSuQmCC
+        iVBORw0KGgoAAAANSUhEUgAAAPoAAAAZCAYAAAAYPDMRAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACySURBVHhe7dy7icQwGIVRlbYVTD/bxXTkh4yb2WgC42Ax
+        HgRK3ILuOXAT/fGXqgAhpmn6qbX+zfN8m9kYa01v2/bqmZeyruvnOI4bGMd5nveyLP8981Ja/cB4Wts9
+        c6HDqIQOAYQOAYQOAYQOAYQOAYQOAYQOAYQOAYQOAYQOAYQOAYQOAYQOAYQOAYQOAYQOAYQOAR6ht3+l
+        ruvqJ2AUj9Brrb/twczG2r7v7545MLZSvt9ePCstnO4vAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="bunifuLabel2.BaseStylesheet" xml:space="preserve">
-    <value>#bunifu-label { padding: 0px; font-family: 'Segoe UI'; font-size: 12pt; width: 100%; height: 100%; font-style: normal; font-weight: normal; text-decoration: none; color: rgb(180, 193, 204); text-align: left; }</value>
-  </data>
   <data name="bunifuLabel3.BaseStylesheet" xml:space="preserve">
-    <value>#bunifu-label { padding: 0px; font-family: 'Segoe UI'; font-size: 12pt; width: 100%; height: 100%; font-style: normal; font-weight: normal; text-decoration: none; color: rgb(180, 193, 204); text-align: left; }</value>
-  </data>
-  <data name="bunifuLabel4.BaseStylesheet" xml:space="preserve">
-    <value>#bunifu-label { padding: 0px; font-family: 'Segoe UI'; font-size: 12pt; width: 100%; height: 100%; font-style: normal; font-weight: normal; text-decoration: none; color: rgb(180, 193, 204); text-align: left; }</value>
-  </data>
-  <data name="bunifuLabel5.BaseStylesheet" xml:space="preserve">
-    <value>#bunifu-label { padding: 0px; font-family: 'Bahnschrift SemiBold Condensed'; font-size: 20pt; width: 100%; height: 100%; font-style: normal; font-weight: bold; text-decoration: none; color: rgb(255, 255, 255); text-align: left; }</value>
+    <value>#bunifu-label { padding: 0px; font-family: 'Segoe UI Semibold'; font-size: 12pt; width: 100%; height: 100%; font-style: normal; font-weight: bold; text-decoration: none; color: rgb(35, 35, 35); text-align: left; }</value>
   </data>
   <data name="txtSifra.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAAIIAAAAeCAYAAADgp8bFAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAB+SURBVGhD7dKxDQIxEEVBl0QHpPSfUsZd5gDkJwuJGjxf
-        mmTTfcPst+u+3x87cuv3O4Mx1uHxfHGgtZ2BEE4mBCIEIgQiBCIEIgQiBCIEIgQiBCIEIgQiBCIEIgQi
-        BCIEIgQiBCIEIgQiBCIEIgTyF8Kc8+pix239fmdgNsYXbfuxA5sr21IAAAAASUVORK5CYII=
+        iVBORw0KGgoAAAANSUhEUgAAAH0AAAAZCAYAAAAc5SFpAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACdSURBVGhD7dq7DQMhFETRV5orcD/uYjvi8xDNOHKACCzE
+        ColkW2DukSaB8BJiEBVCeLn7N8Y42ZlbfUsp753cLOf8a61NnKv3PlNK/53cbL0EnG913smJroLogogu
+        iOiCiC6I6IKILojogoguiOiCiC6I6IKILojogoguiOiCiC6I6IIe0dffqTHGvsKpHtHd/bMO2NmrtV47
+        ObSY3c2HMxUE0r9RAAAAAElFTkSuQmCC
 </value>
+  </data>
+  <data name="bunifuLabel2.BaseStylesheet" xml:space="preserve">
+    <value>#bunifu-label { padding: 0px; font-family: 'Segoe UI Semibold'; font-size: 12pt; width: 100%; height: 100%; font-style: normal; font-weight: bold; text-decoration: none; color: rgb(35, 35, 35); text-align: left; }</value>
   </data>
 </root>

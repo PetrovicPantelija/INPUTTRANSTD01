@@ -55,7 +55,14 @@ namespace TrackModal
         //Struktura za boje
         private struct RGBColors
         {
-            public static Color color1 = Color.FromArgb(83, 175, 190);
+            public static Color color1 = Color.FromArgb(2, 140, 243);
+            public static Color color2 = Color.FromArgb(8, 153, 232);
+            public static Color color3 = Color.FromArgb(15, 167, 222);
+            public static Color color4 = Color.FromArgb(21, 180, 211);
+            public static Color color5 = Color.FromArgb(28, 194, 200);
+            public static Color color6 = Color.FromArgb(34, 207, 189);
+            public static Color color7 = Color.FromArgb(41, 221, 179);
+            public static Color color8 = Color.FromArgb(47, 234, 168);
         }
 
         //metoda
@@ -66,7 +73,7 @@ namespace TrackModal
                 DisableButton();
                 //button
                 curentBtn = (IconButton)senderBtn;
-                curentBtn.BackColor = Color.FromArgb(57, 75, 86);
+                curentBtn.BackColor = Color.FromArgb(82, 108, 120);
                 curentBtn.ForeColor = color;
                 curentBtn.TextAlign = ContentAlignment.MiddleCenter;
                 curentBtn.IconColor = color;
@@ -87,10 +94,10 @@ namespace TrackModal
         {
             if (curentBtn != null)
             {
-                curentBtn.BackColor = Color.FromArgb(48, 63, 72);
-                curentBtn.ForeColor = Color.FromArgb(180, 193, 204);
+                curentBtn.BackColor = Color.FromArgb(69, 90, 100);
+                curentBtn.ForeColor = Color.White;
                 curentBtn.TextAlign = ContentAlignment.MiddleLeft;
-                curentBtn.IconColor = Color.FromArgb(180, 193, 204);
+                curentBtn.IconColor = Color.White;
                 curentBtn.TextImageRelation = TextImageRelation.ImageBeforeText;
                 curentBtn.ImageAlign = ContentAlignment.MiddleLeft;
             }
@@ -741,42 +748,42 @@ namespace TrackModal
 
         private void iconButton1_Click(object sender, EventArgs e)
         {
-            ActivateButton(sender, RGBColors.color1);
+            ActivateButton(sender, RGBColors.color2);
             OpenChildForm(new FormaPrevoz());
 
         }
 
         private void iconButton2_Click(object sender, EventArgs e)
         {
-            ActivateButton(sender, RGBColors.color1);
+            ActivateButton(sender, RGBColors.color3);
             OpenChildForm(new FormaManipulacije());
 
         }
 
         private void iconButton3_Click(object sender, EventArgs e)
         {
-            ActivateButton(sender, RGBColors.color1);
+            ActivateButton(sender, RGBColors.color4);
             OpenChildForm(new FormaSkladistnoPoslovanje());
 
         }
 
         private void iconButton4_Click(object sender, EventArgs e)
         {
-            ActivateButton(sender, RGBColors.color1);
+            ActivateButton(sender, RGBColors.color5);
             OpenChildForm(new FormaTransport());
 
         }
 
         private void iconButton5_Click(object sender, EventArgs e)
         {
-            ActivateButton(sender, RGBColors.color1);
+            ActivateButton(sender, RGBColors.color6);
             OpenChildForm(new FormaAdministracija());
 
         }
 
         private void iconButton6_Click(object sender, EventArgs e)
         {
-            ActivateButton(sender, RGBColors.color1);
+            ActivateButton(sender, RGBColors.color7);
             OpenChildForm(new FormaIzvestaj());
 
         }
@@ -784,7 +791,7 @@ namespace TrackModal
 
         private void iconButton8_Click(object sender, EventArgs e)
         {
-            ActivateButton(sender, RGBColors.color1);
+            ActivateButton(sender, RGBColors.color8);
             OpenChildForm(new FormaPomoc());
         }
 

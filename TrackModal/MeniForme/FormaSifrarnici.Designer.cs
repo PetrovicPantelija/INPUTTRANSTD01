@@ -54,6 +54,7 @@
             this.btnsCena = new FontAwesome.Sharp.IconButton();
             this.btnsDelKontejnera = new FontAwesome.Sharp.IconButton();
             this.btnsOstecenja = new FontAwesome.Sharp.IconButton();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panelSubZaposlSifr.SuspendLayout();
             this.SuspendLayout();
@@ -78,8 +79,7 @@
             this.panel1.Controls.Add(this.btnsCena);
             this.panel1.Controls.Add(this.btnsDelKontejnera);
             this.panel1.Controls.Add(this.btnsOstecenja);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Location = new System.Drawing.Point(0, 10);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(296, 972);
             this.panel1.TabIndex = 0;
@@ -90,7 +90,7 @@
             this.btnsPredefinisanePoruke.FlatAppearance.BorderSize = 0;
             this.btnsPredefinisanePoruke.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnsPredefinisanePoruke.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.btnsPredefinisanePoruke.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(193)))), ((int)(((byte)(204)))));
+            this.btnsPredefinisanePoruke.ForeColor = System.Drawing.Color.White;
             this.btnsPredefinisanePoruke.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btnsPredefinisanePoruke.IconColor = System.Drawing.Color.Black;
             this.btnsPredefinisanePoruke.IconFont = FontAwesome.Sharp.IconFont.Auto;
@@ -111,7 +111,7 @@
             this.btnsVrsteManipulacije.FlatAppearance.BorderSize = 0;
             this.btnsVrsteManipulacije.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnsVrsteManipulacije.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.btnsVrsteManipulacije.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(193)))), ((int)(((byte)(204)))));
+            this.btnsVrsteManipulacije.ForeColor = System.Drawing.Color.White;
             this.btnsVrsteManipulacije.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btnsVrsteManipulacije.IconColor = System.Drawing.Color.Black;
             this.btnsVrsteManipulacije.IconFont = FontAwesome.Sharp.IconFont.Auto;
@@ -132,7 +132,7 @@
             this.btnsSkladišta.FlatAppearance.BorderSize = 0;
             this.btnsSkladišta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnsSkladišta.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.btnsSkladišta.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(193)))), ((int)(((byte)(204)))));
+            this.btnsSkladišta.ForeColor = System.Drawing.Color.White;
             this.btnsSkladišta.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btnsSkladišta.IconColor = System.Drawing.Color.Black;
             this.btnsSkladišta.IconFont = FontAwesome.Sharp.IconFont.Auto;
@@ -153,7 +153,7 @@
             this.btnsPozicije.FlatAppearance.BorderSize = 0;
             this.btnsPozicije.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnsPozicije.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.btnsPozicije.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(193)))), ((int)(((byte)(204)))));
+            this.btnsPozicije.ForeColor = System.Drawing.Color.White;
             this.btnsPozicije.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btnsPozicije.IconColor = System.Drawing.Color.Black;
             this.btnsPozicije.IconFont = FontAwesome.Sharp.IconFont.Auto;
@@ -174,7 +174,7 @@
             this.btnsStanice.FlatAppearance.BorderSize = 0;
             this.btnsStanice.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnsStanice.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.btnsStanice.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(193)))), ((int)(((byte)(204)))));
+            this.btnsStanice.ForeColor = System.Drawing.Color.White;
             this.btnsStanice.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btnsStanice.IconColor = System.Drawing.Color.Black;
             this.btnsStanice.IconFont = FontAwesome.Sharp.IconFont.Auto;
@@ -195,7 +195,7 @@
             this.btnsSredstvaRada.FlatAppearance.BorderSize = 0;
             this.btnsSredstvaRada.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnsSredstvaRada.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.btnsSredstvaRada.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(193)))), ((int)(((byte)(204)))));
+            this.btnsSredstvaRada.ForeColor = System.Drawing.Color.White;
             this.btnsSredstvaRada.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btnsSredstvaRada.IconColor = System.Drawing.Color.Black;
             this.btnsSredstvaRada.IconFont = FontAwesome.Sharp.IconFont.Auto;
@@ -216,7 +216,7 @@
             this.btnsTipKontenjera.FlatAppearance.BorderSize = 0;
             this.btnsTipKontenjera.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnsTipKontenjera.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.btnsTipKontenjera.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(193)))), ((int)(((byte)(204)))));
+            this.btnsTipKontenjera.ForeColor = System.Drawing.Color.White;
             this.btnsTipKontenjera.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btnsTipKontenjera.IconColor = System.Drawing.Color.Black;
             this.btnsTipKontenjera.IconFont = FontAwesome.Sharp.IconFont.Auto;
@@ -237,7 +237,7 @@
             this.btnsVrstaRobe.FlatAppearance.BorderSize = 0;
             this.btnsVrstaRobe.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnsVrstaRobe.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.btnsVrstaRobe.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(193)))), ((int)(((byte)(204)))));
+            this.btnsVrstaRobe.ForeColor = System.Drawing.Color.White;
             this.btnsVrstaRobe.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btnsVrstaRobe.IconColor = System.Drawing.Color.Black;
             this.btnsVrstaRobe.IconFont = FontAwesome.Sharp.IconFont.Auto;
@@ -275,12 +275,12 @@
             // 
             // btnszsStrucniIpit
             // 
-            this.btnszsStrucniIpit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(81)))), ((int)(((byte)(108)))), ((int)(((byte)(123)))));
+            this.btnszsStrucniIpit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(150)))), ((int)(((byte)(166)))));
             this.btnszsStrucniIpit.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnszsStrucniIpit.FlatAppearance.BorderSize = 0;
             this.btnszsStrucniIpit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnszsStrucniIpit.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnszsStrucniIpit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(193)))), ((int)(((byte)(204)))));
+            this.btnszsStrucniIpit.ForeColor = System.Drawing.Color.White;
             this.btnszsStrucniIpit.Location = new System.Drawing.Point(0, 175);
             this.btnszsStrucniIpit.Name = "btnszsStrucniIpit";
             this.btnszsStrucniIpit.Padding = new System.Windows.Forms.Padding(45, 0, 20, 0);
@@ -293,12 +293,12 @@
             // 
             // btnszsZastitnaOdeca
             // 
-            this.btnszsZastitnaOdeca.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(81)))), ((int)(((byte)(108)))), ((int)(((byte)(123)))));
+            this.btnszsZastitnaOdeca.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(150)))), ((int)(((byte)(166)))));
             this.btnszsZastitnaOdeca.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnszsZastitnaOdeca.FlatAppearance.BorderSize = 0;
             this.btnszsZastitnaOdeca.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnszsZastitnaOdeca.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnszsZastitnaOdeca.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(193)))), ((int)(((byte)(204)))));
+            this.btnszsZastitnaOdeca.ForeColor = System.Drawing.Color.White;
             this.btnszsZastitnaOdeca.Location = new System.Drawing.Point(0, 140);
             this.btnszsZastitnaOdeca.Name = "btnszsZastitnaOdeca";
             this.btnszsZastitnaOdeca.Padding = new System.Windows.Forms.Padding(45, 0, 20, 0);
@@ -311,12 +311,12 @@
             // 
             // btnszsLicenceSertifikati
             // 
-            this.btnszsLicenceSertifikati.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(81)))), ((int)(((byte)(108)))), ((int)(((byte)(123)))));
+            this.btnszsLicenceSertifikati.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(150)))), ((int)(((byte)(166)))));
             this.btnszsLicenceSertifikati.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnszsLicenceSertifikati.FlatAppearance.BorderSize = 0;
             this.btnszsLicenceSertifikati.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnszsLicenceSertifikati.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnszsLicenceSertifikati.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(193)))), ((int)(((byte)(204)))));
+            this.btnszsLicenceSertifikati.ForeColor = System.Drawing.Color.White;
             this.btnszsLicenceSertifikati.Location = new System.Drawing.Point(0, 105);
             this.btnszsLicenceSertifikati.Name = "btnszsLicenceSertifikati";
             this.btnszsLicenceSertifikati.Padding = new System.Windows.Forms.Padding(45, 0, 20, 0);
@@ -329,12 +329,12 @@
             // 
             // btnszsOrganizacioneJedinice
             // 
-            this.btnszsOrganizacioneJedinice.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(81)))), ((int)(((byte)(108)))), ((int)(((byte)(123)))));
+            this.btnszsOrganizacioneJedinice.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(150)))), ((int)(((byte)(166)))));
             this.btnszsOrganizacioneJedinice.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnszsOrganizacioneJedinice.FlatAppearance.BorderSize = 0;
             this.btnszsOrganizacioneJedinice.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnszsOrganizacioneJedinice.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnszsOrganizacioneJedinice.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(193)))), ((int)(((byte)(204)))));
+            this.btnszsOrganizacioneJedinice.ForeColor = System.Drawing.Color.White;
             this.btnszsOrganizacioneJedinice.Location = new System.Drawing.Point(0, 70);
             this.btnszsOrganizacioneJedinice.Name = "btnszsOrganizacioneJedinice";
             this.btnszsOrganizacioneJedinice.Padding = new System.Windows.Forms.Padding(45, 0, 20, 0);
@@ -347,12 +347,12 @@
             // 
             // btnszsLekarskiPregled
             // 
-            this.btnszsLekarskiPregled.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(81)))), ((int)(((byte)(108)))), ((int)(((byte)(123)))));
+            this.btnszsLekarskiPregled.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(150)))), ((int)(((byte)(166)))));
             this.btnszsLekarskiPregled.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnszsLekarskiPregled.FlatAppearance.BorderSize = 0;
             this.btnszsLekarskiPregled.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnszsLekarskiPregled.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnszsLekarskiPregled.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(193)))), ((int)(((byte)(204)))));
+            this.btnszsLekarskiPregled.ForeColor = System.Drawing.Color.White;
             this.btnszsLekarskiPregled.Location = new System.Drawing.Point(0, 35);
             this.btnszsLekarskiPregled.Name = "btnszsLekarskiPregled";
             this.btnszsLekarskiPregled.Padding = new System.Windows.Forms.Padding(45, 0, 20, 0);
@@ -365,12 +365,12 @@
             // 
             // btnszSkolskaSprema
             // 
-            this.btnszSkolskaSprema.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(81)))), ((int)(((byte)(108)))), ((int)(((byte)(123)))));
+            this.btnszSkolskaSprema.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(150)))), ((int)(((byte)(166)))));
             this.btnszSkolskaSprema.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnszSkolskaSprema.FlatAppearance.BorderSize = 0;
             this.btnszSkolskaSprema.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnszSkolskaSprema.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnszSkolskaSprema.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(193)))), ((int)(((byte)(204)))));
+            this.btnszSkolskaSprema.ForeColor = System.Drawing.Color.White;
             this.btnszSkolskaSprema.Location = new System.Drawing.Point(0, 0);
             this.btnszSkolskaSprema.Name = "btnszSkolskaSprema";
             this.btnszSkolskaSprema.Padding = new System.Windows.Forms.Padding(45, 0, 20, 0);
@@ -387,9 +387,9 @@
             this.btnsZaposleniSifr.FlatAppearance.BorderSize = 0;
             this.btnsZaposleniSifr.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnsZaposleniSifr.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.btnsZaposleniSifr.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(193)))), ((int)(((byte)(204)))));
+            this.btnsZaposleniSifr.ForeColor = System.Drawing.Color.White;
             this.btnsZaposleniSifr.IconChar = FontAwesome.Sharp.IconChar.SortDown;
-            this.btnsZaposleniSifr.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(193)))), ((int)(((byte)(204)))));
+            this.btnsZaposleniSifr.IconColor = System.Drawing.Color.White;
             this.btnsZaposleniSifr.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnsZaposleniSifr.IconSize = 32;
             this.btnsZaposleniSifr.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -409,7 +409,7 @@
             this.btnsZaposleni.FlatAppearance.BorderSize = 0;
             this.btnsZaposleni.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnsZaposleni.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.btnsZaposleni.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(193)))), ((int)(((byte)(204)))));
+            this.btnsZaposleni.ForeColor = System.Drawing.Color.White;
             this.btnsZaposleni.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btnsZaposleni.IconColor = System.Drawing.Color.Black;
             this.btnsZaposleni.IconFont = FontAwesome.Sharp.IconFont.Auto;
@@ -430,7 +430,7 @@
             this.btnsStatusKontejnera.FlatAppearance.BorderSize = 0;
             this.btnsStatusKontejnera.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnsStatusKontejnera.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.btnsStatusKontejnera.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(193)))), ((int)(((byte)(204)))));
+            this.btnsStatusKontejnera.ForeColor = System.Drawing.Color.White;
             this.btnsStatusKontejnera.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btnsStatusKontejnera.IconColor = System.Drawing.Color.Black;
             this.btnsStatusKontejnera.IconFont = FontAwesome.Sharp.IconFont.Auto;
@@ -451,7 +451,7 @@
             this.btnsNacinDolOdl.FlatAppearance.BorderSize = 0;
             this.btnsNacinDolOdl.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnsNacinDolOdl.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.btnsNacinDolOdl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(193)))), ((int)(((byte)(204)))));
+            this.btnsNacinDolOdl.ForeColor = System.Drawing.Color.White;
             this.btnsNacinDolOdl.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btnsNacinDolOdl.IconColor = System.Drawing.Color.Black;
             this.btnsNacinDolOdl.IconFont = FontAwesome.Sharp.IconFont.Auto;
@@ -472,7 +472,7 @@
             this.btnsPartneri.FlatAppearance.BorderSize = 0;
             this.btnsPartneri.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnsPartneri.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.btnsPartneri.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(193)))), ((int)(((byte)(204)))));
+            this.btnsPartneri.ForeColor = System.Drawing.Color.White;
             this.btnsPartneri.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btnsPartneri.IconColor = System.Drawing.Color.Black;
             this.btnsPartneri.IconFont = FontAwesome.Sharp.IconFont.Auto;
@@ -493,7 +493,7 @@
             this.btnsTipCenovnika.FlatAppearance.BorderSize = 0;
             this.btnsTipCenovnika.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnsTipCenovnika.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.btnsTipCenovnika.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(193)))), ((int)(((byte)(204)))));
+            this.btnsTipCenovnika.ForeColor = System.Drawing.Color.White;
             this.btnsTipCenovnika.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btnsTipCenovnika.IconColor = System.Drawing.Color.Black;
             this.btnsTipCenovnika.IconFont = FontAwesome.Sharp.IconFont.Auto;
@@ -514,7 +514,7 @@
             this.btnsCena.FlatAppearance.BorderSize = 0;
             this.btnsCena.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnsCena.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.btnsCena.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(193)))), ((int)(((byte)(204)))));
+            this.btnsCena.ForeColor = System.Drawing.Color.White;
             this.btnsCena.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btnsCena.IconColor = System.Drawing.Color.Black;
             this.btnsCena.IconFont = FontAwesome.Sharp.IconFont.Auto;
@@ -535,7 +535,7 @@
             this.btnsDelKontejnera.FlatAppearance.BorderSize = 0;
             this.btnsDelKontejnera.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnsDelKontejnera.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.btnsDelKontejnera.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(193)))), ((int)(((byte)(204)))));
+            this.btnsDelKontejnera.ForeColor = System.Drawing.Color.White;
             this.btnsDelKontejnera.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btnsDelKontejnera.IconColor = System.Drawing.Color.Black;
             this.btnsDelKontejnera.IconFont = FontAwesome.Sharp.IconFont.Auto;
@@ -545,7 +545,7 @@
             this.btnsDelKontejnera.Padding = new System.Windows.Forms.Padding(20, 0, 20, 0);
             this.btnsDelKontejnera.Size = new System.Drawing.Size(296, 40);
             this.btnsDelKontejnera.TabIndex = 4;
-            this.btnsDelKontejnera.Text = "Delovi kontenjera";
+            this.btnsDelKontejnera.Text = "Delovi kontejnera";
             this.btnsDelKontejnera.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnsDelKontejnera.UseVisualStyleBackColor = true;
             this.btnsDelKontejnera.Click += new System.EventHandler(this.btnsDelKontejnera_Click);
@@ -556,7 +556,7 @@
             this.btnsOstecenja.FlatAppearance.BorderSize = 0;
             this.btnsOstecenja.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnsOstecenja.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.btnsOstecenja.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(193)))), ((int)(((byte)(204)))));
+            this.btnsOstecenja.ForeColor = System.Drawing.Color.White;
             this.btnsOstecenja.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btnsOstecenja.IconColor = System.Drawing.Color.Black;
             this.btnsOstecenja.IconFont = FontAwesome.Sharp.IconFont.Auto;
@@ -571,12 +571,22 @@
             this.btnsOstecenja.UseVisualStyleBackColor = true;
             this.btnsOstecenja.Click += new System.EventHandler(this.btnsOstecenja_Click);
             // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(140)))), ((int)(((byte)(243)))));
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(862, 10);
+            this.panel2.TabIndex = 1;
+            // 
             // FormaSifrarnici
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(75)))), ((int)(((byte)(86)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(108)))), ((int)(((byte)(120)))));
             this.ClientSize = new System.Drawing.Size(862, 972);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormaSifrarnici";
@@ -615,5 +625,6 @@
         private FontAwesome.Sharp.IconButton btnsTipKontenjera;
         private FontAwesome.Sharp.IconButton btnsVrstaRobe;
         private System.Windows.Forms.Button btnszsStrucniIpit;
+        private System.Windows.Forms.Panel panel2;
     }
 }
