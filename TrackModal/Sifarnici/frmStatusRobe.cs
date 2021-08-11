@@ -272,5 +272,22 @@ namespace TrackModal.Sifarnici
                 VratiPodatke((Convert.ToInt32(txtSifra.Text) + 1).ToString());
 
         }
+
+        private void iconButton10_Click(object sender, EventArgs e)
+        {
+            frmStatusRobe status = new frmStatusRobe();
+            this.Close();
+        }
+
+        private void iconButton1_Click(object sender, EventArgs e)
+        {
+            frmStatusRobe status = new frmStatusRobe();
+            this.Close();
+        }
+
+        private void iconButton7_Click(object sender, EventArgs e)
+        {
+            WindowState = FormWindowState.Minimized;
+        }
     }
 }

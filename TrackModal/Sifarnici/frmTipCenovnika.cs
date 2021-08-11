@@ -158,49 +158,6 @@ namespace TrackModal.Sifarnici
             }
         }
 
-        private void tsPrvi_Click(object sender, EventArgs e)
-        {
-
-            var s_connection = ConfigurationManager.ConnectionStrings["WindowsFormsApplication1.Properties.Settings.NedraConnectionString"].ConnectionString;
-            SqlConnection con = new SqlConnection(s_connection);
-
-            con.Open();
-
-            SqlCommand cmd = new SqlCommand("select Min([ID]) as ID from TipCenovnika", con);
-            SqlDataReader dr = cmd.ExecuteReader();
-
-            while (dr.Read())
-            {
-                txtSifra.Text = dr["ID"].ToString();
-            }
-            VratiPodatke(txtSifra.Text);
-            con.Close();
-
-        }
-
-        private void tsPoslednja_Click(object sender, EventArgs e)
-        {
-
-
-            var s_connection = ConfigurationManager.ConnectionStrings["WindowsFormsApplication1.Properties.Settings.NedraConnectionString"].ConnectionString;
-            SqlConnection con = new SqlConnection(s_connection);
-
-            con.Open();
-
-            SqlCommand cmd = new SqlCommand("select Max([ID]) as ID from TipCenovnika", con);
-            SqlDataReader dr = cmd.ExecuteReader();
-
-            while (dr.Read())
-            {
-                txtSifra.Text = dr["ID"].ToString();
-            }
-            VratiPodatke(txtSifra.Text);
-            con.Close();
-
-
-
-        }
-
         private void tsNazad_Click(object sender, EventArgs e)
         {
             var s_connection = ConfigurationManager.ConnectionStrings["WindowsFormsApplication1.Properties.Settings.NedraConnectionString"].ConnectionString;
@@ -249,8 +206,7 @@ namespace TrackModal.Sifarnici
             int zadnji = 0;
             con.Open();
 
-            SqlCommand cmd = new SqlCommand("select top 1 ID as ID from TipCenovnika where ID >" + Convert.ToInt32(txtSifra.Text) + " Order by ID", con);
-
+            SqlCommand cmd = new SqlCommand("select top 1 ID as ID from Cene where ID >" + Convert.ToInt32(txtSifra.Text) + " Order by ID", con);
             SqlDataReader dr = cmd.ExecuteReader();
 
             while (dr.Read())
@@ -265,10 +221,69 @@ namespace TrackModal.Sifarnici
                 VratiPodatke((Convert.ToInt32(zadnji).ToString()));
             else
                 VratiPodatke((Convert.ToInt32(txtSifra.Text) + 1).ToString());
+        }
+
+        private void tsPrvi_Click(object sender, EventArgs e)
+        {
+            var s_connection = ConfigurationManager.ConnectionStrings["WindowsFormsApplication1.Properties.Settings.NedraConnectionString"].ConnectionString;
+            SqlConnection con = new SqlConnection(s_connection);
+
+            con.Open();
+
+            SqlCommand cmd = new SqlCommand("select Min([ID]) as ID from Cene", con);
+            SqlDataReader dr = cmd.ExecuteReader();
+
+            while (dr.Read())
+            {
+                txtSifra.Text = dr["ID"].ToString();
+            }
+            VratiPodatke(txtSifra.Text);
+            con.Close();
+        }
+
+        private void tsPoslednja_Click(object sender, EventArgs e)
+        {
+            var s_connection = ConfigurationManager.ConnectionStrings["WindowsFormsApplication1.Properties.Settings.NedraConnectionString"].ConnectionString;
+            SqlConnection con = new SqlConnection(s_connection);
+
+            con.Open();
+
+            SqlCommand cmd = new SqlCommand("select Max([ID]) as ID from Cene", con);
+            SqlDataReader dr = cmd.ExecuteReader();
+
+            while (dr.Read())
+            {
+                txtSifra.Text = dr["ID"].ToString();
+            }
+            VratiPodatke(txtSifra.Text);
+            con.Close();
+        }
+
+        private void iconButton1_Click(object sender, EventArgs e)
+        {
+            frmDelovi delovi = new frmDelovi();
+            this.Close();
+        }
+
+        private void iconButton10_Click(object sender, EventArgs e)
+        {
+            frmDelovi delovi = new frmDelovi();
+            this.Close();
+        }
+
+        private void iconButton7_Click(object sender, EventArgs e)
+        {
+            WindowState = FormWindowState.Minimized;
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
 
         }
 
-       
+        private void txtSifra_TextChanged(object sender, EventArgs e)
+        {
 
+        }
     }
 }

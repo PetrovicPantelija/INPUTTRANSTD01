@@ -25,50 +25,50 @@ namespace TrackModal.Sifarnici
             InitializeComponent();
         }
         bool status = false;
-         public frmCene(string Korisnik)
+        public frmCene(string Korisnik)
         {
             InitializeComponent();
             KorisnikCene = Korisnik;
         }
 
-         private void tsNew_Click(object sender, EventArgs e)
-         {
-             status = true;
-         }
+        private void tsNew_Click(object sender, EventArgs e)
+        {
+            status = true;
+        }
 
-         private void RefreshDataGrid()
-         {
-             var select = " SELECT Cene.[ID] as ID ,[TipCenovnika].Naziv as TipCenovnika,[Komitenti].Naziv as Partner,[Cena],Cena2,[VrstaManipulacije].Naziv as VrstaManipulacije,Cene.[Datum],Cene.[Korisnik] FROM [dbo].[Cene] " +
-             " inner join TipCenovnika on TipCenovnika.ID = Cene.TipCenovnika " +
-             " inner join Komitenti on Komitenti.ID = Cene.Komitent " +
-             " inner join VrstaManipulacije on VrstaManipulacije.Id = Cene.VrstaManipulacije order by ID desc";
-             var s_connection = ConfigurationManager.ConnectionStrings["WindowsFormsApplication1.Properties.Settings.NedraConnectionString"].ConnectionString;
-             SqlConnection myConnection = new SqlConnection(s_connection);
-             var c = new SqlConnection(s_connection);
-             var dataAdapter = new SqlDataAdapter(select, c);
+        private void RefreshDataGrid()
+        {
+            var select = " SELECT Cene.[ID] as ID ,[TipCenovnika].Naziv as TipCenovnika,[Komitenti].Naziv as Partner,[Cena],Cena2,[VrstaManipulacije].Naziv as VrstaManipulacije,Cene.[Datum],Cene.[Korisnik] FROM [dbo].[Cene] " +
+            " inner join TipCenovnika on TipCenovnika.ID = Cene.TipCenovnika " +
+            " inner join Komitenti on Komitenti.ID = Cene.Komitent " +
+            " inner join VrstaManipulacije on VrstaManipulacije.Id = Cene.VrstaManipulacije order by ID desc";
+            var s_connection = ConfigurationManager.ConnectionStrings["WindowsFormsApplication1.Properties.Settings.NedraConnectionString"].ConnectionString;
+            SqlConnection myConnection = new SqlConnection(s_connection);
+            var c = new SqlConnection(s_connection);
+            var dataAdapter = new SqlDataAdapter(select, c);
 
-             var commandBuilder = new SqlCommandBuilder(dataAdapter);
-             var ds = new DataSet();
-             dataAdapter.Fill(ds);
-             dataGridView1.ReadOnly = true;
-             dataGridView1.DataSource = ds.Tables[0];
+            var commandBuilder = new SqlCommandBuilder(dataAdapter);
+            var ds = new DataSet();
+            dataAdapter.Fill(ds);
+            dataGridView1.ReadOnly = true;
+            dataGridView1.DataSource = ds.Tables[0];
 
-             //string value = dataGridView3.Rows[0].Cells[0].Value.ToString();
-             DataGridViewColumn column = dataGridView1.Columns[0];
-             dataGridView1.Columns[0].HeaderText = "ID";
-             dataGridView1.Columns[0].Width = 40;
+            //string value = dataGridView3.Rows[0].Cells[0].Value.ToString();
+            DataGridViewColumn column = dataGridView1.Columns[0];
+            dataGridView1.Columns[0].HeaderText = "ID";
+            dataGridView1.Columns[0].Width = 40;
 
-             DataGridViewColumn column2 = dataGridView1.Columns[1];
-             dataGridView1.Columns[1].HeaderText = "Tip Cenovnika";
-             dataGridView1.Columns[1].Width = 130;
+            DataGridViewColumn column2 = dataGridView1.Columns[1];
+            dataGridView1.Columns[1].HeaderText = "Tip Cenovnika";
+            dataGridView1.Columns[1].Width = 130;
 
-             DataGridViewColumn column3 = dataGridView1.Columns[2];
-             dataGridView1.Columns[2].HeaderText = "Komitent";
-             dataGridView1.Columns[2].Width = 250;
+            DataGridViewColumn column3 = dataGridView1.Columns[2];
+            dataGridView1.Columns[2].HeaderText = "Komitent";
+            dataGridView1.Columns[2].Width = 250;
 
-             DataGridViewColumn column4 = dataGridView1.Columns[3];
-             dataGridView1.Columns[3].HeaderText = "Cena JM/EUR";
-             dataGridView1.Columns[3].Width = 80;
+            DataGridViewColumn column4 = dataGridView1.Columns[3];
+            dataGridView1.Columns[3].HeaderText = "Cena JM/EUR";
+            dataGridView1.Columns[3].Width = 80;
 
 
             DataGridViewColumn column5 = dataGridView1.Columns[4];
@@ -76,17 +76,17 @@ namespace TrackModal.Sifarnici
             dataGridView1.Columns[4].Width = 80;
 
             DataGridViewColumn column6 = dataGridView1.Columns[5];
-             dataGridView1.Columns[5].HeaderText = "Vrsta manipulacije";
-             dataGridView1.Columns[5].Width = 300;
+            dataGridView1.Columns[5].HeaderText = "Vrsta manipulacije";
+            dataGridView1.Columns[5].Width = 300;
 
-             DataGridViewColumn column7 = dataGridView1.Columns[6];
-             dataGridView1.Columns[6].HeaderText = "Datum";
-             dataGridView1.Columns[6].Width = 80;
+            DataGridViewColumn column7 = dataGridView1.Columns[6];
+            dataGridView1.Columns[6].HeaderText = "Datum";
+            dataGridView1.Columns[6].Width = 80;
 
-             DataGridViewColumn column8 = dataGridView1.Columns[7];
-             dataGridView1.Columns[7].HeaderText = "Korisnik";
-             dataGridView1.Columns[7].Width = 80;
-         }
+            DataGridViewColumn column8 = dataGridView1.Columns[7];
+            dataGridView1.Columns[7].HeaderText = "Korisnik";
+            dataGridView1.Columns[7].Width = 80;
+        }
 
         private void RefreshDataGridPoCenovniku()
         {
@@ -94,7 +94,7 @@ namespace TrackModal.Sifarnici
             " inner join TipCenovnika on TipCenovnika.ID = Cene.TipCenovnika " +
             " inner join Komitenti on Komitenti.ID = Cene.Komitent " +
             " inner join VrstaManipulacije on VrstaManipulacije.Id = Cene.VrstaManipulacije " +
-            " where Cene.TipCenovnika = " + cboTipCenovnika.SelectedValue + 
+            " where Cene.TipCenovnika = " + cboTipCenovnika.SelectedValue +
             " order by ID desc";
             var s_connection = ConfigurationManager.ConnectionStrings["WindowsFormsApplication1.Properties.Settings.NedraConnectionString"].ConnectionString;
             SqlConnection myConnection = new SqlConnection(s_connection);
@@ -196,24 +196,24 @@ namespace TrackModal.Sifarnici
         }
 
         private void tsSave_Click(object sender, EventArgs e)
-         {
-             if (status == true)
-             {
-                 InsertCene ins = new InsertCene();
-                 ins.InsCene(Convert.ToInt32(cboTipCenovnika.SelectedValue), Convert.ToInt32(cboKomitent.SelectedValue), Convert.ToDouble(txtCena.Text), Convert.ToInt32(cboVrstaManipulacije.SelectedValue), Convert.ToDateTime(DateTime.Now), KorisnikCene, Convert.ToDouble(txtCena2.Text));
-                 status = false;
-             }
-             else
-             {
-                 //int TipCenovnika ,int Komitent, double Cena , int VrstaManipulacije ,DateTime  Datum , string Korisnik
-                 InsertCene upd = new InsertCene();
-                 upd.UpdCene(Convert.ToInt32(txtSifra.Text), Convert.ToInt32(cboTipCenovnika.SelectedValue), Convert.ToInt32(cboKomitent.SelectedValue), Convert.ToDouble(txtCena.Text), Convert.ToInt32(cboVrstaManipulacije.SelectedValue), Convert.ToDateTime(DateTime.Now), KorisnikCene, Convert.ToDouble(txtCena2.Text));
-             }
-             RefreshDataGrid();
-         }
+        {
+            if (status == true)
+            {
+                InsertCene ins = new InsertCene();
+                ins.InsCene(Convert.ToInt32(cboTipCenovnika.SelectedValue), Convert.ToInt32(cboKomitent.SelectedValue), Convert.ToDouble(txtCena.Text), Convert.ToInt32(cboVrstaManipulacije.SelectedValue), Convert.ToDateTime(DateTime.Now), KorisnikCene, Convert.ToDouble(txtCena2.Text));
+                status = false;
+            }
+            else
+            {
+                //int TipCenovnika ,int Komitent, double Cena , int VrstaManipulacije ,DateTime  Datum , string Korisnik
+                InsertCene upd = new InsertCene();
+                upd.UpdCene(Convert.ToInt32(txtSifra.Text), Convert.ToInt32(cboTipCenovnika.SelectedValue), Convert.ToInt32(cboKomitent.SelectedValue), Convert.ToDouble(txtCena.Text), Convert.ToInt32(cboVrstaManipulacije.SelectedValue), Convert.ToDateTime(DateTime.Now), KorisnikCene, Convert.ToDouble(txtCena2.Text));
+            }
+            RefreshDataGrid();
+        }
 
-         private void tsDelete_Click(object sender, EventArgs e)
-         {
+        private void tsDelete_Click(object sender, EventArgs e)
+        {
             DialogResult dialogResult = MessageBox.Show("Da li ste sigurni da želite da brišete?", "Izbor", MessageBoxButtons.YesNo);
 
             if (dialogResult == DialogResult.Yes)
@@ -226,8 +226,8 @@ namespace TrackModal.Sifarnici
                 //do something else
             }
 
-            
-         }
+
+        }
 
         private void VratiPodatke(string ID)
         {
@@ -251,9 +251,9 @@ namespace TrackModal.Sifarnici
             con.Close();
         }
 
-         private void dataGridView1_SelectionChanged(object sender, EventArgs e)
-         {
-             try
+        private void dataGridView1_SelectionChanged(object sender, EventArgs e)
+        {
+            try
             {
                 foreach (DataGridViewRow row in dataGridView1.Rows)
                 {
@@ -273,53 +273,53 @@ namespace TrackModal.Sifarnici
             }
         }
 
-         private void txtSifra_TextChanged(object sender, EventArgs e)
-         {
+        private void txtSifra_TextChanged(object sender, EventArgs e)
+        {
 
-         }
+        }
 
-         private void frmCene_Load(object sender, EventArgs e)
-         {
-             var select = " Select Distinct ID, Naziv  From Komitenti";
-             var s_connection = ConfigurationManager.ConnectionStrings["WindowsFormsApplication1.Properties.Settings.NedraConnectionString"].ConnectionString;
-             SqlConnection myConnection = new SqlConnection(s_connection);
-             var c = new SqlConnection(s_connection);
-             var dataAdapter = new SqlDataAdapter(select, c);
+        private void frmCene_Load(object sender, EventArgs e)
+        {
+            var select = " Select Distinct ID, Naziv  From Komitenti";
+            var s_connection = ConfigurationManager.ConnectionStrings["WindowsFormsApplication1.Properties.Settings.NedraConnectionString"].ConnectionString;
+            SqlConnection myConnection = new SqlConnection(s_connection);
+            var c = new SqlConnection(s_connection);
+            var dataAdapter = new SqlDataAdapter(select, c);
 
-             var commandBuilder = new SqlCommandBuilder(dataAdapter);
-             var ds = new DataSet();
-             dataAdapter.Fill(ds);
-             cboKomitent.DataSource = ds.Tables[0];
-             cboKomitent.DisplayMember = "Naziv";
-             cboKomitent.ValueMember = "ID";
+            var commandBuilder = new SqlCommandBuilder(dataAdapter);
+            var ds = new DataSet();
+            dataAdapter.Fill(ds);
+            cboKomitent.DataSource = ds.Tables[0];
+            cboKomitent.DisplayMember = "Naziv";
+            cboKomitent.ValueMember = "ID";
             //
-             var select3 = " select ID, Naziv from TipCenovnika";
-             var s_connection3 = ConfigurationManager.ConnectionStrings["WindowsFormsApplication1.Properties.Settings.NedraConnectionString"].ConnectionString;
-             SqlConnection myConnection3 = new SqlConnection(s_connection3);
-             var c3 = new SqlConnection(s_connection3);
-             var dataAdapter3 = new SqlDataAdapter(select3, c3);
+            var select3 = " select ID, Naziv from TipCenovnika";
+            var s_connection3 = ConfigurationManager.ConnectionStrings["WindowsFormsApplication1.Properties.Settings.NedraConnectionString"].ConnectionString;
+            SqlConnection myConnection3 = new SqlConnection(s_connection3);
+            var c3 = new SqlConnection(s_connection3);
+            var dataAdapter3 = new SqlDataAdapter(select3, c3);
 
-             var commandBuilder3 = new SqlCommandBuilder(dataAdapter3);
-             var ds3 = new DataSet();
-             dataAdapter3.Fill(ds3);
-             cboTipCenovnika.DataSource = ds3.Tables[0];
-             cboTipCenovnika.DisplayMember = "Naziv";
-             cboTipCenovnika.ValueMember = "ID";
+            var commandBuilder3 = new SqlCommandBuilder(dataAdapter3);
+            var ds3 = new DataSet();
+            dataAdapter3.Fill(ds3);
+            cboTipCenovnika.DataSource = ds3.Tables[0];
+            cboTipCenovnika.DisplayMember = "Naziv";
+            cboTipCenovnika.ValueMember = "ID";
 
-             var select4 = " select ID, Naziv from VrstaManipulacije";
-             var s_connection4 = ConfigurationManager.ConnectionStrings["WindowsFormsApplication1.Properties.Settings.NedraConnectionString"].ConnectionString;
-             SqlConnection myConnection4 = new SqlConnection(s_connection4);
-             var c4 = new SqlConnection(s_connection4);
-             var dataAdapter4 = new SqlDataAdapter(select4, c4);
+            var select4 = " select ID, Naziv from VrstaManipulacije";
+            var s_connection4 = ConfigurationManager.ConnectionStrings["WindowsFormsApplication1.Properties.Settings.NedraConnectionString"].ConnectionString;
+            SqlConnection myConnection4 = new SqlConnection(s_connection4);
+            var c4 = new SqlConnection(s_connection4);
+            var dataAdapter4 = new SqlDataAdapter(select4, c4);
 
-             var commandBuilder4 = new SqlCommandBuilder(dataAdapter4);
-             var ds4 = new DataSet();
-             dataAdapter4.Fill(ds4);
-             cboVrstaManipulacije.DataSource = ds4.Tables[0];
-             cboVrstaManipulacije.DisplayMember = "Naziv";
-             cboVrstaManipulacije.ValueMember = "ID";
+            var commandBuilder4 = new SqlCommandBuilder(dataAdapter4);
+            var ds4 = new DataSet();
+            dataAdapter4.Fill(ds4);
+            cboVrstaManipulacije.DataSource = ds4.Tables[0];
+            cboVrstaManipulacije.DisplayMember = "Naziv";
+            cboVrstaManipulacije.ValueMember = "ID";
 
-             RefreshDataGrid();
+            RefreshDataGrid();
             if (KorisnikCene != "Kecman" && KorisnikCene != "M.Jelisavčić" && KorisnikCene != "Dušan Bašanović")
             {
                 //Dušan Bašanović
@@ -327,116 +327,116 @@ namespace TrackModal.Sifarnici
                 tsSave.Enabled = false;
                 tsDelete.Enabled = false;
             }
-         }
+        }
 
-         private void tsPrvi_Click(object sender, EventArgs e)
-         {
+        private void tsPrvi_Click(object sender, EventArgs e)
+        {
 
-             var s_connection = ConfigurationManager.ConnectionStrings["WindowsFormsApplication1.Properties.Settings.NedraConnectionString"].ConnectionString;
-             SqlConnection con = new SqlConnection(s_connection);
+            var s_connection = ConfigurationManager.ConnectionStrings["WindowsFormsApplication1.Properties.Settings.NedraConnectionString"].ConnectionString;
+            SqlConnection con = new SqlConnection(s_connection);
 
-             con.Open();
+            con.Open();
 
-             SqlCommand cmd = new SqlCommand("select Min([ID]) as ID from Cene", con);
-             SqlDataReader dr = cmd.ExecuteReader();
+            SqlCommand cmd = new SqlCommand("select Min([ID]) as ID from Cene", con);
+            SqlDataReader dr = cmd.ExecuteReader();
 
-             while (dr.Read())
-             {
-                 txtSifra.Text = dr["ID"].ToString();
-             }
-             VratiPodatke(txtSifra.Text);
-             con.Close();
+            while (dr.Read())
+            {
+                txtSifra.Text = dr["ID"].ToString();
+            }
+            VratiPodatke(txtSifra.Text);
+            con.Close();
 
-         }
+        }
 
-         private void tsPoslednja_Click(object sender, EventArgs e)
-         {
-
-
-             var s_connection = ConfigurationManager.ConnectionStrings["WindowsFormsApplication1.Properties.Settings.NedraConnectionString"].ConnectionString;
-             SqlConnection con = new SqlConnection(s_connection);
-
-             con.Open();
-
-             SqlCommand cmd = new SqlCommand("select Max([ID]) as ID from Cene", con);
-             SqlDataReader dr = cmd.ExecuteReader();
-
-             while (dr.Read())
-             {
-                 txtSifra.Text = dr["ID"].ToString();
-             }
-             VratiPodatke(txtSifra.Text);
-             con.Close();
+        private void tsPoslednja_Click(object sender, EventArgs e)
+        {
 
 
+            var s_connection = ConfigurationManager.ConnectionStrings["WindowsFormsApplication1.Properties.Settings.NedraConnectionString"].ConnectionString;
+            SqlConnection con = new SqlConnection(s_connection);
 
-         }
+            con.Open();
 
-         private void tsNazad_Click(object sender, EventArgs e)
-         {
-             var s_connection = ConfigurationManager.ConnectionStrings["WindowsFormsApplication1.Properties.Settings.NedraConnectionString"].ConnectionString;
-             SqlConnection con = new SqlConnection(s_connection);
-             int prvi = 0;
-             con.Open();
+            SqlCommand cmd = new SqlCommand("select Max([ID]) as ID from Cene", con);
+            SqlDataReader dr = cmd.ExecuteReader();
 
-             SqlCommand cmd = new SqlCommand("select top 1 ID as ID from Cene where ID <" + Convert.ToInt32(txtSifra.Text) + " Order by ID desc", con);
-             SqlDataReader dr = cmd.ExecuteReader();
+            while (dr.Read())
+            {
+                txtSifra.Text = dr["ID"].ToString();
+            }
+            VratiPodatke(txtSifra.Text);
+            con.Close();
 
-             while (dr.Read())
-             {
-                 prvi = Convert.ToInt32(dr["ID"].ToString());
-                 txtSifra.Text = prvi.ToString();
-             }
 
-             con.Close();
-             if ((Convert.ToInt32(txtSifra.Text) - 1) > prvi)
-                 VratiPodatke((Convert.ToInt32(txtSifra.Text) - 1).ToString());
-             else
-                 VratiPodatke((Convert.ToInt32(prvi)).ToString());
-         }
 
-         private void VratiPodatkeMax()
-         {
-             var s_connection = ConfigurationManager.ConnectionStrings["WindowsFormsApplication1.Properties.Settings.NedraConnectionString"].ConnectionString;
-             SqlConnection con = new SqlConnection(s_connection);
+        }
 
-             con.Open();
+        private void tsNazad_Click(object sender, EventArgs e)
+        {
+            var s_connection = ConfigurationManager.ConnectionStrings["WindowsFormsApplication1.Properties.Settings.NedraConnectionString"].ConnectionString;
+            SqlConnection con = new SqlConnection(s_connection);
+            int prvi = 0;
+            con.Open();
 
-             SqlCommand cmd = new SqlCommand("select Max([ID]) as ID from Cene", con);
-             SqlDataReader dr = cmd.ExecuteReader();
+            SqlCommand cmd = new SqlCommand("select top 1 ID as ID from Cene where ID <" + Convert.ToInt32(txtSifra.Text) + " Order by ID desc", con);
+            SqlDataReader dr = cmd.ExecuteReader();
 
-             while (dr.Read())
-             {
-                 txtSifra.Text = dr["ID"].ToString();
-             }
+            while (dr.Read())
+            {
+                prvi = Convert.ToInt32(dr["ID"].ToString());
+                txtSifra.Text = prvi.ToString();
+            }
 
-             con.Close();
-         }
+            con.Close();
+            if ((Convert.ToInt32(txtSifra.Text) - 1) > prvi)
+                VratiPodatke((Convert.ToInt32(txtSifra.Text) - 1).ToString());
+            else
+                VratiPodatke((Convert.ToInt32(prvi)).ToString());
+        }
 
-         private void tsNapred_Click(object sender, EventArgs e)
-         {
-             var s_connection = ConfigurationManager.ConnectionStrings["WindowsFormsApplication1.Properties.Settings.NedraConnectionString"].ConnectionString;
-             SqlConnection con = new SqlConnection(s_connection);
-             int zadnji = 0;
-             con.Open();
+        private void VratiPodatkeMax()
+        {
+            var s_connection = ConfigurationManager.ConnectionStrings["WindowsFormsApplication1.Properties.Settings.NedraConnectionString"].ConnectionString;
+            SqlConnection con = new SqlConnection(s_connection);
 
-             SqlCommand cmd = new SqlCommand("select top 1 ID as ID from Cene where ID >" + Convert.ToInt32(txtSifra.Text) + " Order by ID", con);
-             SqlDataReader dr = cmd.ExecuteReader();
+            con.Open();
 
-             while (dr.Read())
-             {
-                 zadnji = Convert.ToInt32(dr["ID"].ToString());
-                 txtSifra.Text = zadnji.ToString();
-             }
+            SqlCommand cmd = new SqlCommand("select Max([ID]) as ID from Cene", con);
+            SqlDataReader dr = cmd.ExecuteReader();
 
-             con.Close();
+            while (dr.Read())
+            {
+                txtSifra.Text = dr["ID"].ToString();
+            }
 
-             if ((Convert.ToInt32(txtSifra.Text) + 1) == zadnji)
-                 VratiPodatke((Convert.ToInt32(zadnji).ToString()));
-             else
-                 VratiPodatke((Convert.ToInt32(txtSifra.Text) + 1).ToString());
+            con.Close();
+        }
 
-         }
+        private void tsNapred_Click(object sender, EventArgs e)
+        {
+            var s_connection = ConfigurationManager.ConnectionStrings["WindowsFormsApplication1.Properties.Settings.NedraConnectionString"].ConnectionString;
+            SqlConnection con = new SqlConnection(s_connection);
+            int zadnji = 0;
+            con.Open();
+
+            SqlCommand cmd = new SqlCommand("select top 1 ID as ID from Cene where ID >" + Convert.ToInt32(txtSifra.Text) + " Order by ID", con);
+            SqlDataReader dr = cmd.ExecuteReader();
+
+            while (dr.Read())
+            {
+                zadnji = Convert.ToInt32(dr["ID"].ToString());
+                txtSifra.Text = zadnji.ToString();
+            }
+
+            con.Close();
+
+            if ((Convert.ToInt32(txtSifra.Text) + 1) == zadnji)
+                VratiPodatke((Convert.ToInt32(zadnji).ToString()));
+            else
+                VratiPodatke((Convert.ToInt32(txtSifra.Text) + 1).ToString());
+
+        }
 
         private void button2_Click(object sender, EventArgs e)
         {
@@ -459,6 +459,38 @@ namespace TrackModal.Sifarnici
         {
             RefreshDataGridPoPartneru();
         }
+
+        private void bunifuTextBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void iconButton1_Click(object sender, EventArgs e)
+        {
+            frmCene cene = new frmCene();
+            this.Close();
+        }
+
+        private void iconButton10_Click(object sender, EventArgs e)
+        {
+            frmCene cene = new frmCene();
+            this.Close();
+        }
+
+        private void iconButton9_Click(object sender, EventArgs e)
+        {
+            if (WindowState == FormWindowState.Normal)
+                WindowState = FormWindowState.Maximized;
+            else
+                WindowState = FormWindowState.Normal;
+        }
+
+        private void iconButton7_Click(object sender, EventArgs e)
+        {
+            WindowState = FormWindowState.Minimized;
+        }
     }
-    }
+}
+
+
 

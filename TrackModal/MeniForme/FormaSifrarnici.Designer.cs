@@ -461,7 +461,7 @@
             this.btnsNacinDolOdl.Padding = new System.Windows.Forms.Padding(20, 0, 20, 0);
             this.btnsNacinDolOdl.Size = new System.Drawing.Size(296, 40);
             this.btnsNacinDolOdl.TabIndex = 8;
-            this.btnsNacinDolOdl.Text = "Način dolaska odlaska";
+            this.btnsNacinDolOdl.Text = "Način dolaska - odlaska";
             this.btnsNacinDolOdl.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnsNacinDolOdl.UseVisualStyleBackColor = true;
             this.btnsNacinDolOdl.Click += new System.EventHandler(this.btnsNacinDolOdl_Click);

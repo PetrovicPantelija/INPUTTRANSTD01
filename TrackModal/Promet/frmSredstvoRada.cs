@@ -86,8 +86,24 @@ namespace TrackModal.Promet
             cboSredstvoRada.DisplayMember = "Naziv";
             cboSredstvoRada.ValueMember = "ID";
             */
+            this.reportViewer1.RefreshReport();
         }
 
+        private void iconButton1_Click(object sender, EventArgs e)
+        {
+            frmSredstvoRada sredstva = new frmSredstvoRada();
+            this.Close();
+        }
 
+        private void iconButton10_Click(object sender, EventArgs e)
+        {
+            frmSredstvoRada sredstva = new frmSredstvoRada();
+            this.Close();
+        }
+
+        private void iconButton7_Click(object sender, EventArgs e)
+        {
+            WindowState = FormWindowState.Minimized;
+        }
     }
 }

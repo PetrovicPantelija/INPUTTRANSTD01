@@ -16,7 +16,7 @@ namespace TrackModal
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmLogovanje());
+            Application.Run(new Main());
         }
     }
 }

@@ -485,5 +485,29 @@ namespace TrackModal.Sifarnici
 
         }
 
+        private void iconButton1_Click(object sender, EventArgs e)
+        {
+            frmKomitent komitent = new frmKomitent();
+            this.Close();
+        }
+
+        private void iconButton10_Click(object sender, EventArgs e)
+        {
+            frmKomitent komitent = new frmKomitent();
+            this.Close();
+        }
+
+        private void iconButton9_Click(object sender, EventArgs e)
+        {
+            if (WindowState == FormWindowState.Normal)
+                WindowState = FormWindowState.Maximized;
+            else
+                WindowState = FormWindowState.Normal;
+        }
+
+        private void iconButton7_Click(object sender, EventArgs e)
+        {
+            WindowState = FormWindowState.Minimized;
+        }
     }
 }

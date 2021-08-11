@@ -299,6 +299,37 @@ namespace TrackModal.Sifarnici
                 VratiPodatke((Convert.ToInt32(txtSifra.Text) +1).ToString());
 
         }
-   
+
+        private void bunifuTextBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuTextBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtSifra_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void iconButton1_Click(object sender, EventArgs e)
+        {
+            frmTipKontejnera kontejner = new frmTipKontejnera();
+            this.Close();
+        }
+
+        private void iconButton10_Click(object sender, EventArgs e)
+        {
+            frmTipKontejnera kontejner = new frmTipKontejnera();
+            this.Close();
+        }
+
+        private void iconButton7_Click(object sender, EventArgs e)
+        {
+            WindowState = FormWindowState.Minimized;
+        }
     }
 }
