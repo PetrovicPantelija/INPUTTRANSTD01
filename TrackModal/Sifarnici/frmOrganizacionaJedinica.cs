@@ -275,5 +275,22 @@ namespace TrackModal.Sifarnici
                 tsDelete.Enabled = false;
             }
         }
+
+        private void iconButton10_Click(object sender, EventArgs e)
+        {
+            frmOrganizacionaJedinica organizacione = new frmOrganizacionaJedinica();
+            this.Close();
+        }
+
+        private void iconButton1_Click(object sender, EventArgs e)
+        {
+            frmOrganizacionaJedinica organizacione = new frmOrganizacionaJedinica();
+            this.Close();
+        }
+
+        private void iconButton7_Click(object sender, EventArgs e)
+        {
+            WindowState = FormWindowState.Minimized;
+        }
     }
 }

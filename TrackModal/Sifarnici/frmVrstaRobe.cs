@@ -264,5 +264,22 @@ namespace TrackModal.Sifarnici
                 tsDelete.Enabled = false;
             }
         }
+
+        private void iconButton1_Click(object sender, EventArgs e)
+        {
+            frmVrstaRobe roba = new frmVrstaRobe();
+            this.Close();
+        }
+
+        private void iconButton10_Click(object sender, EventArgs e)
+        {
+            frmVrstaRobe roba = new frmVrstaRobe();
+            this.Close();
+        }
+
+        private void iconButton7_Click(object sender, EventArgs e)
+        {
+            WindowState = FormWindowState.Minimized;
+        }
     }
 }
