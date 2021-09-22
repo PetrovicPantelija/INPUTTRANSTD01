@@ -76,7 +76,7 @@
             this.btnprPregledtovarniList.Padding = new System.Windows.Forms.Padding(20, 0, 20, 0);
             this.btnprPregledtovarniList.Size = new System.Drawing.Size(296, 40);
             this.btnprPregledtovarniList.TabIndex = 12;
-            this.btnprPregledtovarniList.Text = "Pregled Tovarni list";
+            this.btnprPregledtovarniList.Text = "Pregled - Tovarni list";
             this.btnprPregledtovarniList.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnprPregledtovarniList.UseVisualStyleBackColor = true;
             this.btnprPregledtovarniList.Click += new System.EventHandler(this.btnprPregledtovarniList_Click);
@@ -97,7 +97,7 @@
             this.btnprPregledPutniNalozi.Padding = new System.Windows.Forms.Padding(20, 0, 20, 0);
             this.btnprPregledPutniNalozi.Size = new System.Drawing.Size(296, 40);
             this.btnprPregledPutniNalozi.TabIndex = 11;
-            this.btnprPregledPutniNalozi.Text = "Pregled Putni nalozi";
+            this.btnprPregledPutniNalozi.Text = "Pregled - Putni  nalozi";
             this.btnprPregledPutniNalozi.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnprPregledPutniNalozi.UseVisualStyleBackColor = true;
             this.btnprPregledPutniNalozi.Click += new System.EventHandler(this.btnprPregledPutniNalozi_Click);
@@ -118,7 +118,7 @@
             this.btnprPregledNaloziPrevoz.Padding = new System.Windows.Forms.Padding(20, 0, 20, 0);
             this.btnprPregledNaloziPrevoz.Size = new System.Drawing.Size(296, 40);
             this.btnprPregledNaloziPrevoz.TabIndex = 10;
-            this.btnprPregledNaloziPrevoz.Text = "Pregled Nalozi za prevoz";
+            this.btnprPregledNaloziPrevoz.Text = "Pregled - Nalozi za prevoz";
             this.btnprPregledNaloziPrevoz.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnprPregledNaloziPrevoz.UseVisualStyleBackColor = true;
             this.btnprPregledNaloziPrevoz.Click += new System.EventHandler(this.btnprPregledNaloziPrevoz_Click);
@@ -139,7 +139,7 @@
             this.btnprPtpremaKontejneraKamion.Padding = new System.Windows.Forms.Padding(20, 0, 20, 0);
             this.btnprPtpremaKontejneraKamion.Size = new System.Drawing.Size(296, 40);
             this.btnprPtpremaKontejneraKamion.TabIndex = 9;
-            this.btnprPtpremaKontejneraKamion.Text = "Otprema kontejnera kamionom";
+            this.btnprPtpremaKontejneraKamion.Text = "Otprema kontejnera - Kamionom";
             this.btnprPtpremaKontejneraKamion.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnprPtpremaKontejneraKamion.UseVisualStyleBackColor = true;
             this.btnprPtpremaKontejneraKamion.Click += new System.EventHandler(this.btnprPtpremaKontejneraKamion_Click);
@@ -160,7 +160,7 @@
             this.btnorOtpremaKontejneraVoz.Padding = new System.Windows.Forms.Padding(20, 0, 20, 0);
             this.btnorOtpremaKontejneraVoz.Size = new System.Drawing.Size(296, 40);
             this.btnorOtpremaKontejneraVoz.TabIndex = 8;
-            this.btnorOtpremaKontejneraVoz.Text = "Otprema kontejnera vozom";
+            this.btnorOtpremaKontejneraVoz.Text = "Otprema kontejnera - Vozom";
             this.btnorOtpremaKontejneraVoz.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnorOtpremaKontejneraVoz.UseVisualStyleBackColor = true;
             this.btnorOtpremaKontejneraVoz.Click += new System.EventHandler(this.btnorOtpremaKontejneraVoz_Click);

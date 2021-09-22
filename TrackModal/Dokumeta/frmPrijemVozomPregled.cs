@@ -383,6 +383,24 @@ namespace TrackModal.Dokumeta
             dataGridView1.Columns[7].HeaderText = "Datum";
             dataGridView1.Columns[7].Width = 100;
         }
+
+        private void iconButton1_Click(object sender, EventArgs e)
+        {
+            frmPrijemVozomPregled prijvozpre = new frmPrijemVozomPregled();
+            this.Close();
+
+        }
+
+        private void iconButton10_Click(object sender, EventArgs e)
+        {
+            frmPrijemVozomPregled prijvozpre = new frmPrijemVozomPregled();
+            this.Close();
+        }
+
+        private void iconButton7_Click(object sender, EventArgs e)
+        {
+            WindowState = FormWindowState.Minimized;
+        }
     }
 }
 

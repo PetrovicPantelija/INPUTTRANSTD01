@@ -42,5 +42,22 @@ namespace TrackModal.Izvestaji
             dataGridView1.ReadOnly = true;
             dataGridView1.DataSource = ds.Tables[0];
         }
+
+        private void iconButton2_Click(object sender, EventArgs e)
+        {
+            frmMenadzerPretovar mp = new frmMenadzerPretovar();
+            this.Close();
+        }
+
+        private void iconButton3_Click(object sender, EventArgs e)
+        {
+            frmMenadzerPretovar mp = new frmMenadzerPretovar();
+            this.Close();
+        }
+
+        private void iconButton4_Click(object sender, EventArgs e)
+        {
+            WindowState = FormWindowState.Minimized;
+        }
     }
 }

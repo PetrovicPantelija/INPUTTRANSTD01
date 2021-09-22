@@ -139,7 +139,7 @@
             this.btnspPrijemRaspored.Padding = new System.Windows.Forms.Padding(20, 0, 20, 0);
             this.btnspPrijemRaspored.Size = new System.Drawing.Size(296, 40);
             this.btnspPrijemRaspored.TabIndex = 9;
-            this.btnspPrijemRaspored.Text = "Prijem raspored";
+            this.btnspPrijemRaspored.Text = "Prijem rasporeda";
             this.btnspPrijemRaspored.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnspPrijemRaspored.UseVisualStyleBackColor = true;
             this.btnspPrijemRaspored.Click += new System.EventHandler(this.btnspPrijemRaspored_Click);
@@ -223,7 +223,7 @@
             this.btnspPregPrometa.Padding = new System.Windows.Forms.Padding(20, 0, 20, 0);
             this.btnspPregPrometa.Size = new System.Drawing.Size(296, 40);
             this.btnspPregPrometa.TabIndex = 5;
-            this.btnspPregPrometa.Text = "Pregled prometa";
+            this.btnspPregPrometa.Text = "Pregled - Promet";
             this.btnspPregPrometa.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnspPregPrometa.UseVisualStyleBackColor = true;
             this.btnspPregPrometa.Click += new System.EventHandler(this.btnspPregPrometa_Click);
@@ -244,7 +244,7 @@
             this.btnspPregMedjuPrijem.Padding = new System.Windows.Forms.Padding(20, 0, 20, 0);
             this.btnspPregMedjuPrijem.Size = new System.Drawing.Size(296, 40);
             this.btnspPregMedjuPrijem.TabIndex = 4;
-            this.btnspPregMedjuPrijem.Text = "Pregled Međuskladišni po prijemu";
+            this.btnspPregMedjuPrijem.Text = "Pregled - Međuskladišni po prijemu";
             this.btnspPregMedjuPrijem.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnspPregMedjuPrijem.UseVisualStyleBackColor = true;
             this.btnspPregMedjuPrijem.Click += new System.EventHandler(this.btnspPregMedjuPrijem_Click);
@@ -265,7 +265,7 @@
             this.btnspPregledPrijemaRaspored.Padding = new System.Windows.Forms.Padding(20, 0, 20, 0);
             this.btnspPregledPrijemaRaspored.Size = new System.Drawing.Size(296, 40);
             this.btnspPregledPrijemaRaspored.TabIndex = 3;
-            this.btnspPregledPrijemaRaspored.Text = "Pregled prijema raspored";
+            this.btnspPregledPrijemaRaspored.Text = "Pregled - Prijema raspored";
             this.btnspPregledPrijemaRaspored.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnspPregledPrijemaRaspored.UseVisualStyleBackColor = true;
             this.btnspPregledPrijemaRaspored.Click += new System.EventHandler(this.btnspPregledPrijemaRaspored_Click);

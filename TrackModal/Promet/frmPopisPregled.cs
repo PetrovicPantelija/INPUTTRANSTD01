@@ -105,5 +105,22 @@ namespace TrackModal.Promet
             frmPopis otpr = new frmPopis(Convert.ToInt32(txtSifra.Text), "");
             otpr.Show();
         }
+
+        private void iconButton1_Click(object sender, EventArgs e)
+        {
+            frmPopisPregled popispregled = new frmPopisPregled();
+            this.Close();
+        }
+
+        private void iconButton10_Click(object sender, EventArgs e)
+        {
+            frmPopisPregled popispregled = new frmPopisPregled();
+            this.Close();
+        }
+
+        private void iconButton7_Click(object sender, EventArgs e)
+        {
+            WindowState = FormWindowState.Minimized;
+        }
     }
 }

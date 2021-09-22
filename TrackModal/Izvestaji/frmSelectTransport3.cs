@@ -46,5 +46,23 @@ namespace TrackModal.Izvestaji
             reportViewer1.LocalReport.DataSources.Add(rds);
             reportViewer1.RefreshReport();
         }
+
+        private void iconButton1_Click(object sender, EventArgs e)
+        {
+            frmSelectTransport3 select3 =new  frmSelectTransport3();
+            this.Close();
+
+        }
+
+        private void iconButton10_Click(object sender, EventArgs e)
+        {
+            frmSelectTransport3 select3 = new frmSelectTransport3();
+            this.Close();
+        }
+
+        private void iconButton7_Click(object sender, EventArgs e)
+        {
+            WindowState = FormWindowState.Minimized;
+        }
     }
 }

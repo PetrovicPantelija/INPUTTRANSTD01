@@ -250,6 +250,23 @@ namespace TrackModal.Promet
 
 
         }
+
+        private void iconButton1_Click(object sender, EventArgs e)
+        {
+            frmPregledMedjuskladisniPrenos pregmedjpreno = new frmPregledMedjuskladisniPrenos();
+            this.Close();
+        }
+
+        private void iconButton10_Click(object sender, EventArgs e)
+        {
+            frmPregledMedjuskladisniPrenos pregmedjpreno = new frmPregledMedjuskladisniPrenos();
+            this.Close();
+        }
+
+        private void iconButton7_Click(object sender, EventArgs e)
+        {
+            WindowState = FormWindowState.Minimized;
+        }
     }
 }
 

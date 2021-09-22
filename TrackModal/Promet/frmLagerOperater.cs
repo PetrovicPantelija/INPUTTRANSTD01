@@ -366,5 +366,22 @@ namespace TrackModal.Promet
             dataGridView1.Columns[10].HeaderText = "Korisnik";
             dataGridView1.Columns[10].Width = 80;
         }
+
+        private void iconButton1_Click(object sender, EventArgs e)
+        {
+            frmLagerOperater lagerope = new frmLagerOperater();
+            this.Close();
+        }
+
+        private void iconButton10_Click(object sender, EventArgs e)
+        {
+            frmLagerOperater lagerope = new frmLagerOperater();
+            this.Close();
+        }
+
+        private void iconButton7_Click(object sender, EventArgs e)
+        {
+            WindowState = FormWindowState.Minimized;
+        }
     }
 }

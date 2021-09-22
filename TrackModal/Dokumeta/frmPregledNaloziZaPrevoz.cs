@@ -208,5 +208,22 @@ namespace TrackModal.Dokumeta
             frmNalogZaPrevoz nal = new frmNalogZaPrevoz(Convert.ToInt32(txtSifra.Text), KorisnikTekuci);
             nal.Show();
         }
+
+        private void iconButton1_Click(object sender, EventArgs e)
+        {
+            frmPregledNaloziZaPrevoz nalozizaprevoz = new frmPregledNaloziZaPrevoz();
+            this.Close();
+        }
+
+        private void iconButton10_Click(object sender, EventArgs e)
+        {
+            frmPregledNaloziZaPrevoz nalozizaprevoz = new frmPregledNaloziZaPrevoz();
+            this.Close();
+        }
+
+        private void iconButton7_Click(object sender, EventArgs e)
+        {
+            WindowState = FormWindowState.Minimized;
+        }
     }
 }

@@ -95,5 +95,22 @@ namespace TrackModal.Izvestaji
             dataGridView1.Columns[12].Width = 80;
 
         }
+
+        private void iconButton1_Click(object sender, EventArgs e)
+        {
+            frmMenadzerPoKamionuSpediter kamionspediter = new frmMenadzerPoKamionuSpediter();
+            this.Close();
+        }
+
+        private void iconButton10_Click(object sender, EventArgs e)
+        {
+            frmMenadzerPoKamionuSpediter kamionspediter = new frmMenadzerPoKamionuSpediter();
+            this.Close();
+        }
+
+        private void iconButton7_Click(object sender, EventArgs e)
+        {
+            WindowState = FormWindowState.Minimized;
+        }
     }
 }

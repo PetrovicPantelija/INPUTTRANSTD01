@@ -122,7 +122,8 @@ namespace TrackModal.Dokumeta
 
         private void toolStripButton1_Click(object sender, EventArgs e)
         {
-           
+            frmVoz ter = new frmVoz(Convert.ToInt32(txtSifra.Text), KorisnikCene);
+            ter.Show();
         }
 
         private void toolStripButton2_Click(object sender, EventArgs e)
@@ -187,6 +188,24 @@ namespace TrackModal.Dokumeta
             InsertVoz ins = new InsertVoz();
             ins.PrekopirajVoz(Convert.ToInt32(txtSifra.Text));
         }
+
+        private void iconButton1_Click(object sender, EventArgs e)
+        {
+            frmPregledVozova pregled = new frmPregledVozova();
+            this.Close();
+        }
+
+        private void iconButton10_Click(object sender, EventArgs e)
+        {
+            frmPregledVozova pregled = new frmPregledVozova();
+            this.Close();
+        }
+
+        private void iconButton7_Click(object sender, EventArgs e)
+        {
+            WindowState = FormWindowState.Minimized;
+        }
+
     }
 }
 

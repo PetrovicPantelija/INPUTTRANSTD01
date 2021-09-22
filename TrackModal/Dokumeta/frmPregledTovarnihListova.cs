@@ -20,11 +20,6 @@ namespace TrackModal.Dokumeta
             InitializeComponent();
         }
 
-        private void toolStripButton4_Click(object sender, EventArgs e)
-        {
-           
-        }
-
         private void dataGridView1_SelectionChanged(object sender, EventArgs e)
         {
             try
@@ -70,6 +65,23 @@ namespace TrackModal.Dokumeta
         {
             frmTovarniList tl = new frmTovarniList(Convert.ToInt32(txtSifra.Text));
             tl.Show();
+        }
+
+        private void iconButton10_Click(object sender, EventArgs e)
+        {
+            frmPregledTovarnihListova pregledtovlist = new frmPregledTovarnihListova();
+            this.Close();
+        }
+
+        private void iconButton1_Click(object sender, EventArgs e)
+        {
+            frmPregledTovarnihListova pregledtovlist = new frmPregledTovarnihListova();
+            this.Close();
+        }
+
+        private void iconButton7_Click(object sender, EventArgs e)
+        {
+            WindowState = FormWindowState.Minimized;
         }
     }
 }

@@ -243,9 +243,26 @@ namespace TrackModal.Promet
 
             DataGridViewColumn column14 = dataGridView2.Columns[13];
             dataGridView2.Columns[13].HeaderText = "Stavka prijemnice ID";
-            dataGridView2.Columns[13].Width = 80;
+            dataGridView2.Columns[13].Width = 80;frmPregledSkladistePrijem pregsklapri = new frmPregledSkladistePrijem();
+            this.Close();
 
+        }
 
+        private void iconButton1_Click(object sender, EventArgs e)
+        {
+            frmPregledSkladistePrijem pregsklapri = new frmPregledSkladistePrijem();
+            this.Close();
+        }
+
+        private void iconButton10_Click(object sender, EventArgs e)
+        {
+            frmPregledSkladistePrijem pregsklapri = new frmPregledSkladistePrijem();
+            this.Close();
+        }
+
+        private void iconButton7_Click(object sender, EventArgs e)
+        {
+            WindowState = FormWindowState.Minimized;
         }
     }
 }

@@ -199,8 +199,7 @@ namespace TrackModal.Dokumeta
 
         private void toolStripButton1_Click_1(object sender, EventArgs e)
         {
-            frmOtpremaKontejnera otpr = new frmOtpremaKontejnera(Convert.ToInt32(txtSifra.Text), KorisnikCene);
-            otpr.Show();
+
         }
 
         private void dataGridView1_SelectionChanged_1(object sender, EventArgs e)
@@ -620,6 +619,23 @@ namespace TrackModal.Dokumeta
         private void button3_Click(object sender, EventArgs e)
         {
             RefreshDataGridPoKontejneru();
+        }
+
+        private void iconButton10_Click(object sender, EventArgs e)
+        {
+            frmPregledOtpremeKamionom pregledotpremakamionom = new frmPregledOtpremeKamionom();
+            this.Close();
+        }
+
+        private void iconButton1_Click(object sender, EventArgs e)
+        {
+            frmPregledOtpremeKamionom pregledotpremakamionom = new frmPregledOtpremeKamionom();
+            this.Close();
+        }
+
+        private void iconButton7_Click(object sender, EventArgs e)
+        {
+            WindowState = FormWindowState.Minimized;
         }
     }
 }

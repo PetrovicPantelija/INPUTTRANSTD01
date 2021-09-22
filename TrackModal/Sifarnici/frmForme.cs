@@ -182,6 +182,23 @@ namespace TrackModal.Sifarnici
                 MessageBox.Show("Nije uspela selekcija stavki");
             }
         }
+
+        private void iconButton1_Click(object sender, EventArgs e)
+        {
+            frmForme forma = new frmForme();
+            this.Close();
+        }
+
+        private void iconButton10_Click(object sender, EventArgs e)
+        {
+            frmForme forma = new frmForme();
+            this.Close();
+        }
+
+        private void iconButton7_Click(object sender, EventArgs e)
+        {
+            WindowState = FormWindowState.Minimized;
+        }
     }
 }
 

@@ -1003,5 +1003,22 @@ namespace TrackModal.Promet
             dataGridView1.Columns[16].Width = 80;
 
         }
+
+        private void iconButton1_Click(object sender, EventArgs e)
+        {
+            frmMedjuskladisniPrenos mp = new frmMedjuskladisniPrenos();
+            this.Close();
+        }
+
+        private void iconButton10_Click(object sender, EventArgs e)
+        {
+            frmMedjuskladisniPrenos mp = new frmMedjuskladisniPrenos();
+            this.Close();
+        }
+
+        private void iconButton7_Click(object sender, EventArgs e)
+        {
+            WindowState = FormWindowState.Minimized;
+        }
     }
 }

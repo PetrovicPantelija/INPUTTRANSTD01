@@ -15,6 +15,7 @@ using System.Net.Mail;
  
 
 using Microsoft.Reporting.WinForms;
+using System.Runtime.Remoting.Messaging;
 
 namespace TrackModal.Sifarnici
 {
@@ -209,6 +210,23 @@ namespace TrackModal.Sifarnici
             }
 
 
+        }
+
+        private void iconButton1_Click(object sender, EventArgs e)
+        {
+            frmPravoPristupaFormi pravopristupa = new frmPravoPristupaFormi();
+            this.Close();
+        }
+
+        private void iconButton10_Click(object sender, EventArgs e)
+        {
+            frmPravoPristupaFormi pravopristupa = new frmPravoPristupaFormi();
+            this.Close();
+        }
+
+        private void iconButton7_Click(object sender, EventArgs e)
+        {
+            WindowState = FormWindowState.Minimized;
         }
     }
 }

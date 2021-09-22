@@ -667,11 +667,6 @@ namespace TrackModal.Dokumeta
                         */
         }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-          
-        }
-
         private void RefreshDataGrid4()
         {
             var select = "SELECT PrometManipulacije.Id AS ID, PrometManipulacije.PRStDokumenta, PrometManipulacije.BrojKontejnera AS BrojKontrejnera, PrometManipulacije.ManipulacijaID, PrometManipulacije.NajavaID, " +
@@ -849,6 +844,23 @@ namespace TrackModal.Dokumeta
         private void label4_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void iconButton10_Click(object sender, EventArgs e)
+        {
+            frmSkladistePrijem sp = new frmSkladistePrijem();
+            this.Close();
+        }
+
+        private void iconButton1_Click(object sender, EventArgs e)
+        {
+            frmSkladistePrijem sp = new frmSkladistePrijem();
+            this.Close();
+        }
+
+        private void iconButton7_Click(object sender, EventArgs e)
+        {
+            WindowState = FormWindowState.Minimized;
         }
     }
     }

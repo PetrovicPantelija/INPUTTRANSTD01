@@ -493,6 +493,29 @@ namespace TrackModal.Dokumeta
         {
             RefreshDataGridPoBukinguBrodara();
         }
+
+        private void bunifuButton1_Click(object sender, EventArgs e)
+        {
+            frmPrijemKontejneraVoz ter = new frmPrijemKontejneraVoz(Convert.ToInt32(txtSifra.Text), KorisnikCene, 0);
+            ter.Show();
+        }
+
+        private void iconButton1_Click(object sender, EventArgs e)
+        {
+            frmPrijemKontejneraKamionom primkonkam = new frmPrijemKontejneraKamionom();
+            this.Close();
+        }
+
+        private void iconButton10_Click(object sender, EventArgs e)
+        {
+            frmPrijemKontejneraKamionom primkonkam = new frmPrijemKontejneraKamionom();
+            this.Close();
+        }
+
+        private void iconButton7_Click(object sender, EventArgs e)
+        {
+            WindowState = FormWindowState.Minimized;
+        }
     }
 }
 

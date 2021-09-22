@@ -253,5 +253,23 @@ namespace TrackModal.Promet
             dataGridView1.ReadOnly = true;
             dataGridView1.DataSource = ds.Tables[0];
         }
+
+        private void iconButton1_Click(object sender, EventArgs e)
+        {
+            frmLager lager = new frmLager();
+            this.Close();
+        }
+
+        private void iconButton10_Click(object sender, EventArgs e)
+        {
+            frmLager lager = new frmLager();
+            this.Close();
+            
+        }
+
+        private void iconButton7_Click(object sender, EventArgs e)
+        {
+            WindowState = FormWindowState.Minimized;
+        }
     }
 }

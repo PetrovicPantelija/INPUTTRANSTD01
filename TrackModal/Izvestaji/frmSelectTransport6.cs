@@ -46,5 +46,22 @@ namespace TrackModal.Izvestaji
         {
 
         }
+
+        private void iconButton1_Click(object sender, EventArgs e)
+        {
+            frmSelectTransport6 select6 = new frmSelectTransport6();
+            this.Close();
+        }
+
+        private void iconButton10_Click(object sender, EventArgs e)
+        {
+            frmSelectTransport6 select6 = new frmSelectTransport6();
+            this.Close();
+        }
+
+        private void iconButton7_Click(object sender, EventArgs e)
+        {
+            WindowState = FormWindowState.Minimized;
+        }
     }
 }

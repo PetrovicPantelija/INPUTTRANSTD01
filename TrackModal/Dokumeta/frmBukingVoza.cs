@@ -122,7 +122,7 @@ namespace TrackModal.Dokumeta
             if (status == true)
             {
                 InsertBukingVoza ins = new InsertBukingVoza();
-                ins.InsertBuk(Convert.ToInt32(cboVoz.SelectedValue), Convert.ToDateTime(dtpDatumOtpreme.Value), txtStanicaOtpreme.Text, Convert.ToDateTime(DateTime.Now), KorisnikCene, Convert.ToInt32(txtUkupno2.Value), Convert.ToDouble(txtSopstvenaMasa2.Value) );
+               // ins.InsertBuk(Convert.ToInt32(cboVoz.SelectedValue), Convert.ToDateTime(dtpDatumOtpreme.Value), txtStanicaOtpreme.Text, Convert.ToDateTime(DateTime.Now), KorisnikCene, Convert.ToInt32(txtUkupno2.Value), Convert.ToDouble(txtSopstvenaMasa2.Value) );
                 VratiPodatkeMax();
                 status = false;
 
@@ -131,7 +131,7 @@ namespace TrackModal.Dokumeta
             {
                 //int TipCenovnika ,int Komitent, double Cena , int VrstaManipulacije ,DateTime  Datum , string Korisnik
                 InsertBukingVoza upd = new InsertBukingVoza();
-                upd.UpdVoz(Convert.ToInt32(txtSifra.Text), Convert.ToInt32(cboVoz.SelectedValue), Convert.ToDateTime(dtpDatumOtpreme.Value), txtStanicaOtpreme.Text, Convert.ToDateTime(DateTime.Now), KorisnikCene, Convert.ToInt32(txtUkupno2.Value), Convert.ToDouble(txtSopstvenaMasa2.Value));
+               // upd.UpdVoz(Convert.ToInt32(txtSifra.Text), Convert.ToInt32(cboVoz.SelectedValue), Convert.ToDateTime(dtpDatumOtpreme.Value), txtStanicaOtpreme.Text, Convert.ToDateTime(DateTime.Now), KorisnikCene, Convert.ToInt32(txtUkupno2.Value), Convert.ToDouble(txtSopstvenaMasa2.Value));
                 status = false;
             }
             RefreshDataGrid();
@@ -274,10 +274,10 @@ namespace TrackModal.Dokumeta
             {
                 
                 // Convert.ToInt32(cboTipCenovnika.SelectedValue), Convert.ToInt32(cboKomitent.SelectedValue), Convert.ToDouble(txtCena.Text), Convert.ToInt32(cboVrstaManipulacije.SelectedValue), Convert.ToDateTime(DateTime.Now), KorisnikCene
-                txtStanicaOtpreme.Text = dr["StanicaOtpreme"].ToString();
+               // txtStanicaOtpreme.Text = dr["StanicaOtpreme"].ToString();
                 cboVoz.SelectedValue = Convert.ToInt32(dr["IdVoza"].ToString());
 
-                dtpDatumOtpreme.Value = Convert.ToDateTime(dr["DatumOtpreme"].ToString()); 
+               // dtpDatumOtpreme.Value = Convert.ToDateTime(dr["DatumOtpreme"].ToString()); 
                 
           
             }
@@ -989,6 +989,121 @@ group by substring(Naziv,1,3)
             }
 
 
+        }
+
+        private void siticoneNumericUpDown1_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void siticoneNumericUpDown2_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel7_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void tsPrvi_Click(object sender, EventArgs e)
+        {
+            var s_connection = ConfigurationManager.ConnectionStrings["WindowsFormsApplication1.Properties.Settings.NedraConnectionString"].ConnectionString;
+            SqlConnection con = new SqlConnection(s_connection);
+
+            con.Open();
+
+            SqlCommand cmd = new SqlCommand("select Min([ID]) as ID from TipKontenjera", con);
+            SqlDataReader dr = cmd.ExecuteReader();
+
+            while (dr.Read())
+            {
+                txtSifra.Text = dr["ID"].ToString();
+            }
+            VratiPodatke(txtSifra.Text);
+            con.Close();
+        }
+
+        private void tsNazad_Click_1(object sender, EventArgs e)
+        {
+            var s_connection = ConfigurationManager.ConnectionStrings["WindowsFormsApplication1.Properties.Settings.NedraConnectionString"].ConnectionString;
+            SqlConnection con = new SqlConnection(s_connection);
+            int prvi = 0;
+            con.Open();
+
+            SqlCommand cmd = new SqlCommand("select top 1 ID as ID from TipKontenjera where ID <" + Convert.ToInt32(txtSifra.Text) + " Order by ID desc", con);
+            SqlDataReader dr = cmd.ExecuteReader();
+
+            while (dr.Read())
+            {
+                prvi = Convert.ToInt32(dr["ID"].ToString());
+            }
+
+            con.Close();
+            if ((Convert.ToInt32(txtSifra.Text) - 1) > prvi)
+                VratiPodatke((Convert.ToInt32(txtSifra.Text) - 1).ToString());
+            else
+                VratiPodatke((Convert.ToInt32(prvi)).ToString());
+        }
+
+        private void tsNapred_Click(object sender, EventArgs e)
+        {
+
+            var s_connection = ConfigurationManager.ConnectionStrings["WindowsFormsApplication1.Properties.Settings.NedraConnectionString"].ConnectionString;
+            SqlConnection con = new SqlConnection(s_connection);
+            int zadnji = 0;
+            con.Open();
+
+            SqlCommand cmd = new SqlCommand("select top 1 ID as ID from TipKontenjera where ID >" + Convert.ToInt32(txtSifra.Text) + " Order by ID", con);
+
+            SqlDataReader dr = cmd.ExecuteReader();
+
+            while (dr.Read())
+            {
+                zadnji = Convert.ToInt32(dr["ID"].ToString());
+            }
+
+            con.Close();
+
+            if ((Convert.ToInt32(txtSifra.Text) + 1) == zadnji)
+                VratiPodatke((Convert.ToInt32(zadnji).ToString()));
+            else
+                VratiPodatke((Convert.ToInt32(txtSifra.Text) + 1).ToString());
+        }
+
+        private void tsPoslednja_Click(object sender, EventArgs e)
+        {
+            var s_connection = ConfigurationManager.ConnectionStrings["WindowsFormsApplication1.Properties.Settings.NedraConnectionString"].ConnectionString;
+            SqlConnection con = new SqlConnection(s_connection);
+
+            con.Open();
+
+            SqlCommand cmd = new SqlCommand("select Max([ID]) as ID from Komitenti", con);
+            SqlDataReader dr = cmd.ExecuteReader();
+
+            while (dr.Read())
+            {
+                txtSifra.Text = dr["ID"].ToString();
+            }
+            VratiPodatke(txtSifra.Text);
+            con.Close();
+        }
+
+        private void iconButton10_Click(object sender, EventArgs e)
+        {
+            frmBukingVoza bukingvoz = new frmBukingVoza();
+            this.Close();
+        }
+
+        private void iconButton1_Click(object sender, EventArgs e)
+        {
+            frmBukingVoza bukingvoz = new frmBukingVoza();
+            this.Close();
+        }
+
+        private void iconButton7_Click(object sender, EventArgs e)
+        {
+            WindowState = FormWindowState.Minimized;
         }
     }
         

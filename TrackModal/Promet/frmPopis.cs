@@ -331,5 +331,22 @@ namespace TrackModal.Promet
             frmPopisStampa popst = new frmPopisStampa(txtSifra.Text);
             popst.Show();
         }
+
+        private void iconButton1_Click(object sender, EventArgs e)
+        {
+            frmPopis popis = new frmPopis();
+            this.Close();
+        }
+
+        private void iconButton10_Click(object sender, EventArgs e)
+        {
+            frmPopis popis = new frmPopis();
+            this.Close();
+        }
+
+        private void iconButton7_Click(object sender, EventArgs e)
+        {
+            WindowState = FormWindowState.Minimized;
+        }
     }
 }

@@ -22,12 +22,6 @@ namespace TrackModal.Izvestaji
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-           
-        }
-
         private void button1_Click_1(object sender, EventArgs e)
         {
             InsertCosco ins = new InsertCosco();
@@ -47,6 +41,23 @@ namespace TrackModal.Izvestaji
             dataAdapter.Fill(ds);
             dataGridView1.ReadOnly = true;
             dataGridView1.DataSource = ds.Tables[0];
+        }
+
+        private void iconButton2_Click(object sender, EventArgs e)
+        {
+            frmCosco cos = new frmCosco();
+            this.Close();
+        }
+
+        private void iconButton3_Click(object sender, EventArgs e)
+        {
+            frmCosco cos = new frmCosco();
+            this.Close();
+        }
+
+        private void iconButton4_Click(object sender, EventArgs e)
+        {
+            WindowState = FormWindowState.Minimized;
         }
     }
 }

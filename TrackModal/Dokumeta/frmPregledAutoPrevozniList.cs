@@ -77,5 +77,22 @@ namespace TrackModal.Dokumeta
         {
 
         }
+
+        private void iconButton1_Click(object sender, EventArgs e)
+        {
+            frmPregledAutoPrevozniList pregledauto = new frmPregledAutoPrevozniList();
+            this.Close();
+        }
+
+        private void iconButton10_Click(object sender, EventArgs e)
+        {
+            frmPregledAutoPrevozniList pregledauto = new frmPregledAutoPrevozniList();
+            this.Close();
+        }
+
+        private void iconButton7_Click(object sender, EventArgs e)
+        {
+            WindowState = FormWindowState.Minimized;
+        }
     }
 }

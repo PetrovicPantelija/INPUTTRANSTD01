@@ -29,9 +29,10 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmPozicija));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties17 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties18 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties19 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties20 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties21 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties22 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
@@ -45,10 +46,9 @@
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties30 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties31 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties32 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties17 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties18 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties19 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties20 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.iconButton1 = new FontAwesome.Sharp.IconButton();
             this.bunifuLabel1 = new Bunifu.UI.WinForms.BunifuLabel();
@@ -63,13 +63,7 @@
             this.tsNazad = new FontAwesome.Sharp.IconButton();
             this.tsPrvi = new FontAwesome.Sharp.IconButton();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.bunifuLabel8 = new Bunifu.UI.WinForms.BunifuLabel();
-            this.dataGridView1 = new Bunifu.UI.WinForms.BunifuDataGridView();
-            this.panel9 = new System.Windows.Forms.Panel();
-            this.panel10 = new System.Windows.Forms.Panel();
-            this.tsDelete = new FontAwesome.Sharp.IconButton();
-            this.tsSave = new FontAwesome.Sharp.IconButton();
-            this.tsNew = new FontAwesome.Sharp.IconButton();
+            this.txtOznaka = new Bunifu.UI.WinForms.BunifuTextBox();
             this.btnPretraziPoSkladistu = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.txtNamena = new Bunifu.UI.WinForms.BunifuTextBox();
             this.bunifuLabel4 = new Bunifu.UI.WinForms.BunifuLabel();
@@ -80,7 +74,13 @@
             this.bunifuLabel14 = new Bunifu.UI.WinForms.BunifuLabel();
             this.txtSifra = new Bunifu.UI.WinForms.BunifuTextBox();
             this.bunifuLabel15 = new Bunifu.UI.WinForms.BunifuLabel();
-            this.txtOznaka = new Bunifu.UI.WinForms.BunifuTextBox();
+            this.bunifuLabel8 = new Bunifu.UI.WinForms.BunifuLabel();
+            this.dataGridView1 = new Bunifu.UI.WinForms.BunifuDataGridView();
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.panel10 = new System.Windows.Forms.Panel();
+            this.tsDelete = new FontAwesome.Sharp.IconButton();
+            this.tsSave = new FontAwesome.Sharp.IconButton();
+            this.tsNew = new FontAwesome.Sharp.IconButton();
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -98,7 +98,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1130, 76);
+            this.panel1.Size = new System.Drawing.Size(1400, 76);
             this.panel1.TabIndex = 157;
             // 
             // iconButton1
@@ -139,7 +139,7 @@
             this.panel4.Controls.Add(this.iconButton10);
             this.panel4.Controls.Add(this.iconButton7);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel4.Location = new System.Drawing.Point(1011, 0);
+            this.panel4.Location = new System.Drawing.Point(1281, 0);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(119, 76);
             this.panel4.TabIndex = 4;
@@ -182,7 +182,7 @@
             this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel5.Location = new System.Drawing.Point(0, 76);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(1130, 10);
+            this.panel5.Size = new System.Drawing.Size(1400, 10);
             this.panel5.TabIndex = 162;
             // 
             // panel3
@@ -196,7 +196,7 @@
             this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel3.Location = new System.Drawing.Point(0, 690);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1130, 40);
+            this.panel3.Size = new System.Drawing.Size(1400, 40);
             this.panel3.TabIndex = 163;
             // 
             // bunifuLabel5
@@ -208,7 +208,7 @@
             this.bunifuLabel5.CursorType = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel5.Font = new System.Drawing.Font("Bahnschrift SemiBold Condensed", 20F, System.Drawing.FontStyle.Bold);
             this.bunifuLabel5.ForeColor = System.Drawing.Color.White;
-            this.bunifuLabel5.Location = new System.Drawing.Point(495, 4);
+            this.bunifuLabel5.Location = new System.Drawing.Point(630, 4);
             this.bunifuLabel5.Name = "bunifuLabel5";
             this.bunifuLabel5.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.bunifuLabel5.Size = new System.Drawing.Size(141, 33);
@@ -226,7 +226,7 @@
             this.tsNapred.IconColor = System.Drawing.Color.White;
             this.tsNapred.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.tsNapred.IconSize = 32;
-            this.tsNapred.Location = new System.Drawing.Point(1030, 0);
+            this.tsNapred.Location = new System.Drawing.Point(1300, 0);
             this.tsNapred.Name = "tsNapred";
             this.tsNapred.Size = new System.Drawing.Size(50, 40);
             this.tsNapred.TabIndex = 4;
@@ -242,7 +242,7 @@
             this.tsPoslednja.IconColor = System.Drawing.Color.White;
             this.tsPoslednja.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.tsPoslednja.IconSize = 32;
-            this.tsPoslednja.Location = new System.Drawing.Point(1080, 0);
+            this.tsPoslednja.Location = new System.Drawing.Point(1350, 0);
             this.tsPoslednja.Name = "tsPoslednja";
             this.tsPoslednja.Size = new System.Drawing.Size(50, 40);
             this.tsPoslednja.TabIndex = 3;
@@ -300,155 +300,82 @@
             this.panel7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel7.Location = new System.Drawing.Point(0, 86);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(1130, 604);
+            this.panel7.Size = new System.Drawing.Size(1400, 604);
             this.panel7.TabIndex = 164;
             // 
-            // bunifuLabel8
+            // txtOznaka
             // 
-            this.bunifuLabel8.AllowParentOverrides = false;
-            this.bunifuLabel8.AutoEllipsis = false;
-            this.bunifuLabel8.CursorType = null;
-            this.bunifuLabel8.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuLabel8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
-            this.bunifuLabel8.Location = new System.Drawing.Point(517, 107);
-            this.bunifuLabel8.Name = "bunifuLabel8";
-            this.bunifuLabel8.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel8.Size = new System.Drawing.Size(108, 21);
-            this.bunifuLabel8.TabIndex = 9;
-            this.bunifuLabel8.Text = "Tabela pozicije";
-            this.bunifuLabel8.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.bunifuLabel8.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.AllowCustomTheming = false;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
-            this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
-            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.dataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.DodgerBlue;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(115)))), ((int)(((byte)(204)))));
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
-            this.dataGridView1.ColumnHeadersHeight = 40;
-            this.dataGridView1.CurrentTheme.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
-            this.dataGridView1.CurrentTheme.AlternatingRowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
-            this.dataGridView1.CurrentTheme.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Black;
-            this.dataGridView1.CurrentTheme.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
-            this.dataGridView1.CurrentTheme.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Black;
-            this.dataGridView1.CurrentTheme.BackColor = System.Drawing.Color.White;
-            this.dataGridView1.CurrentTheme.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
-            this.dataGridView1.CurrentTheme.HeaderStyle.BackColor = System.Drawing.Color.DodgerBlue;
-            this.dataGridView1.CurrentTheme.HeaderStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
-            this.dataGridView1.CurrentTheme.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.dataGridView1.CurrentTheme.HeaderStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(115)))), ((int)(((byte)(204)))));
-            this.dataGridView1.CurrentTheme.HeaderStyle.SelectionForeColor = System.Drawing.Color.White;
-            this.dataGridView1.CurrentTheme.Name = null;
-            this.dataGridView1.CurrentTheme.RowsStyle.BackColor = System.Drawing.Color.White;
-            this.dataGridView1.CurrentTheme.RowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
-            this.dataGridView1.CurrentTheme.RowsStyle.ForeColor = System.Drawing.Color.Black;
-            this.dataGridView1.CurrentTheme.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
-            this.dataGridView1.CurrentTheme.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle6;
-            this.dataGridView1.EnableHeadersVisualStyles = false;
-            this.dataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
-            this.dataGridView1.HeaderBackColor = System.Drawing.Color.DodgerBlue;
-            this.dataGridView1.HeaderBgColor = System.Drawing.Color.Empty;
-            this.dataGridView1.HeaderForeColor = System.Drawing.Color.White;
-            this.dataGridView1.Location = new System.Drawing.Point(517, 128);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersVisible = false;
-            this.dataGridView1.RowTemplate.Height = 40;
-            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(580, 447);
-            this.dataGridView1.TabIndex = 5;
-            this.dataGridView1.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Light;
-            // 
-            // panel9
-            // 
-            this.panel9.Controls.Add(this.panel10);
-            this.panel9.Controls.Add(this.tsDelete);
-            this.panel9.Controls.Add(this.tsSave);
-            this.panel9.Controls.Add(this.tsNew);
-            this.panel9.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel9.Location = new System.Drawing.Point(0, 0);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(1130, 40);
-            this.panel9.TabIndex = 0;
-            // 
-            // panel10
-            // 
-            this.panel10.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel10.Location = new System.Drawing.Point(228, 0);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(902, 40);
-            this.panel10.TabIndex = 4;
-            // 
-            // tsDelete
-            // 
-            this.tsDelete.Dock = System.Windows.Forms.DockStyle.Left;
-            this.tsDelete.FlatAppearance.BorderSize = 0;
-            this.tsDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.tsDelete.IconChar = FontAwesome.Sharp.IconChar.Trash;
-            this.tsDelete.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(90)))), ((int)(((byte)(100)))));
-            this.tsDelete.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.tsDelete.IconSize = 36;
-            this.tsDelete.Location = new System.Drawing.Point(152, 0);
-            this.tsDelete.Name = "tsDelete";
-            this.tsDelete.Size = new System.Drawing.Size(76, 40);
-            this.tsDelete.TabIndex = 7;
-            this.tsDelete.UseVisualStyleBackColor = true;
-            this.tsDelete.Click += new System.EventHandler(this.tsDelete_Click);
-            // 
-            // tsSave
-            // 
-            this.tsSave.Dock = System.Windows.Forms.DockStyle.Left;
-            this.tsSave.FlatAppearance.BorderSize = 0;
-            this.tsSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.tsSave.IconChar = FontAwesome.Sharp.IconChar.FileDownload;
-            this.tsSave.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(90)))), ((int)(((byte)(100)))));
-            this.tsSave.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.tsSave.IconSize = 36;
-            this.tsSave.Location = new System.Drawing.Point(76, 0);
-            this.tsSave.Name = "tsSave";
-            this.tsSave.Size = new System.Drawing.Size(76, 40);
-            this.tsSave.TabIndex = 6;
-            this.tsSave.UseVisualStyleBackColor = true;
-            this.tsSave.Click += new System.EventHandler(this.tsSave_Click);
-            // 
-            // tsNew
-            // 
-            this.tsNew.Dock = System.Windows.Forms.DockStyle.Left;
-            this.tsNew.FlatAppearance.BorderSize = 0;
-            this.tsNew.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.tsNew.IconChar = FontAwesome.Sharp.IconChar.PlusCircle;
-            this.tsNew.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(90)))), ((int)(((byte)(100)))));
-            this.tsNew.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.tsNew.IconSize = 36;
-            this.tsNew.Location = new System.Drawing.Point(0, 0);
-            this.tsNew.Name = "tsNew";
-            this.tsNew.Size = new System.Drawing.Size(76, 40);
-            this.tsNew.TabIndex = 5;
-            this.tsNew.UseVisualStyleBackColor = true;
-            this.tsNew.Click += new System.EventHandler(this.tsNew_Click);
+            this.txtOznaka.AcceptsReturn = false;
+            this.txtOznaka.AcceptsTab = false;
+            this.txtOznaka.AnimationSpeed = 200;
+            this.txtOznaka.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.txtOznaka.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.txtOznaka.BackColor = System.Drawing.Color.Transparent;
+            this.txtOznaka.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txtOznaka.BackgroundImage")));
+            this.txtOznaka.BorderColorActive = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(140)))), ((int)(((byte)(243)))));
+            this.txtOznaka.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.txtOznaka.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.txtOznaka.BorderColorIdle = System.Drawing.Color.Silver;
+            this.txtOznaka.BorderRadius = 2;
+            this.txtOznaka.BorderThickness = 1;
+            this.txtOznaka.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txtOznaka.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtOznaka.DefaultFont = new System.Drawing.Font("Segoe UI", 10F);
+            this.txtOznaka.DefaultText = "";
+            this.txtOznaka.FillColor = System.Drawing.Color.White;
+            this.txtOznaka.HideSelection = true;
+            this.txtOznaka.IconLeft = null;
+            this.txtOznaka.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtOznaka.IconPadding = 10;
+            this.txtOznaka.IconRight = null;
+            this.txtOznaka.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtOznaka.Lines = new string[0];
+            this.txtOznaka.Location = new System.Drawing.Point(42, 225);
+            this.txtOznaka.MaxLength = 32767;
+            this.txtOznaka.MinimumSize = new System.Drawing.Size(1, 1);
+            this.txtOznaka.Modified = false;
+            this.txtOznaka.Multiline = false;
+            this.txtOznaka.Name = "txtOznaka";
+            stateProperties17.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(140)))), ((int)(((byte)(243)))));
+            stateProperties17.FillColor = System.Drawing.Color.Empty;
+            stateProperties17.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(140)))), ((int)(((byte)(243)))));
+            stateProperties17.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtOznaka.OnActiveState = stateProperties17;
+            stateProperties18.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            stateProperties18.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            stateProperties18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            stateProperties18.PlaceholderForeColor = System.Drawing.Color.DarkGray;
+            this.txtOznaka.OnDisabledState = stateProperties18;
+            stateProperties19.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(140)))), ((int)(((byte)(243)))));
+            stateProperties19.FillColor = System.Drawing.Color.Empty;
+            stateProperties19.ForeColor = System.Drawing.Color.Empty;
+            stateProperties19.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtOznaka.OnHoverState = stateProperties19;
+            stateProperties20.BorderColor = System.Drawing.Color.Silver;
+            stateProperties20.FillColor = System.Drawing.Color.White;
+            stateProperties20.ForeColor = System.Drawing.Color.Empty;
+            stateProperties20.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtOznaka.OnIdleState = stateProperties20;
+            this.txtOznaka.Padding = new System.Windows.Forms.Padding(3);
+            this.txtOznaka.PasswordChar = '\0';
+            this.txtOznaka.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(216)))), ((int)(((byte)(220)))));
+            this.txtOznaka.PlaceholderText = "Unesite oznaku";
+            this.txtOznaka.ReadOnly = false;
+            this.txtOznaka.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txtOznaka.SelectedText = "";
+            this.txtOznaka.SelectionLength = 0;
+            this.txtOznaka.SelectionStart = 0;
+            this.txtOznaka.ShortcutsEnabled = true;
+            this.txtOznaka.Size = new System.Drawing.Size(250, 25);
+            this.txtOznaka.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
+            this.txtOznaka.TabIndex = 37;
+            this.txtOznaka.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtOznaka.TextMarginBottom = 0;
+            this.txtOznaka.TextMarginLeft = 3;
+            this.txtOznaka.TextMarginTop = 0;
+            this.txtOznaka.TextPlaceholder = "Unesite oznaku";
+            this.txtOznaka.UseSystemPasswordChar = false;
+            this.txtOznaka.WordWrap = true;
             // 
             // btnPretraziPoSkladistu
             // 
@@ -621,7 +548,7 @@
             this.bunifuLabel4.CursorType = null;
             this.bunifuLabel4.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuLabel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
-            this.bunifuLabel4.Location = new System.Drawing.Point(42, 305);
+            this.bunifuLabel4.Location = new System.Drawing.Point(42, 304);
             this.bunifuLabel4.Name = "bunifuLabel4";
             this.bunifuLabel4.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.bunifuLabel4.Size = new System.Drawing.Size(68, 21);
@@ -712,7 +639,7 @@
             this.bunifuLabel12.CursorType = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel12.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuLabel12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
-            this.bunifuLabel12.Location = new System.Drawing.Point(42, 255);
+            this.bunifuLabel12.Location = new System.Drawing.Point(42, 254);
             this.bunifuLabel12.Name = "bunifuLabel12";
             this.bunifuLabel12.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.bunifuLabel12.Size = new System.Drawing.Size(41, 21);
@@ -728,7 +655,7 @@
             this.bunifuLabel13.CursorType = null;
             this.bunifuLabel13.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuLabel13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
-            this.bunifuLabel13.Location = new System.Drawing.Point(42, 205);
+            this.bunifuLabel13.Location = new System.Drawing.Point(42, 204);
             this.bunifuLabel13.Name = "bunifuLabel13";
             this.bunifuLabel13.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.bunifuLabel13.Size = new System.Drawing.Size(60, 21);
@@ -786,7 +713,7 @@
             this.bunifuLabel14.CursorType = null;
             this.bunifuLabel14.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuLabel14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
-            this.bunifuLabel14.Location = new System.Drawing.Point(42, 155);
+            this.bunifuLabel14.Location = new System.Drawing.Point(42, 154);
             this.bunifuLabel14.Name = "bunifuLabel14";
             this.bunifuLabel14.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.bunifuLabel14.Size = new System.Drawing.Size(73, 21);
@@ -877,7 +804,7 @@
             this.bunifuLabel15.CursorType = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel15.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuLabel15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
-            this.bunifuLabel15.Location = new System.Drawing.Point(42, 107);
+            this.bunifuLabel15.Location = new System.Drawing.Point(42, 106);
             this.bunifuLabel15.Name = "bunifuLabel15";
             this.bunifuLabel15.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.bunifuLabel15.Size = new System.Drawing.Size(41, 21);
@@ -886,86 +813,159 @@
             this.bunifuLabel15.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel15.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
-            // txtOznaka
+            // bunifuLabel8
             // 
-            this.txtOznaka.AcceptsReturn = false;
-            this.txtOznaka.AcceptsTab = false;
-            this.txtOznaka.AnimationSpeed = 200;
-            this.txtOznaka.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
-            this.txtOznaka.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
-            this.txtOznaka.BackColor = System.Drawing.Color.Transparent;
-            this.txtOznaka.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txtOznaka.BackgroundImage")));
-            this.txtOznaka.BorderColorActive = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(140)))), ((int)(((byte)(243)))));
-            this.txtOznaka.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.txtOznaka.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            this.txtOznaka.BorderColorIdle = System.Drawing.Color.Silver;
-            this.txtOznaka.BorderRadius = 2;
-            this.txtOznaka.BorderThickness = 1;
-            this.txtOznaka.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.txtOznaka.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtOznaka.DefaultFont = new System.Drawing.Font("Segoe UI", 10F);
-            this.txtOznaka.DefaultText = "";
-            this.txtOznaka.FillColor = System.Drawing.Color.White;
-            this.txtOznaka.HideSelection = true;
-            this.txtOznaka.IconLeft = null;
-            this.txtOznaka.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtOznaka.IconPadding = 10;
-            this.txtOznaka.IconRight = null;
-            this.txtOznaka.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtOznaka.Lines = new string[0];
-            this.txtOznaka.Location = new System.Drawing.Point(42, 225);
-            this.txtOznaka.MaxLength = 32767;
-            this.txtOznaka.MinimumSize = new System.Drawing.Size(1, 1);
-            this.txtOznaka.Modified = false;
-            this.txtOznaka.Multiline = false;
-            this.txtOznaka.Name = "txtOznaka";
-            stateProperties17.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(140)))), ((int)(((byte)(243)))));
-            stateProperties17.FillColor = System.Drawing.Color.Empty;
-            stateProperties17.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(140)))), ((int)(((byte)(243)))));
-            stateProperties17.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtOznaka.OnActiveState = stateProperties17;
-            stateProperties18.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            stateProperties18.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            stateProperties18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            stateProperties18.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.txtOznaka.OnDisabledState = stateProperties18;
-            stateProperties19.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(140)))), ((int)(((byte)(243)))));
-            stateProperties19.FillColor = System.Drawing.Color.Empty;
-            stateProperties19.ForeColor = System.Drawing.Color.Empty;
-            stateProperties19.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtOznaka.OnHoverState = stateProperties19;
-            stateProperties20.BorderColor = System.Drawing.Color.Silver;
-            stateProperties20.FillColor = System.Drawing.Color.White;
-            stateProperties20.ForeColor = System.Drawing.Color.Empty;
-            stateProperties20.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtOznaka.OnIdleState = stateProperties20;
-            this.txtOznaka.Padding = new System.Windows.Forms.Padding(3);
-            this.txtOznaka.PasswordChar = '\0';
-            this.txtOznaka.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(216)))), ((int)(((byte)(220)))));
-            this.txtOznaka.PlaceholderText = "Unesite oznaku";
-            this.txtOznaka.ReadOnly = false;
-            this.txtOznaka.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.txtOznaka.SelectedText = "";
-            this.txtOznaka.SelectionLength = 0;
-            this.txtOznaka.SelectionStart = 0;
-            this.txtOznaka.ShortcutsEnabled = true;
-            this.txtOznaka.Size = new System.Drawing.Size(250, 25);
-            this.txtOznaka.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
-            this.txtOznaka.TabIndex = 37;
-            this.txtOznaka.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.txtOznaka.TextMarginBottom = 0;
-            this.txtOznaka.TextMarginLeft = 3;
-            this.txtOznaka.TextMarginTop = 0;
-            this.txtOznaka.TextPlaceholder = "Unesite oznaku";
-            this.txtOznaka.UseSystemPasswordChar = false;
-            this.txtOznaka.WordWrap = true;
+            this.bunifuLabel8.AllowParentOverrides = false;
+            this.bunifuLabel8.AutoEllipsis = false;
+            this.bunifuLabel8.CursorType = null;
+            this.bunifuLabel8.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuLabel8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.bunifuLabel8.Location = new System.Drawing.Point(517, 105);
+            this.bunifuLabel8.Name = "bunifuLabel8";
+            this.bunifuLabel8.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.bunifuLabel8.Size = new System.Drawing.Size(108, 21);
+            this.bunifuLabel8.TabIndex = 9;
+            this.bunifuLabel8.Text = "Tabela pozicije";
+            this.bunifuLabel8.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.bunifuLabel8.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AllowCustomTheming = false;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
+            this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
+            this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.dataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.DodgerBlue;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(115)))), ((int)(((byte)(204)))));
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            this.dataGridView1.ColumnHeadersHeight = 40;
+            this.dataGridView1.CurrentTheme.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
+            this.dataGridView1.CurrentTheme.AlternatingRowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            this.dataGridView1.CurrentTheme.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Black;
+            this.dataGridView1.CurrentTheme.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
+            this.dataGridView1.CurrentTheme.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Black;
+            this.dataGridView1.CurrentTheme.BackColor = System.Drawing.Color.White;
+            this.dataGridView1.CurrentTheme.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
+            this.dataGridView1.CurrentTheme.HeaderStyle.BackColor = System.Drawing.Color.DodgerBlue;
+            this.dataGridView1.CurrentTheme.HeaderStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
+            this.dataGridView1.CurrentTheme.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.dataGridView1.CurrentTheme.HeaderStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(115)))), ((int)(((byte)(204)))));
+            this.dataGridView1.CurrentTheme.HeaderStyle.SelectionForeColor = System.Drawing.Color.White;
+            this.dataGridView1.CurrentTheme.Name = null;
+            this.dataGridView1.CurrentTheme.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.dataGridView1.CurrentTheme.RowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            this.dataGridView1.CurrentTheme.RowsStyle.ForeColor = System.Drawing.Color.Black;
+            this.dataGridView1.CurrentTheme.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
+            this.dataGridView1.CurrentTheme.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle6;
+            this.dataGridView1.EnableHeadersVisualStyles = false;
+            this.dataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
+            this.dataGridView1.HeaderBackColor = System.Drawing.Color.DodgerBlue;
+            this.dataGridView1.HeaderBgColor = System.Drawing.Color.Empty;
+            this.dataGridView1.HeaderForeColor = System.Drawing.Color.White;
+            this.dataGridView1.Location = new System.Drawing.Point(517, 128);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersVisible = false;
+            this.dataGridView1.RowTemplate.Height = 40;
+            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataGridView1.Size = new System.Drawing.Size(850, 447);
+            this.dataGridView1.TabIndex = 5;
+            this.dataGridView1.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Light;
+            // 
+            // panel9
+            // 
+            this.panel9.Controls.Add(this.panel10);
+            this.panel9.Controls.Add(this.tsDelete);
+            this.panel9.Controls.Add(this.tsSave);
+            this.panel9.Controls.Add(this.tsNew);
+            this.panel9.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel9.Location = new System.Drawing.Point(0, 0);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(1400, 40);
+            this.panel9.TabIndex = 0;
+            // 
+            // panel10
+            // 
+            this.panel10.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel10.Location = new System.Drawing.Point(228, 0);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(1172, 40);
+            this.panel10.TabIndex = 4;
+            // 
+            // tsDelete
+            // 
+            this.tsDelete.Dock = System.Windows.Forms.DockStyle.Left;
+            this.tsDelete.FlatAppearance.BorderSize = 0;
+            this.tsDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.tsDelete.IconChar = FontAwesome.Sharp.IconChar.Trash;
+            this.tsDelete.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(90)))), ((int)(((byte)(100)))));
+            this.tsDelete.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.tsDelete.IconSize = 36;
+            this.tsDelete.Location = new System.Drawing.Point(152, 0);
+            this.tsDelete.Name = "tsDelete";
+            this.tsDelete.Size = new System.Drawing.Size(76, 40);
+            this.tsDelete.TabIndex = 7;
+            this.tsDelete.UseVisualStyleBackColor = true;
+            this.tsDelete.Click += new System.EventHandler(this.tsDelete_Click);
+            // 
+            // tsSave
+            // 
+            this.tsSave.Dock = System.Windows.Forms.DockStyle.Left;
+            this.tsSave.FlatAppearance.BorderSize = 0;
+            this.tsSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.tsSave.IconChar = FontAwesome.Sharp.IconChar.FileDownload;
+            this.tsSave.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(90)))), ((int)(((byte)(100)))));
+            this.tsSave.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.tsSave.IconSize = 36;
+            this.tsSave.Location = new System.Drawing.Point(76, 0);
+            this.tsSave.Name = "tsSave";
+            this.tsSave.Size = new System.Drawing.Size(76, 40);
+            this.tsSave.TabIndex = 6;
+            this.tsSave.UseVisualStyleBackColor = true;
+            this.tsSave.Click += new System.EventHandler(this.tsSave_Click);
+            // 
+            // tsNew
+            // 
+            this.tsNew.Dock = System.Windows.Forms.DockStyle.Left;
+            this.tsNew.FlatAppearance.BorderSize = 0;
+            this.tsNew.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.tsNew.IconChar = FontAwesome.Sharp.IconChar.PlusCircle;
+            this.tsNew.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(90)))), ((int)(((byte)(100)))));
+            this.tsNew.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.tsNew.IconSize = 36;
+            this.tsNew.Location = new System.Drawing.Point(0, 0);
+            this.tsNew.Name = "tsNew";
+            this.tsNew.Size = new System.Drawing.Size(76, 40);
+            this.tsNew.TabIndex = 5;
+            this.tsNew.UseVisualStyleBackColor = true;
+            this.tsNew.Click += new System.EventHandler(this.tsNew_Click);
             // 
             // frmPozicija
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(216)))), ((int)(((byte)(220)))));
-            this.ClientSize = new System.Drawing.Size(1130, 730);
+            this.ClientSize = new System.Drawing.Size(1400, 730);
             this.Controls.Add(this.panel7);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel5);

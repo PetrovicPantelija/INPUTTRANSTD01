@@ -175,8 +175,7 @@ namespace TrackModal.Dokumeta
 
         private void toolStripButton1_Click(object sender, EventArgs e)
         {
-            frmOtpremaKontejnera ter = new frmOtpremaKontejnera(Convert.ToInt32(txtSifra.Text), KorisnikCene);
-            ter.Show();
+
         }
 
         private void toolStripButton2_Click(object sender, EventArgs e)
@@ -624,6 +623,28 @@ namespace TrackModal.Dokumeta
         private void button2_Click(object sender, EventArgs e)
         {
             RefreshDataGridPoBukingu();
+        }
+
+        private void iconButton1_Click(object sender, EventArgs e)
+        {
+            frmPregledOtpreme pregledotprema = new frmPregledOtpreme();
+            this.Close();
+        }
+
+        private void iconButton10_Click(object sender, EventArgs e)
+        {
+            frmPregledOtpreme pregledotprema = new frmPregledOtpreme();
+            this.Close();
+        }
+
+        private void iconButton7_Click(object sender, EventArgs e)
+        {
+            WindowState = FormWindowState.Minimized;
+        }
+
+        private void txtBrojKontejnera_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

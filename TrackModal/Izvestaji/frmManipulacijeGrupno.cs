@@ -66,5 +66,22 @@ namespace TrackModal.Izvestaji
 
          
         }
+
+        private void iconButton1_Click(object sender, EventArgs e)
+        {
+            frmManipulacijeGrupno mg = new frmManipulacijeGrupno();
+            this.Close();
+        }
+
+        private void iconButton10_Click(object sender, EventArgs e)
+        {
+            frmManipulacijeGrupno mg = new frmManipulacijeGrupno();
+            this.Close();
+        }
+
+        private void iconButton7_Click(object sender, EventArgs e)
+        {
+            WindowState = FormWindowState.Minimized;
+        }
     }
 }

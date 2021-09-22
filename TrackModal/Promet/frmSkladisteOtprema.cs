@@ -687,5 +687,22 @@ namespace TrackModal.Promet
             Promet.frmPregledOtprema sr = new Promet.frmPregledOtprema(broj);
             sr.Show();
         }
+
+        private void iconButton1_Click(object sender, EventArgs e)
+        {
+            frmSkladisteOtprema so = new frmSkladisteOtprema();
+            this.Close();
+        }
+
+        private void iconButton10_Click(object sender, EventArgs e)
+        {
+            frmSkladisteOtprema so = new frmSkladisteOtprema();
+            this.Close();
+        }
+
+        private void iconButton7_Click(object sender, EventArgs e)
+        {
+            WindowState = FormWindowState.Minimized;
+        }
     }
 }

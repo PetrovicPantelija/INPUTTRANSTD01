@@ -115,32 +115,12 @@ namespace TrackModal.Dokumeta
 
         private void tsNew_Click(object sender, EventArgs e)
         {
-            status = true;
-            txtSifra.Enabled = false;
+
         }
 
         private void tsSave_Click(object sender, EventArgs e)
         {
 
-
-           
-            if (status == true)
-            {
-                Dokumeta.InsertPutniNalog ins = new InsertPutniNalog();
-                ins.InsPutniNalog(Convert.ToInt32(txtNalogZaPrevozID.Text),txtMestoIzdavanja.Text, Convert.ToDateTime(dtpDatumPrevoza.Value), txtIstovarnoMesto.Text, txtUtovarnoMesto.Text,Convert.ToInt32(cboVozilo.SelectedValue), txtPrikljucnaVozila.Text,txtNapomena.Text, Convert.ToInt32(cboTransportniDispičer.SelectedValue), Convert.ToInt32(cboVozac.SelectedValue), Convert.ToInt32(cboTehnickaIspravnost.SelectedValue),DateTime.Now, KorisnikCene,Convert.ToInt32(cboPrikljucnoVozilo.SelectedValue), txtMarka1.Text, txtTip1.Text, Convert.ToDouble(txtTezina1.Text), txtMarka2.Text, txtTip2.Text, Convert.ToDouble(txtTezina2.Text),txtRelacija1.Text, txtRelacija2.Text);
-                status = false;
-                VratiPodatkeMax();
-            }
-            else
-            {
-
-                
-                    Dokumeta.InsertPutniNalog upd = new InsertPutniNalog();
-                    upd.UpdPutniNalog(Convert.ToInt32(txtSifra.Text), Convert.ToInt32(txtNalogZaPrevozID.Text), txtMestoIzdavanja.Text, Convert.ToDateTime(dtpDatumPrevoza.Value), txtIstovarnoMesto.Text, txtUtovarnoMesto.Text, Convert.ToInt32(cboVozilo.SelectedValue), txtPrikljucnaVozila.Text, txtNapomena.Text, Convert.ToInt32(cboTransportniDispičer.SelectedValue), Convert.ToInt32(cboVozac.SelectedValue), Convert.ToInt32(cboTehnickaIspravnost.SelectedValue), DateTime.Now, KorisnikCene, Convert.ToInt32(cboPrikljucnoVozilo.SelectedValue), txtMarka1.Text, txtTip1.Text, Convert.ToDouble(txtTezina1.Text), txtMarka2.Text, txtTip2.Text, Convert.ToDouble(txtTezina2.Text), txtRelacija1.Text, txtRelacija2.Text);
-                    status = false;
-                
-
-            }
         }
 
         private void VratiPodatkeMax()
@@ -251,6 +231,7 @@ namespace TrackModal.Dokumeta
             {
                 VratiPodatke(Convert.ToInt32(txtSifra.Text));
             }
+            this.reportViewer1.RefreshReport();
         }
 
         private void button17_Click(object sender, EventArgs e)
@@ -418,68 +399,37 @@ namespace TrackModal.Dokumeta
             var commandBuilder = new SqlCommandBuilder(dataAdapter);
             var ds = new DataSet();
             dataAdapter.Fill(ds);
-            dataGridView1.ReadOnly = true;
-            dataGridView1.DataSource = ds.Tables[0];
-            DataGridViewColumn column = dataGridView1.Columns[0];
-            dataGridView1.Columns[0].HeaderText = "ID";
-            dataGridView1.Columns[0].Width = 50;
+            dataGridView3.ReadOnly = true;
+            dataGridView3.DataSource = ds.Tables[0];
+            DataGridViewColumn column = dataGridView3.Columns[0];
+            dataGridView3.Columns[0].HeaderText = "ID";
+            dataGridView3.Columns[0].Width = 50;
 
-            DataGridViewColumn column2 = dataGridView1.Columns[1];
-            dataGridView1.Columns[1].HeaderText = "IdNadredjeni";
-            dataGridView1.Columns[1].Width = 50;
+            DataGridViewColumn column2 = dataGridView3.Columns[1];
+            dataGridView3.Columns[1].HeaderText = "IdNadredjeni";
+            dataGridView3.Columns[1].Width = 50;
 
-            DataGridViewColumn column3 = dataGridView1.Columns[2];
-            dataGridView1.Columns[2].HeaderText = "Servis";
-            dataGridView1.Columns[2].Width = 150;
+            DataGridViewColumn column3 = dataGridView3.Columns[2];
+            dataGridView3.Columns[2].HeaderText = "Servis";
+            dataGridView3.Columns[2].Width = 150;
 
-            DataGridViewColumn column4 = dataGridView1.Columns[3];
-            dataGridView1.Columns[3].HeaderText = "St goriva ulaz";
-            dataGridView1.Columns[3].Width = 80;
+            DataGridViewColumn column4 = dataGridView3.Columns[3];
+            dataGridView3.Columns[3].HeaderText = "St goriva ulaz";
+            dataGridView3.Columns[3].Width = 80;
 
-            DataGridViewColumn column5 = dataGridView1.Columns[4];
-            dataGridView1.Columns[4].HeaderText = "St goriva izlaz";
-            dataGridView1.Columns[4].Width = 80;
+            DataGridViewColumn column5 = dataGridView3.Columns[4];
+            dataGridView3.Columns[4].HeaderText = "St goriva izlaz";
+            dataGridView3.Columns[4].Width = 80;
 
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-           
 
-            Dokumeta.InsertPutniNalogServis upd = new InsertPutniNalogServis();
-
-            foreach (DataGridViewRow row in dataGridView1.Rows)
-            {
-                if (row.Selected == true)
-                {
-                    upd.UpdPutniNalogServis(Convert.ToInt32(row.Cells[0].Value.ToString()), Convert.ToInt32(txtSifra.Text), txtServis.Text, Convert.ToDouble(txtStanjeGorivaUlaz.Value), Convert.ToDouble(txtStanjeGorivaIzlaz));
-                }
-            }
-            RefreshDataGridServis();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            DialogResult dialogResult = MessageBox.Show("Da li ste sigurni da želite da brišete?", "Izbor", MessageBoxButtons.YesNo);
-
-            if (dialogResult == DialogResult.Yes)
-            {
-                Dokumeta.InsertPutniNalogServis upd = new InsertPutniNalogServis();
-
-                foreach (DataGridViewRow row in dataGridView1.Rows)
-                {
-                    if (row.Selected == true)
-                    {
-                        upd.DeletePutniNalogServis(Convert.ToInt32(row.Cells[0].Value.ToString()));
-                    }
-                }
-                RefreshDataGridServis();
-            }
-            else if (dialogResult == DialogResult.No)
-            {
-                //do something else
-            }
-
 
         }
 
@@ -545,41 +495,11 @@ namespace TrackModal.Dokumeta
         private void button4_Click(object sender, EventArgs e)
         {
 
-            int Polazak = 0;
-
-            if (chkPolazak.Checked == true)
-            {
-                Polazak = 1;
-            }
-            else
-            {
-                Polazak = 2;
-            }
-
-            Dokumeta.InsertPutniNalogRuta upd = new InsertPutniNalogRuta();
-
-            foreach (DataGridViewRow row in dataGridView2.Rows)
-            {
-                if (row.Selected == true)
-                {
-                    upd.UpdPutniNalogRuta(Convert.ToInt32(row.Cells[0].Value.ToString()), Convert.ToInt32(txtSifra.Text), Polazak, Convert.ToDateTime(dtpDatumRuta.Value), Convert.ToDouble(StanjeBrojilaRuta.Value), txtServiserRuta.Text);
-                }
-            }
-            RefreshDataGridRuta();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            Dokumeta.InsertPutniNalogRuta upd = new InsertPutniNalogRuta();
 
-            foreach (DataGridViewRow row in dataGridView2.Rows)
-            {
-                if (row.Selected == true)
-                {
-                    upd.DeletePutniNalogRuta(Convert.ToInt32(row.Cells[0].Value.ToString()));
-                }
-            }
-            RefreshDataGridRuta();
         }
 
         private void button8_Click(object sender, EventArgs e)
@@ -1007,9 +927,36 @@ namespace TrackModal.Dokumeta
             cboVozacRute.ValueMember = "ID";
         }
 
-        private void tsDelete_Click(object sender, EventArgs e)
+        private void bunifuTextBox19_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void bunifuTextBox18_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuTextBox9_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void iconButton1_Click(object sender, EventArgs e)
+        {
+            frmPutniNalog pn = new frmPutniNalog();
+            this.Close();
+        }
+
+        private void iconButton10_Click(object sender, EventArgs e)
+        {
+            frmPutniNalog pn = new frmPutniNalog();
+            this.Close();
+        }
+
+        private void iconButton7_Click(object sender, EventArgs e)
+        {
+            WindowState = FormWindowState.Minimized;
         }
     }
 }
