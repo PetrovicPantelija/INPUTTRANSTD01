@@ -62,6 +62,7 @@ namespace TrackModal
                     if (myString.TrimEnd() == cboKorisnik.Text.TrimEnd())
                     {
                         Main mainf = new Main(cboKorisnik.Text.TrimEnd(), 1);
+                      
                         mainf.Show();
                     }
                     else

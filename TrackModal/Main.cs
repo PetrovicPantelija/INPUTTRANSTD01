@@ -80,10 +80,10 @@ namespace TrackModal
                 curentBtn.TextImageRelation = TextImageRelation.TextBeforeImage;
                 curentBtn.ImageAlign = ContentAlignment.MiddleCenter;
                 //left border btn
-                leftBorderBtn.BackColor = color;
-                leftBorderBtn.Location = new Point(0, curentBtn.Location.Y);
-                leftBorderBtn.Visible = true;
-                leftBorderBtn.BringToFront();
+                //leftBorderBtn.BackColor = color;
+               // leftBorderBtn.Location = new Point(0, curentBtn.Location.Y);
+               // leftBorderBtn.Visible = true;
+               // leftBorderBtn.BringToFront();
                 //Icon curent child form
                 iconCurentChildForm.IconChar = curentBtn.IconChar;
                 iconCurentChildForm.IconColor = color;
