@@ -1125,6 +1125,12 @@
     <EmbeddedResource Include="Dokumeta\rptPutniNalog.rdlc" />
     <EmbeddedResource Include="Dokumeta\rptRadniNalogTransport.rdlc" />
     <EmbeddedResource Include="Dokumeta\rptRadniNalogTransportStavke.rdlc" />
+    <EmbeddedResource Include="Form1.en-GB.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.en.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmManipulacijeFilter.resx">
       <DependentUpon>frmManipulacijeFilter.cs</DependentUpon>
     </EmbeddedResource>

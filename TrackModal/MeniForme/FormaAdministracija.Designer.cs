@@ -109,6 +109,7 @@
             this.BtnaDodavanjeKorisnika.Text = "Dodavanje novog korisnika";
             this.BtnaDodavanjeKorisnika.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnaDodavanjeKorisnika.UseVisualStyleBackColor = true;
+            this.BtnaDodavanjeKorisnika.Click += new System.EventHandler(this.BtnaDodavanjeKorisnika_Click);
             // 
             // btnaKorisnici
             // 

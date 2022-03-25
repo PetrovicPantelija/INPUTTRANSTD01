@@ -230,7 +230,7 @@ namespace TrackModal.Dokumeta
             else
             {
                 InsertRadniNalogTransportStavke ins = new InsertRadniNalogTransportStavke();
-                ins.InsRadniNalogTransportStavke(Convert.ToInt32(txtSifra.Text), txtKorisnik.Text, txtTovarniList.Text, txtRačun.Text, Convert.ToDouble(txtDencano.Value), Convert.ToDouble(txtKolsko.Value), Convert.ToDouble(txtPrihodDencano.Value), Convert.ToDouble(txtPrihodOstalo.Value), txtPrimedba.Text, txtPotpisao.Text);
+                ins.InsRadniNalogTransportStavke(Convert.ToInt32(txtSifra.Text), txtKorisnik.Text, txtTovarniList.Text, txtRačun.Text, Convert.ToDouble(txtBrojVagona.Value), Convert.ToDouble(txtKolsko.Value), Convert.ToDouble(txtPrihodDencano.Value), Convert.ToDouble(txtPrihodOstalo.Value), txtPrimedba.Text, txtPotpisao.Text);
                 RefreshDataGridStavke();
             }
         }
@@ -249,63 +249,63 @@ namespace TrackModal.Dokumeta
             var commandBuilder = new SqlCommandBuilder(dataAdapter);
             var ds = new DataSet();
             dataAdapter.Fill(ds);
-            dataGridView1.ReadOnly = false;
-            dataGridView1.DataSource = ds.Tables[0];
+            dataGridView3.ReadOnly = false;
+            dataGridView3.DataSource = ds.Tables[0];
 
-            DataGridViewColumn column = dataGridView1.Columns[0];
-            dataGridView1.Columns[0].HeaderText = "ID";
-            dataGridView1.Columns[0].Width = 40;
+            DataGridViewColumn column = dataGridView3.Columns[0];
+            dataGridView3.Columns[0].HeaderText = "ID";
+            dataGridView3.Columns[0].Width = 40;
             // dataGridView2.Columns[0].Visible = false;
 
-            DataGridViewColumn column2 = dataGridView1.Columns[1];
-            dataGridView1.Columns[1].HeaderText = "ID nadr";
-            dataGridView1.Columns[1].Width = 40;
+            DataGridViewColumn column2 = dataGridView3.Columns[1];
+            dataGridView3.Columns[1].HeaderText = "ID nadr";
+            dataGridView3.Columns[1].Width = 40;
 
-            DataGridViewColumn column3 = dataGridView1.Columns[2];
-            dataGridView1.Columns[2].HeaderText = "RB";
-            dataGridView1.Columns[2].Width = 40;
+            DataGridViewColumn column3 = dataGridView3.Columns[2];
+            dataGridView3.Columns[2].HeaderText = "RB";
+            dataGridView3.Columns[2].Width = 40;
 
-            DataGridViewColumn column4 = dataGridView1.Columns[3];
-            dataGridView1.Columns[3].HeaderText = "Korisnik";
-            dataGridView1.Columns[3].Width = 90;
+            DataGridViewColumn column4 = dataGridView3.Columns[3];
+            dataGridView3.Columns[3].HeaderText = "Korisnik";
+            dataGridView3.Columns[3].Width = 90;
 
-            DataGridViewColumn column5 = dataGridView1.Columns[4];
-            dataGridView1.Columns[4].HeaderText = "Tov list";
-            dataGridView1.Columns[4].Width = 60;
+            DataGridViewColumn column5 = dataGridView3.Columns[4];
+            dataGridView3.Columns[4].HeaderText = "Tov list";
+            dataGridView3.Columns[4].Width = 60;
 
-            DataGridViewColumn column6 = dataGridView1.Columns[5];
-            dataGridView1.Columns[5].HeaderText = "Račun";
-            dataGridView1.Columns[5].Width = 60;
+            DataGridViewColumn column6 = dataGridView3.Columns[5];
+            dataGridView3.Columns[5].HeaderText = "Račun";
+            dataGridView3.Columns[5].Width = 60;
 
-            DataGridViewColumn column7 = dataGridView1.Columns[6];
-            dataGridView1.Columns[6].HeaderText = "Denčano";
-            dataGridView1.Columns[6].Width = 80;
+            DataGridViewColumn column7 = dataGridView3.Columns[6];
+            dataGridView3.Columns[6].HeaderText = "Denčano";
+            dataGridView3.Columns[6].Width = 80;
 
-            DataGridViewColumn column8 = dataGridView1.Columns[7];
-            dataGridView1.Columns[7].HeaderText = "Kolsko";
-            dataGridView1.Columns[7].Width = 80;
+            DataGridViewColumn column8 = dataGridView3.Columns[7];
+            dataGridView3.Columns[7].HeaderText = "Kolsko";
+            dataGridView3.Columns[7].Width = 80;
 
-            DataGridViewColumn column9 = dataGridView1.Columns[8];
-            dataGridView1.Columns[8].HeaderText = "Denčano RSD";
-            dataGridView1.Columns[8].Width = 80;
+            DataGridViewColumn column9 = dataGridView3.Columns[8];
+            dataGridView3.Columns[8].HeaderText = "Denčano RSD";
+            dataGridView3.Columns[8].Width = 80;
 
-            DataGridViewColumn column10 = dataGridView1.Columns[9];
-            dataGridView1.Columns[9].HeaderText = "Ostalo RSD";
-            dataGridView1.Columns[9].Width = 80;
+            DataGridViewColumn column10 = dataGridView3.Columns[9];
+            dataGridView3.Columns[9].HeaderText = "Ostalo RSD";
+            dataGridView3.Columns[9].Width = 80;
 
-            DataGridViewColumn column11 = dataGridView1.Columns[10];
-            dataGridView1.Columns[10].HeaderText = "Primedba";
-            dataGridView1.Columns[10].Width = 120;
+            DataGridViewColumn column11 = dataGridView3.Columns[10];
+            dataGridView3.Columns[10].HeaderText = "Primedba";
+            dataGridView3.Columns[10].Width = 120;
 
-            DataGridViewColumn column12 = dataGridView1.Columns[11];
-            dataGridView1.Columns[11].HeaderText = "Potpisao";
-            dataGridView1.Columns[11].Width = 120;
+            DataGridViewColumn column12 = dataGridView3.Columns[11];
+            dataGridView3.Columns[11].HeaderText = "Potpisao";
+            dataGridView3.Columns[11].Width = 120;
         }
 
         private void button13_Click(object sender, EventArgs e)
         {
             InsertRadniNalogTransportStavke ins = new InsertRadniNalogTransportStavke();
-            ins.UpdRadniNalogTransportStavke(Convert.ToInt32(txtStavka.Text), Convert.ToInt32(txtSifra.Text),  txtKorisnik.Text, txtTovarniList.Text, txtRačun.Text, Convert.ToDouble(txtDencano.Value), Convert.ToDouble(txtKolsko.Value), Convert.ToDouble(txtPrihodDencano.Value), Convert.ToDouble(txtPrihodOstalo.Value), txtPrimedba.Text, txtPotpisao.Text);
+            ins.UpdRadniNalogTransportStavke(Convert.ToInt32(txtStavka.Text), Convert.ToInt32(txtSifra.Text),  txtKorisnik.Text, txtTovarniList.Text, txtRačun.Text, Convert.ToDouble(txtBrojVagona.Value), Convert.ToDouble(txtKolsko.Value), Convert.ToDouble(txtPrihodDencano.Value), Convert.ToDouble(txtPrihodOstalo.Value), txtPrimedba.Text, txtPotpisao.Text);
             RefreshDataGridStavke();
         }
 
@@ -385,6 +385,46 @@ namespace TrackModal.Dokumeta
         private void tsDelete_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void txtTipKontejnera_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtBrojKontejnera1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtSifra_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuGroupBox3_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuGroupBox2_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void iconButton1_Click(object sender, EventArgs e)
+        {
+            frmRadniNalogTransport rnt = new frmRadniNalogTransport();
+        }
+
+        private void iconButton3_Click(object sender, EventArgs e)
+        {
+            frmRadniNalogTransport rnt = new frmRadniNalogTransport();
+        }
+
+        private void iconButton4_Click(object sender, EventArgs e)
+        {
+            WindowState = FormWindowState.Minimized;
         }
     }
     }

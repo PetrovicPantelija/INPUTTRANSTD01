@@ -548,5 +548,22 @@ namespace TrackModal.Dokumeta
                 MessageBox.Show("Nije uspela promena rednog broja");
             }
         }
+
+        private void iconButton10_Click(object sender, EventArgs e)
+        {
+            frmBukingKolaKontrejner bkk = new frmBukingKolaKontrejner();
+            this.Close();
+        }
+
+        private void iconButton1_Click(object sender, EventArgs e)
+        {
+            frmBukingKolaKontrejner bkk = new frmBukingKolaKontrejner();
+            this.Close();
+        }
+
+        private void iconButton7_Click(object sender, EventArgs e)
+        {
+            WindowState = FormWindowState.Minimized;
+        }
     }
 }

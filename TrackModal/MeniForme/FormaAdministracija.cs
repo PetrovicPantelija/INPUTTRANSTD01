@@ -49,5 +49,10 @@ namespace TrackModal.MeniForme
             Sifarnici.frmForme forme = new Sifarnici.frmForme(Korisnik);
             forme.Show();
         }
+
+        private void BtnaDodavanjeKorisnika_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

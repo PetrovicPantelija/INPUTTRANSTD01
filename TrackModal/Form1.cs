@@ -11,6 +11,7 @@ using System.Data.OleDb;
 using System.Data.SqlClient;
 using System.Configuration;
 using System.Globalization;
+using System.Threading;
 
 namespace TrackModal
 {
@@ -129,6 +130,23 @@ namespace TrackModal
         private void iconButton7_Click(object sender, EventArgs e)
         {
             WindowState = FormWindowState.Minimized;
+        }
+
+        private void siticoneComboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            switch(siticoneComboBox1.SelectedIndex)
+            {
+                case 0:
+                    Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("rs");
+                    break;
+
+                case 1:
+                    Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("en");
+                    break;
+            }
+
+            this.Controls.Clear();
+            InitializeComponent();
         }
     }
 }

@@ -321,51 +321,51 @@ namespace TrackModal.Dokumeta
                 var commandBuilder = new SqlCommandBuilder(dataAdapter);
                 var ds = new DataSet();
                 dataAdapter.Fill(ds);
-                dataGridView3.ReadOnly = false;
-                dataGridView3.DataSource = ds.Tables[0];
+                dataGridView2.ReadOnly = false;
+                dataGridView2.DataSource = ds.Tables[0];
 
-                DataGridViewColumn column = dataGridView3.Columns[0];
-                dataGridView3.Columns[0].HeaderText = "Prijem";
-                dataGridView3.Columns[0].Width = 40;
+                DataGridViewColumn column = dataGridView2.Columns[0];
+                dataGridView2.Columns[0].HeaderText = "Prijem";
+                dataGridView2.Columns[0].Width = 40;
                 // dataGridView2.Columns[0].Visible = false;
 
-                DataGridViewColumn column2 = dataGridView3.Columns[1];
-                dataGridView3.Columns[1].HeaderText = "Broj kontejnera";
-                dataGridView3.Columns[1].Width = 100;
+                DataGridViewColumn column2 = dataGridView2.Columns[1];
+                dataGridView2.Columns[1].HeaderText = "Broj kontejnera";
+                dataGridView2.Columns[1].Width = 100;
 
-                DataGridViewColumn column3 = dataGridView3.Columns[2];
-                dataGridView3.Columns[2].HeaderText = "Man ID";
-                dataGridView3.Columns[2].Width = 50;
+                DataGridViewColumn column3 = dataGridView2.Columns[2];
+                dataGridView2.Columns[2].HeaderText = "Man ID";
+                dataGridView2.Columns[2].Width = 50;
 
-                DataGridViewColumn column4 = dataGridView3.Columns[3];
-                dataGridView3.Columns[3].HeaderText = "Manipulacija";
-                dataGridView3.Columns[3].Width = 50;
+                DataGridViewColumn column4 = dataGridView2.Columns[3];
+                dataGridView2.Columns[3].HeaderText = "Manipulacija";
+                dataGridView2.Columns[3].Width = 50;
 
               
 
-                DataGridViewColumn column5 = dataGridView3.Columns[4];
-                dataGridView3.Columns[4].HeaderText = "Urađeno";
-                dataGridView3.Columns[4].Width = 50;
+                DataGridViewColumn column5 = dataGridView2.Columns[4];
+                dataGridView2.Columns[4].HeaderText = "Urađeno";
+                dataGridView2.Columns[4].Width = 50;
 
-                DataGridViewColumn column6 = dataGridView3.Columns[5];
-                dataGridView3.Columns[5].HeaderText = "Datum od";
-                dataGridView3.Columns[5].Width = 80;
+                DataGridViewColumn column6 = dataGridView2.Columns[5];
+                dataGridView2.Columns[5].HeaderText = "Datum od";
+                dataGridView2.Columns[5].Width = 80;
 
-                DataGridViewColumn column7 = dataGridView3.Columns[6];
-                dataGridView3.Columns[6].HeaderText = "Datum do";
-                dataGridView3.Columns[6].Width = 80;
+                DataGridViewColumn column7 = dataGridView2.Columns[6];
+                dataGridView2.Columns[6].HeaderText = "Datum do";
+                dataGridView2.Columns[6].Width = 80;
 
-                DataGridViewColumn column8 = dataGridView3.Columns[7];
-                dataGridView3.Columns[7].HeaderText = "Datum";
-                dataGridView3.Columns[7].Width = 80;
+                DataGridViewColumn column8 = dataGridView2.Columns[7];
+                dataGridView2.Columns[7].HeaderText = "Datum";
+                dataGridView2.Columns[7].Width = 80;
 
-                DataGridViewColumn column9 = dataGridView3.Columns[8];
-                dataGridView3.Columns[8].HeaderText = "Korisnik";
-                dataGridView3.Columns[8].Width = 80;
+                DataGridViewColumn column9 = dataGridView2.Columns[8];
+                dataGridView2.Columns[8].HeaderText = "Korisnik";
+                dataGridView2.Columns[8].Width = 80;
 
-                DataGridViewColumn column10 = dataGridView3.Columns[9];
-                dataGridView3.Columns[9].HeaderText = "ID";
-                dataGridView3.Columns[9].Width = 70;
+                DataGridViewColumn column10 = dataGridView2.Columns[9];
+                dataGridView2.Columns[9].HeaderText = "ID";
+                dataGridView2.Columns[9].Width = 70;
 
 
             
@@ -385,51 +385,51 @@ namespace TrackModal.Dokumeta
                 var commandBuilder = new SqlCommandBuilder(dataAdapter);
                 var ds = new DataSet();
                 dataAdapter.Fill(ds);
-                dataGridView3.ReadOnly = false;
-                dataGridView3.DataSource = ds.Tables[0];
+                dataGridView2.ReadOnly = false;
+                dataGridView2.DataSource = ds.Tables[0];
 
 
 
-                DataGridViewColumn column = dataGridView3.Columns[0];
-                dataGridView3.Columns[0].HeaderText = "Prijem kamionom";
-                dataGridView3.Columns[0].Width = 40;
+                DataGridViewColumn column = dataGridView2.Columns[0];
+                dataGridView2.Columns[0].HeaderText = "Prijem kamionom";
+                dataGridView2.Columns[0].Width = 40;
                 // dataGridView2.Columns[0].Visible = false;
 
-                DataGridViewColumn column2 = dataGridView3.Columns[1];
-                dataGridView3.Columns[1].HeaderText = "Broj kontejnera";
-                dataGridView3.Columns[1].Width = 100;
+                DataGridViewColumn column2 = dataGridView2.Columns[1];
+                dataGridView2.Columns[1].HeaderText = "Broj kontejnera";
+                dataGridView2.Columns[1].Width = 100;
 
-                DataGridViewColumn column3 = dataGridView3.Columns[2];
-                dataGridView3.Columns[2].HeaderText = "Man ID";
-                dataGridView3.Columns[2].Width = 50;
+                DataGridViewColumn column3 = dataGridView2.Columns[2];
+                dataGridView2.Columns[2].HeaderText = "Man ID";
+                dataGridView2.Columns[2].Width = 50;
 
-                DataGridViewColumn column4 = dataGridView3.Columns[3];
-                dataGridView3.Columns[3].HeaderText = "Manipulacija";
-                dataGridView3.Columns[3].Width = 50;
+                DataGridViewColumn column4 = dataGridView2.Columns[3];
+                dataGridView2.Columns[3].HeaderText = "Manipulacija";
+                dataGridView2.Columns[3].Width = 50;
 
-                DataGridViewColumn column5 = dataGridView3.Columns[4];
-                dataGridView3.Columns[4].HeaderText = "Urađeno";
-                dataGridView3.Columns[4].Width = 50;
+                DataGridViewColumn column5 = dataGridView2.Columns[4];
+                dataGridView2.Columns[4].HeaderText = "Urađeno";
+                dataGridView2.Columns[4].Width = 50;
 
-                DataGridViewColumn column6 = dataGridView3.Columns[5];
-                dataGridView3.Columns[5].HeaderText = "Datum od";
-                dataGridView3.Columns[5].Width = 80;
+                DataGridViewColumn column6 = dataGridView2.Columns[5];
+                dataGridView2.Columns[5].HeaderText = "Datum od";
+                dataGridView2.Columns[5].Width = 80;
 
-                DataGridViewColumn column7 = dataGridView3.Columns[6];
-                dataGridView3.Columns[6].HeaderText = "Datum do";
-                dataGridView3.Columns[6].Width = 80;
+                DataGridViewColumn column7 = dataGridView2.Columns[6];
+                dataGridView2.Columns[6].HeaderText = "Datum do";
+                dataGridView2.Columns[6].Width = 80;
 
-                DataGridViewColumn column8 = dataGridView3.Columns[7];
-                dataGridView3.Columns[7].HeaderText = "Datum";
-                dataGridView3.Columns[7].Width = 80;
+                DataGridViewColumn column8 = dataGridView2.Columns[7];
+                dataGridView2.Columns[7].HeaderText = "Datum";
+                dataGridView2.Columns[7].Width = 80;
 
-                DataGridViewColumn column9 = dataGridView3.Columns[8];
-                dataGridView3.Columns[8].HeaderText = "Korisnik";
-                dataGridView3.Columns[8].Width = 80;
+                DataGridViewColumn column9 = dataGridView2.Columns[8];
+                dataGridView2.Columns[8].HeaderText = "Korisnik";
+                dataGridView2.Columns[8].Width = 80;
 
-                DataGridViewColumn column10 = dataGridView3.Columns[8];
-                dataGridView3.Columns[9].HeaderText = "ID";
-                dataGridView3.Columns[9].Width = 80;
+                DataGridViewColumn column10 = dataGridView2.Columns[8];
+                dataGridView2.Columns[9].HeaderText = "ID";
+                dataGridView2.Columns[9].Width = 80;
 
             }
           
@@ -448,27 +448,27 @@ namespace TrackModal.Dokumeta
                 var commandBuilder = new SqlCommandBuilder(dataAdapter);
                 var ds = new DataSet();
                 dataAdapter.Fill(ds);
-                dataGridView2.ReadOnly = false;
-                dataGridView2.DataSource = ds.Tables[0];
+                dataGridView3.ReadOnly = false;
+                dataGridView3.DataSource = ds.Tables[0];
 
 
 
-                DataGridViewColumn column = dataGridView2.Columns[0];
-                dataGridView2.Columns[0].HeaderText = "ID";
-                dataGridView2.Columns[0].Width = 40;
+                DataGridViewColumn column = dataGridView3.Columns[0];
+                dataGridView3.Columns[0].HeaderText = "ID";
+                dataGridView3.Columns[0].Width = 40;
                // dataGridView2.Columns[0].Visible = false;
 
-                DataGridViewColumn column2 = dataGridView2.Columns[1];
-                dataGridView2.Columns[1].HeaderText = "Manipulacija";
-                dataGridView2.Columns[1].Width = 250;
+                DataGridViewColumn column2 = dataGridView3.Columns[1];
+                dataGridView3.Columns[1].HeaderText = "Manipulacija";
+                dataGridView3.Columns[1].Width = 250;
 
-                DataGridViewColumn column3 = dataGridView2.Columns[2];
-                dataGridView2.Columns[2].HeaderText = "JM";
-                dataGridView2.Columns[2].Width = 80;
+                DataGridViewColumn column3 = dataGridView3.Columns[2];
+                dataGridView3.Columns[2].HeaderText = "JM";
+                dataGridView3.Columns[2].Width = 80;
 
-                DataGridViewColumn column4 = dataGridView2.Columns[3];
-                dataGridView2.Columns[3].HeaderText = "Skladišno";
-                dataGridView2.Columns[3].Width = 80;
+                DataGridViewColumn column4 = dataGridView3.Columns[3];
+                dataGridView3.Columns[3].HeaderText = "Skladišno";
+                dataGridView3.Columns[3].Width = 80;
 
                
               }
@@ -549,7 +549,7 @@ namespace TrackModal.Dokumeta
                 InsertNaruceneManipulacije ins = new InsertNaruceneManipulacije();
 
                 if (row.Selected == true)
-                    foreach (DataGridViewRow row2 in dataGridView2.Rows)
+                    foreach (DataGridViewRow row2 in dataGridView3.Rows)
                     {
                         if (chkVoz.Checked == true && row2.Selected == true)
                         {
@@ -729,7 +729,7 @@ namespace TrackModal.Dokumeta
             if (dialogResult == DialogResult.Yes)
             {
                 InsertNaruceneManipulacije ins = new InsertNaruceneManipulacije();
-                foreach (DataGridViewRow row in dataGridView3.Rows)
+                foreach (DataGridViewRow row in dataGridView2.Rows)
                 {
                     if (row.Selected == true)
                     {
@@ -887,6 +887,43 @@ namespace TrackModal.Dokumeta
         private void label8_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void dataGridView3_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void bunifuLabel6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuCheckBox2_CheckedChanged(object sender, Bunifu.UI.WinForms.BunifuCheckBox.CheckedChangedEventArgs e)
+        {
+
+        }
+
+        private void iconButton10_Click(object sender, EventArgs e)
+        {
+            frmManipulacije man = new frmManipulacije();
+            this.Close();
+        }
+
+        private void iconButton1_Click(object sender, EventArgs e)
+        {
+            frmManipulacije man = new frmManipulacije();
+            this.Close();
+        }
+
+        private void iconButton7_Click(object sender, EventArgs e)
+        {
+            WindowState = FormWindowState.Minimized;
         }
     }
 }

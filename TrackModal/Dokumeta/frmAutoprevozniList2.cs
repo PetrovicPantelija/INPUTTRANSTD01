@@ -53,7 +53,7 @@ namespace TrackModal.Dokumeta
         {
             InitializeComponent();
 
-            txtNalogZaPrevozID.Text = NalogZaPrevozID;
+            txtPutniNalogID.Text = NalogZaPrevozID;
             txtPutniNalogID.Text = PutniNalogID;
             txtRadniNalogID.Text = RAdniNalogID;
 
@@ -94,13 +94,13 @@ namespace TrackModal.Dokumeta
                 txtUgovor.Text = dr["Ugovor"].ToString();
                 txtPonuda.Text = dr["Ponuda"].ToString();
                 txtPutniNalogID.Text = dr["IDPutniNalog"].ToString();
-                txtNalogZaPrevozID.Text = dr["IDNalogZaPrevoz"].ToString();
+                txtPutniNalogID.Text = dr["IDNalogZaPrevoz"].ToString();
                 txtRadniNalogID.Text = dr["IDRadniNalog"].ToString();
                 cboPlatilac.SelectedValue = Convert.ToInt32(dr["Platilac"].ToString());
                 cboVozilo.SelectedValue = Convert.ToInt32(dr["Vozilo"].ToString());
                 dtpDatumPrevoza.Value = Convert.ToDateTime(dr["Dana"].ToString());
                 txtKontaktOsoba.Text = dr["Kontakt"].ToString();
-                txtMestoIzdavanja.Text = dr["MestoIzdavanja"].ToString();
+                txtPonuda.Text = dr["MestoIzdavanja"].ToString();
                // dtpDatumPrevoza.Value = Convert.ToDateTime(dr["DatumPrevoza"].ToString());
                 txtUtovarnoMesto.Text = dr["UtovarnoMesto"].ToString();
                 txtIstovarnoMesto.Text = dr["IstovarnoMesto"].ToString();
@@ -155,7 +155,7 @@ namespace TrackModal.Dokumeta
             {
                 // dtpDatum.Value = Convert.ToDateTime(dr["Datum"].ToString());
                 cboVozilo.SelectedValue = Convert.ToInt32(dr["Vozilo"].ToString());
-                cboPrikljucnoVozilo.SelectedValue = Convert.ToInt32(dr["PrikljucnoVoziloID"].ToString());
+                cboPlatilac.SelectedValue = Convert.ToInt32(dr["PrikljucnoVoziloID"].ToString());
                 txtKontaktOsoba.Text = dr["Vozac"].ToString();
             }
             con.Close();
@@ -175,7 +175,7 @@ namespace TrackModal.Dokumeta
             while (dr.Read())
             {
                 // dtpDatum.Value = Convert.ToDateTime(dr["Datum"].ToString());
-                txtMestoIzdavanja.Text = dr["MestoIzdavanja"].ToString();
+                txtPonuda.Text = dr["MestoIzdavanja"].ToString();
             }
             con.Close();
         }
@@ -244,9 +244,9 @@ namespace TrackModal.Dokumeta
             var commandBuilder2 = new SqlCommandBuilder(dataAdapter2);
             var ds2 = new DataSet();
             dataAdapter2.Fill(ds2);
-            cboPrikljucnoVozilo.DataSource = ds2.Tables[0];
-            cboPrikljucnoVozilo.DisplayMember = "RegistarskaOznaka";
-            cboPrikljucnoVozilo.ValueMember = "ID";
+            cboPlatilac.DataSource = ds2.Tables[0];
+            cboPlatilac.DisplayMember = "RegistarskaOznaka";
+            cboPlatilac.ValueMember = "ID";
 
             if (txtSifra.Text != "")
             {
@@ -256,11 +256,12 @@ namespace TrackModal.Dokumeta
             else
             {
                 cboVozilo.SelectedValue = Convert.ToInt32(VoziloS);
-                cboPrikljucnoVozilo.SelectedValue = Convert.ToInt32(PriklucjucnoVoziloS);
+                cboPlatilac.SelectedValue = Convert.ToInt32(PriklucjucnoVoziloS);
                // cboTransportniDispicer.SelectedValue = Convert.ToInt32(transportnidispecerS);
-                txtMestoIzdavanja.Text = mestoizdavanjaS;
+                txtPonuda.Text = mestoizdavanjaS;
             }
 
+            this.reportViewer1.RefreshReport();
         }
 
         private void tsNew_Click(object sender, EventArgs e)
@@ -290,7 +291,7 @@ namespace TrackModal.Dokumeta
             if (status == true)
             {
                 Dokumeta.InsertAutoprevozniList ins = new InsertAutoprevozniList();
-                ins.InsAutoprevozniList(Convert.ToInt32(txtPutniNalogID.Text), Convert.ToInt32(txtNalogZaPrevozID.Text), Convert.ToInt32(txtRadniNalogID.Text), Convert.ToInt32(cboPlatilac.SelectedValue), txtKontaktOsoba.Text, Convert.ToInt32(cboVozilo.SelectedValue), Convert.ToDateTime(dtpDatumPrevoza.Value), txtUtovarnoMesto.Text, txtIstovarnoMesto.Text, Convert.ToInt32(cboPrimalac.SelectedValue), txtUgovor.Text, txtPonuda.Text, txtMestoIzdavanja.Text, DateTime.Now);
+                ins.InsAutoprevozniList(Convert.ToInt32(txtPutniNalogID.Text), Convert.ToInt32(txtPutniNalogID.Text), Convert.ToInt32(txtRadniNalogID.Text), Convert.ToInt32(cboPlatilac.SelectedValue), txtKontaktOsoba.Text, Convert.ToInt32(cboVozilo.SelectedValue), Convert.ToDateTime(dtpDatumPrevoza.Value), txtUtovarnoMesto.Text, txtIstovarnoMesto.Text, Convert.ToInt32(cboPrimalac.SelectedValue), txtUgovor.Text, txtPonuda.Text, txtPonuda.Text, DateTime.Now);
                 status = false;
                  VratiPodatkeMax();
             }
@@ -300,7 +301,7 @@ namespace TrackModal.Dokumeta
                 if (status == true)
                 {
                     Dokumeta.InsertAutoprevozniList upd = new InsertAutoprevozniList();
-                    upd.UpdAutoprevozniList(Convert.ToInt32(txtSifra.Text), Convert.ToInt32(txtPutniNalogID.Text), Convert.ToInt32(txtNalogZaPrevozID.Text), Convert.ToInt32(txtRadniNalogID.Text), Convert.ToInt32(cboPlatilac.SelectedValue), txtKontaktOsoba.Text, Convert.ToInt32(cboVozilo.SelectedValue), Convert.ToDateTime(dtpDatumPrevoza.Value), txtUtovarnoMesto.Text, txtIstovarnoMesto.Text, Convert.ToInt32(cboPrimalac.SelectedValue), txtUgovor.Text, txtPonuda.Text, txtMestoIzdavanja.Text, DateTime.Now);
+                    upd.UpdAutoprevozniList(Convert.ToInt32(txtSifra.Text), Convert.ToInt32(txtPutniNalogID.Text), Convert.ToInt32(txtPutniNalogID.Text), Convert.ToInt32(txtRadniNalogID.Text), Convert.ToInt32(cboPlatilac.SelectedValue), txtKontaktOsoba.Text, Convert.ToInt32(cboVozilo.SelectedValue), Convert.ToDateTime(dtpDatumPrevoza.Value), txtUtovarnoMesto.Text, txtIstovarnoMesto.Text, Convert.ToInt32(cboPrimalac.SelectedValue), txtUgovor.Text, txtPonuda.Text, txtPonuda.Text, DateTime.Now);
                     status = false;
                 }
             }
@@ -308,58 +309,22 @@ namespace TrackModal.Dokumeta
 
         private void button6_Click(object sender, EventArgs e)
         {
-            Dokumeta.InsertAutoprevozniList ins = new InsertAutoprevozniList();
-            ins.InsAutoprevozniListKameni(Convert.ToInt32(txtSifra.Text), txtRelacijaOd.Text, txtRelacijaDo.Text, txtBrojOtpravljanja.Text, Convert.ToDouble(txtBrojVagona.Value), Convert.ToDouble(txtNetoMasa.Value), dtpDatumIstovara.Value);
 
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
-            Dokumeta.InsertAutoprevozniList ins = new InsertAutoprevozniList();
-            ins.UpdAutoprevozniListKameni(Convert.ToInt32(txtStavkaKameni.Text), Convert.ToInt32(txtSifra.Text), txtRelacijaOd.Text, txtRelacijaDo.Text, txtBrojOtpravljanja.Text, Convert.ToDouble(txtBrojVagona.Value), Convert.ToDouble(txtNetoMasa.Value), dtpDatumIstovara.Value);
-        }
 
-        private void button4_Click(object sender, EventArgs e)
-        {
-            Dokumeta.InsertAutoprevozniList ins = new InsertAutoprevozniList();
-            ins.DelAutoprevozniListGeneralni(Convert.ToInt32(txtStavkaKameni.Text));
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-            if (txtSifra.Text == "")
-            {
-                MessageBox.Show("Niste uneli zaglavlje");
-            }
-            else
-            {
-                InsertAutoprevozniList ins = new InsertAutoprevozniList();
-                ins.InsAutoprevozniListGeneralni(Convert.ToInt32(txtSifra.Text), txtKorisnik.Text, txtTovarniList.Text, txtRačun.Text, Convert.ToDouble(txtDencano.Value), Convert.ToDouble(txtKolsko.Value), Convert.ToDouble(txtPrihodDencano.Value), Convert.ToDouble(txtPrihodOstalo.Value), txtPrimedba.Text, txtPotpisao.Text);
-            }
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            InsertAutoprevozniList ins = new InsertAutoprevozniList();
-            ins.UpdAutoprevozniListGeneralni(Convert.ToInt32(txtStavkaGeneralni.Text), Convert.ToInt32(txtSifra.Text), txtKorisnik.Text, txtTovarniList.Text, txtRačun.Text, Convert.ToDouble(txtDencano.Value), Convert.ToDouble(txtKolsko.Value), Convert.ToDouble(txtPrihodDencano.Value), Convert.ToDouble(txtPrihodOstalo.Value), txtPrimedba.Text, txtPotpisao.Text);
 
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
 
-            DialogResult dialogResult = MessageBox.Show("Da li ste sigurni da želite da brišete?", "Izbor", MessageBoxButtons.YesNo);
-
-            if (dialogResult == DialogResult.Yes)
-            {
-                InsertAutoprevozniList del = new InsertAutoprevozniList();
-                del.DelAutoprevozniListGeneralni(Convert.ToInt32(txtStavkaGeneralni.Text));
-            }
-
-            else if (dialogResult == DialogResult.No)
-            {
-                //do something else
-            }
         }
 
         private void toolStripButton1_Click(object sender, EventArgs e)
@@ -387,6 +352,40 @@ namespace TrackModal.Dokumeta
         private void tsDelete_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Dokumeta.InsertAutoprevozniList ins = new InsertAutoprevozniList();
+            ins.DelAutoprevozniListGeneralni(Convert.ToInt32(txtStavkaKameni.Text));
+        }
+
+        private void iconButton10_Click(object sender, EventArgs e)
+        {
+            frmAutoprevozniList2 al2 = new frmAutoprevozniList2();
+            this.Close();
+        }
+
+        private void iconButton7_Click(object sender, EventArgs e)
+        {
+            WindowState = FormWindowState.Minimized;
+        }
+
+        private void iconButton1_Click(object sender, EventArgs e)
+        {
+            frmAutoprevozniList2 al2 = new frmAutoprevozniList2();
+            this.Close();
+        }
+
+        private void iconButton3_Click(object sender, EventArgs e)
+        {
+            frmAutoprevozniList2 al2 = new frmAutoprevozniList2();
+            this.Close();
+        }
+
+        private void iconButton4_Click(object sender, EventArgs e)
+        {
+            WindowState = FormWindowState.Minimized;
         }
     }
 }

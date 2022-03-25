@@ -2728,7 +2728,7 @@
             this.txtVremeIstovaraD.ThousandsSeparator = true;
             this.txtVremeIstovaraD.UpDownButtonBorderVisible = false;
             this.txtVremeIstovaraD.UpDownButtonFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(140)))), ((int)(((byte)(243)))));
-            this.txtVremeIstovaraD.UpDownButtonForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.txtVremeIstovaraD.UpDownButtonForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             // 
             // dtpVremePolaska
             // 

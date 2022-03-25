@@ -70,14 +70,14 @@ namespace TrackModal.Dokumeta
                 txtUkupnaMasa.Text = dr["UkupnaMasa"].ToString();
                 txtRelacija1.Text = dr["Relacija1"].ToString();
                 txtRelacija2.Text = dr["Relacija2"].ToString();
-                dtpDatumPrevoza.Value = Convert.ToDateTime(dr["DatumPrevoza"].ToString());
+               // txtBrojKontejnera2.Value = Convert.ToDateTime(dr["DatumPrevoza"].ToString());
                 cboVrstaRobe.Text = dr["VrstaRobe"].ToString();
                 cboVrstaRobeKomerijala.SelectedValue = Convert.ToInt32(dr["VrstaRobeId"].ToString());
                 txtUkupnaMasa2.Value = Convert.ToDecimal(dr["UkupnaMasa2"].ToString());
                 cboOrganizacionaJedinica.SelectedValue = Convert.ToInt32(dr["OrganizacionaJedinica"].ToString());
-                txtUtovarnoMesto.Text = dr["UtovarnoMesto"].ToString();
-                txtIstovarnoMesto.Text = dr["IstovarnoMesto"].ToString();
-                txtKontaktOsoba.Text = dr["KontaktOsoba"].ToString();
+                txtTipKontejnera.Text = dr["UtovarnoMesto"].ToString();
+                txtTipKontejnera2.Text = dr["IstovarnoMesto"].ToString();
+                txtRelacija2.Text = dr["KontaktOsoba"].ToString();
                 txtNapomena.Text = dr["Napomena"].ToString();
                 dtpDatumUtovara.Value = Convert.ToDateTime(dr["DatumUtovara"].ToString());
                 dtpPredvidjenDatumUtovara.Value = Convert.ToDateTime(dr["PredvidjenoDatumUtovara"].ToString());
@@ -105,13 +105,13 @@ namespace TrackModal.Dokumeta
             con.Close();
 
         }
-        public frmNalogZaPrevoz(string BrojKontejnera1, string BrojKontejnera2, string vrstarobe1, string vrstarobe2,double ukupnaMasa, string Korisnik, string TipKontejnera, string TipKontejnera2, double ukupnaMasa2)
+        public frmNalogZaPrevoz(string BrojKontejnera1, string BrojKontejnera2, string vrstarobe1, string vrstarobe2, double ukupnaMasa, string Korisnik, string TipKontejnera, string TipKontejnera2, double ukupnaMasa2)
         {
             InitializeComponent();
             KorisnikCene = Korisnik;
             txtBrojKontejnera1.Text = BrojKontejnera1;
             txtBrojKontejnera2.Text = BrojKontejnera2;
-           // cboVrstaRobe.Text = vrstarobe1 + ".." + vrstarobe2;
+            // cboVrstaRobe.Text = vrstarobe1 + ".." + vrstarobe2;
             txtUkupnaMasa.Value = Convert.ToDecimal(ukupnaMasa);
             txtUkupnaMasa2.Value = Convert.ToDecimal(ukupnaMasa2);
             dtpDatumPrevoza.Value = DateTime.Now;
@@ -146,7 +146,7 @@ namespace TrackModal.Dokumeta
             }
             else
             {
-               
+
                 if (status == false)
                 {
 
@@ -162,7 +162,7 @@ namespace TrackModal.Dokumeta
                         statusurn = 3;
                     }
 
-                    upd.UpdNaloziZaPrevoz(Convert.ToInt32(txtSifra.Text), txtBrojKontejnera1.Text, txtBrojKontejnera2.Text, Convert.ToDouble(txtUkupnaMasa.Value), txtRelacija1.Text, txtRelacija2.Text, Convert.ToDateTime(dtpDatumPrevoza.Value), cboVrstaRobe.Text, Convert.ToDouble(txtUkupnaMasa2.Text), Convert.ToInt32(cboPlatilac.SelectedValue), Convert.ToInt32(cboOrganizacionaJedinica.SelectedValue), txtUtovarnoMesto.Text, txtIstovarnoMesto.Text, txtKontaktOsoba.Text, txtNapomena.Text, Convert.ToDateTime(DateTime.Now), KorisnikCene, Convert.ToInt32(cboPrimalac.SelectedValue), Convert.ToInt32(statusurn),  Convert.ToDateTime(dtpDatumUtovara.Value), Convert.ToDateTime(dtpPredvidjenDatumUtovara.Value), txtTipKontejnera.Text, txtTipKontejnera2.Text, 0,  Convert.ToDouble(txtNetoMasaRobe.Value));
+                    upd.UpdNaloziZaPrevoz(Convert.ToInt32(txtSifra.Text), txtBrojKontejnera1.Text, txtBrojKontejnera2.Text, Convert.ToDouble(txtUkupnaMasa.Value), txtRelacija1.Text, txtRelacija2.Text, Convert.ToDateTime(dtpDatumPrevoza.Value), cboVrstaRobe.Text, Convert.ToDouble(txtUkupnaMasa2.Text), Convert.ToInt32(cboPlatilac.SelectedValue), Convert.ToInt32(cboOrganizacionaJedinica.SelectedValue), txtUtovarnoMesto.Text, txtIstovarnoMesto.Text, txtKontaktOsoba.Text, txtNapomena.Text, Convert.ToDateTime(DateTime.Now), KorisnikCene, Convert.ToInt32(cboPrimalac.SelectedValue), Convert.ToInt32(statusurn), Convert.ToDateTime(dtpDatumUtovara.Value), Convert.ToDateTime(dtpPredvidjenDatumUtovara.Value), txtTipKontejnera.Text, txtTipKontejnera2.Text, 0, Convert.ToDouble(txtNetoMasaRobe.Value));
 
                     status = false;
                 }
@@ -397,7 +397,7 @@ namespace TrackModal.Dokumeta
 
         private void toolStripLabel2_Click(object sender, EventArgs e)
         {
-            frmPutniNalog pn = new frmPutniNalog(txtSifra.Text, txtUtovarnoMesto.Text, txtIstovarnoMesto.Text, KorisnikCene, txtRelacija1.Text, txtRelacija2.Text);
+            frmPutniNalog pn = new frmPutniNalog(txtSifra.Text, txtTipKontejnera.Text, txtTipKontejnera2.Text, KorisnikCene, txtRelacija1.Text, txtRelacija2.Text);
             pn.Show();
         }
 
@@ -471,6 +471,23 @@ namespace TrackModal.Dokumeta
             }
 
 
+        }
+
+        private void iconButton1_Click(object sender, EventArgs e)
+        {
+            frmNalogZaPrevoz nzp = new frmNalogZaPrevoz();
+            this.Close();
+        }
+
+        private void iconButton10_Click(object sender, EventArgs e)
+        {
+            frmNalogZaPrevoz nzp = new frmNalogZaPrevoz();
+            this.Close();
+        }
+
+        private void iconButton7_Click(object sender, EventArgs e)
+        {
+            WindowState = FormWindowState.Minimized;
         }
     }
 }

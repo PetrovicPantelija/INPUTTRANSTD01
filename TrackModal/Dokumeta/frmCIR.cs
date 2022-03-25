@@ -238,6 +238,7 @@ namespace TrackModal.Dokumeta
             cboDeo.ValueMember = "ID";
 
             VratiPodatkeTipKontejnera();
+            this.reportViewer2.RefreshReport();
         }
 
         private void label5_Click(object sender, EventArgs e)
@@ -247,146 +248,12 @@ namespace TrackModal.Dokumeta
 
         private void tsNew_Click(object sender, EventArgs e)
         {
-            status = true;
-            txtSifra.Enabled = false;
+
         }
 
         private void tsSave_Click(object sender, EventArgs e)
         {
 
-            if (status == true)
-            {
-
-                Sifarnici.InsertCIR ins = new Sifarnici.InsertCIR();
-                int MaterijalCelik = 0;
-                int MaterijalAlumni = 0;
-                int incoming = 0;
-                int Pun = 0;
-                int Plomba1 = 0;
-                int Plomba2 = 0;
-                int Damaged = 0;
-                int Ispravan = 0;
-                int Prevoz = 0;
-                int Prijem = 0;
-
-                if (chkMaterijalCelik.Checked == true)
-                {
-                    MaterijalCelik = 1;
-                }
-
-                if (chkAlumini.Checked == true)
-                {
-                    MaterijalAlumni = 1;
-                }
-                if (chkincoming.Checked == true)
-                {
-                    incoming = 1;
-                }
-                if (chkPun.Checked == true)
-                {
-                    Pun = 1;
-                }
-                if (chkPlomba1.Checked == true)
-                {
-                    Plomba1 = 1;
-                }
-                if (chkPlomba2.Checked == true)
-                {
-                    Plomba2 = 1;
-                }
-                if (chkDemaged.Checked == true)
-                {
-                    Damaged = 1;
-                }
-                if (chkIspravan.Checked == true)
-                {
-                    Ispravan = 1;
-                }
-                if (chkPrevoz.Checked == true)
-                {
-                    Prevoz = 1;
-                }
-                if (chkPrijem.Checked == true)
-                {
-                    Prijem = 1;
-                }
-                double TezinaPom = 0;
-                TezinaPom = Convert.ToDouble(txtBruto.Text);
-
-                ins.InsCIR(Convert.ToInt32(txtSize.Value), Convert.ToInt32(cboTipKontejnera.SelectedValue), MaterijalCelik, MaterijalAlumni, incoming, Pun, Convert.ToDouble(txtBruto.Text), txtBrojKontejnera.Text, Plomba1, Plomba2, Convert.ToDateTime(dtpDatumIn.Value), txtVagon.Text, txtTruckIn.Text, Damaged, Ispravan, Prevoz, txtContainerresponsible.Text, txtprimedbe.Text, txtReceived.Text, txtInspected.Text, txtDelivery.Text, Convert.ToDateTime(DateTime.Now), KorisnikCene, Prijem, Convert.ToInt32(txtDokument.Text), Convert.ToDouble(txtDuzina.Value), Convert.ToDouble(txtSirina.Value), Convert.ToDouble(txtDuzina.Value), txtPlomba.Text, txtPlomba2.Text);
-                if (Prijem == 1)
-                {
-                    ins.UpdateCIRPrijem(Convert.ToInt32(txtDokument.Text));
-                }
-                else
-                {
-                    ins.UpdateCIROtprema(Convert.ToInt32(txtDokument.Text));
-                }
-                status = false;
-                VratiPodatkeMax();
-            }
-            else
-            {
-                Sifarnici.InsertCIR upd = new Sifarnici.InsertCIR();
-                int MaterijalCelik = 0;
-                int MaterijalAlumni = 0;
-                int incoming = 0;
-                int Pun = 0;
-                int Plomba1 = 0;
-                int Plomba2 = 0;
-                int Damaged = 0;
-                int Ispravan = 0;
-                int Prevoz = 0;
-                int Prijem = 0;
-
-                if (chkMaterijalCelik.Checked == true)
-                {
-                    MaterijalCelik = 1;
-                }
-
-                if (chkAlumini.Checked == true)
-                {
-                    MaterijalAlumni = 1;
-                }
-                if (chkincoming.Checked == true)
-                {
-                    incoming = 1;
-                }
-                if (chkPun.Checked == true)
-                {
-                    Pun = 1;
-                }
-                if (chkPlomba1.Checked == true)
-                {
-                    Plomba1 = 1;
-                }
-                if (chkPlomba2.Checked == true)
-                {
-                    Plomba2 = 1;
-                }
-                if (chkDemaged.Checked == true)
-                {
-                    Damaged = 1;
-                }
-                if (chkIspravan.Checked == true)
-                {
-                    Ispravan = 1;
-                }
-                if (chkPrevoz.Checked == true)
-                {
-                    Prevoz = 1;
-                }
-                if (chkPrijem.Checked == true)
-                {
-                    Prijem = 1;
-                }
-                double TezinaPom = 0;
-                TezinaPom = Convert.ToDouble(txtBruto.Text);
-
-                upd.UpdCIR(Convert.ToInt32(txtSifra.Text), Convert.ToInt32(txtSize.Value), Convert.ToInt32(cboTipKontejnera.SelectedValue), MaterijalCelik, MaterijalAlumni, incoming, Pun, Convert.ToDouble(txtBruto.Text), txtBrojKontejnera.Text, Plomba1, Plomba2, Convert.ToDateTime(dtpDatumIn.Value), txtVagon.Text, txtTruckIn.Text, Damaged, Ispravan, Prevoz, txtContainerresponsible.Text, txtprimedbe.Text, txtReceived.Text, txtInspected.Text, txtDelivery.Text, Convert.ToDateTime(DateTime.Now), KorisnikCene, Prijem, Convert.ToInt32(txtDokument.Text), Convert.ToDouble(txtDuzina.Value), Convert.ToDouble(txtSirina.Value), Convert.ToDouble(txtDuzina.Value), txtPlomba.Text, txtPlomba2.Text);
-
-                status = false;
-            }
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -434,42 +301,7 @@ namespace TrackModal.Dokumeta
 
         private void toolStripLabel1_Click(object sender, EventArgs e)
         {
-            if (txtSifra.Text.Trim() == "")
-            {
-                MessageBox.Show("Niste sačuvali CIR");
-                return;
-            }
 
-            TrackModalDataSet3TableAdapters.SelectCIRTableAdapter ta = new TrackModalDataSet3TableAdapters.SelectCIRTableAdapter();
-            TrackModalDataSet3.SelectCIRDataTable dt = new TrackModalDataSet3.SelectCIRDataTable();
-
-
-            TrackModalDataSet3TableAdapters.SelectCIRGreskeTableAdapter tal = new TrackModalDataSet3TableAdapters.SelectCIRGreskeTableAdapter();
-            TrackModalDataSet3.SelectCIRGreskeDataTable dtl = new TrackModalDataSet3.SelectCIRGreskeDataTable();
-
-
-            ta.Fill(dt, Convert.ToInt32(txtSifra.Text));
-            ReportDataSource rds = new ReportDataSource();
-            rds.Name = "DataSet1";
-            rds.Value = dt;
-
-            tal.Fill(dtl);
-
-            ReportDataSource rdsl = new ReportDataSource();
-            rdsl.Name = "DataSet1";
-            rdsl.Value = dtl;
-            ndt = dtl;
-
-            ReportParameter[] par = new ReportParameter[1];
-            par[0] = new ReportParameter("ID", txtSifra.Text);
-
-            reportViewer1.LocalReport.DataSources.Clear();
-            reportViewer1.LocalReport.ReportPath = "rptCIR.rdlc";
-            reportViewer1.LocalReport.SetParameters(par);
-            reportViewer1.LocalReport.DataSources.Add(rds);
-            reportViewer1.LocalReport.SubreportProcessing += new
-                       SubreportProcessingEventHandler(SetSubDataSource);
-            reportViewer1.RefreshReport();
         }
 
         public void SetSubDataSource(object sender, SubreportProcessingEventArgs e)
@@ -514,11 +346,6 @@ namespace TrackModal.Dokumeta
             }
 
             con.Close();
-        }
-
-        private void tsDelete_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void chkPun_CheckedChanged(object sender, EventArgs e)
@@ -812,49 +639,7 @@ namespace TrackModal.Dokumeta
 
         private void button3_Click(object sender, EventArgs e)
         {
-            DialogResult dialogResult = MessageBox.Show("Da li ste sigurni da želite da brišete?", "Izbor", MessageBoxButtons.YesNo);
 
-            if (dialogResult == DialogResult.Yes)
-            {
-                Sifarnici.InsertCIR ins = new Sifarnici.InsertCIR();
-                ins.DelCIRGreske(Convert.ToInt32(txtIDGreske.Text));
-
-                var select = "  select CIrGreske.ID as ID, Greske.Naziv as GreskaNaziv,  Delovi.Naziv as DeoNaziv from CIRGreske inner join Greske " +
-                " on Greske.ID = CIrGreske.IDGreske " +
-                "inner join Delovi on CIRGreske.IDDela = Delovi.ID" +
-                " where IDNadredjenog = " + txtSifra.Text;
-
-                var s_connection = ConfigurationManager.ConnectionStrings["WindowsFormsApplication1.Properties.Settings.NedraConnectionString"].ConnectionString;
-                SqlConnection myConnection = new SqlConnection(s_connection);
-                var c = new SqlConnection(s_connection);
-                var dataAdapter = new SqlDataAdapter(select, c);
-
-                var commandBuilder = new SqlCommandBuilder(dataAdapter);
-                var ds = new DataSet();
-                dataAdapter.Fill(ds);
-                dataGridView2.ReadOnly = false;
-                dataGridView2.DataSource = ds.Tables[0];
-
-                DataGridViewColumn column = dataGridView2.Columns[0];
-                dataGridView2.Columns[0].HeaderText = "ID";
-                dataGridView2.Columns[0].Width = 50;
-                // dataGridView2.Columns[0].Visible = false;
-
-                DataGridViewColumn column2 = dataGridView2.Columns[1];
-                dataGridView2.Columns[1].HeaderText = "Greška";
-                dataGridView2.Columns[1].Width = 140;
-
-                DataGridViewColumn column3 = dataGridView2.Columns[2];
-                dataGridView2.Columns[2].HeaderText = "Deo";
-                dataGridView2.Columns[2].Width = 140;
-
-            }
-            else if (dialogResult == DialogResult.No)
-            {
-                //do something else
-            }
-
-            
         }
 
         private void dataGridView2_SelectionChanged(object sender, EventArgs e)
@@ -918,63 +703,7 @@ namespace TrackModal.Dokumeta
 
         private void button2_Click(object sender, EventArgs e)
         {
-            int pomPrijem = 0;
-            int pomVozom = 0;
-            if (chkPrijem.Checked == true)
-            {
-                pomPrijem = 1;
-                pomVozom = VratiDaLiVozPrijem();
-            }
-            else
-            {
-                pomPrijem = 0;
-                pomVozom = VratiDalijeVozOtprema();
 
-                
-            }
-            if (pomPrijem == 1)
-            {
-                //Prijem
-                if (pomVozom == 0)
-                {
-                    txtContainerresponsible.Text = NapomenaPrijemKamionom();
-
-                    //Kamionom
-                }
-                else
-                {
-                    txtContainerresponsible.Text = NapomenaPrijemVozom();
-                    //Vozom
-
-                }
-            }
-            else
-            {
-                if (pomVozom == 0)
-                {
-                    //Kamionom
-                    txtContainerresponsible.Text = NapomenaOtpremaKamionom();
-                }
-                else
-                {
-                    txtContainerresponsible.Text = NapomenaOtpremaVozom();
-                    //Vozom
-
-                }
-
-            }
-
-             //txtBrojKontejnera   
-            /*
-        Select SUBSTRING(
-            (
-                 SELECT ';' + t1.Naziv AS 'data()'
-                     FROM(Select VrstaManipulacije.Naziv from NaruceneManipulacije
-            inner join VrstaManipulacije on VrstaManipulacije.ID = NaruceneManipulacije.VrstaManipulacije
-            Where IDPrijemaVoza = 12091 and BrojKontejnera = 'PAGU3570180' and IzPrijema = 1)  t1 FOR XML PATH('') 
-            ), 2 , 9999) As Manipulacije
-
-        */
         }
 
         int VratiBrojPrijemnica()
@@ -1133,6 +862,126 @@ namespace TrackModal.Dokumeta
         private void tsDelete_Click_1(object sender, EventArgs e)
         {
             //za dodavanje
+        }
+
+        private void bunifuDropdown3_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuTextBox3_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuTextBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuDropdown8_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void chkPun_CheckedChanged(object sender, Bunifu.UI.WinForms.BunifuCheckBox.CheckedChangedEventArgs e)
+        {
+            if (chkPun.Checked == true)
+            {
+                chkPrazan.Checked = false;
+            }
+            else
+            {
+                chkPrazan.Checked = true;
+                chkPun.Checked = false;
+            }
+        }
+
+        private void chkPrazan_CheckedChanged(object sender, Bunifu.UI.WinForms.BunifuCheckBox.CheckedChangedEventArgs e)
+        {
+            if (chkPrazan.Checked == true)
+            { chkPun.Checked = false; }
+            else
+            { chkPun.Checked = true; }
+        }
+
+        private void chkMaterijalCelik_CheckedChanged(object sender, Bunifu.UI.WinForms.BunifuCheckBox.CheckedChangedEventArgs e)
+        {
+            if (chkMaterijalCelik.Checked == true)
+            {
+                chkAlumini.Checked = false;
+            }
+        }
+
+        private void chkAlumini_CheckedChanged(object sender, Bunifu.UI.WinForms.BunifuCheckBox.CheckedChangedEventArgs e)
+        {
+            if (chkAlumini.Checked == true)
+            {
+                chkMaterijalCelik.Checked = false;
+            }
+            else
+            {
+                chkMaterijalCelik.Checked = true;
+            }
+        }
+
+        private void chkPrijem_CheckedChanged(object sender, Bunifu.UI.WinForms.BunifuCheckBox.CheckedChangedEventArgs e)
+        {
+            if (chkPrijem.Checked == true)
+            {
+                chkincoming.Checked = false;
+            }
+            else
+            { chkincoming.Checked = true; }
+        }
+
+        private void chkincoming_CheckedChanged(object sender, Bunifu.UI.WinForms.BunifuCheckBox.CheckedChangedEventArgs e)
+        {
+            if (chkincoming.Checked == true)
+            { chkPrijem.Checked = false; }
+            else
+            { chkPrijem.Checked = true; }
+        }
+
+        private void chkDemaged_CheckedChanged(object sender, Bunifu.UI.WinForms.BunifuCheckBox.CheckedChangedEventArgs e)
+        {
+            if (chkDemaged.Checked == true)
+            {
+                chkIspravan.Checked = false;
+            }
+            else
+            {
+                chkIspravan.Checked = true;
+            }
+        }
+
+        private void chkIspravan_CheckedChanged(object sender, Bunifu.UI.WinForms.BunifuCheckBox.CheckedChangedEventArgs e)
+        {
+            if (chkIspravan.Checked == true)
+            {
+                chkDemaged.Checked = false;
+            }
+            else
+            {
+                chkDemaged.Checked = true;
+            }
+        }
+
+        private void iconButton1_Click(object sender, EventArgs e)
+        {
+            frmCIR cir = new frmCIR();
+            this.Close();
+        }
+
+        private void iconButton10_Click(object sender, EventArgs e)
+        {
+            frmCIR cir = new frmCIR();
+            this.Close();
+        }
+
+        private void iconButton7_Click(object sender, EventArgs e)
+        {
+            WindowState = FormWindowState.Minimized;
         }
     }
 }
